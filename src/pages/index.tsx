@@ -1,18 +1,8 @@
-import Head from 'next/head'
+import { FC } from "react";
+import HomeLayout from "layouts/home";
 
-export default function Home() {
-  return (
-    <div>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+const Home: FC = () => {
+	return <HomeLayout />;
+};
 
-      <main>
-        <h1>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-      </main>
-    </div>
-  )
-}
+export default Home;
