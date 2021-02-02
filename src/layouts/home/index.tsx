@@ -2,7 +2,7 @@ import { FC } from "react";
 import Hero from "./hero";
 import About from "./about";
 import Video from "./video";
-import Services from "./services";
+// import Services from "./services";
 
 const Home: FC = () => {
 	return (
@@ -10,7 +10,7 @@ const Home: FC = () => {
 			<Hero />
 			<About />
 			<Video />
-			<Services />
+			{/* <Services /> */}
 		</>
 	);
 };
