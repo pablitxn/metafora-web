@@ -21,13 +21,7 @@ const Nosotros: FC = () => {
 					condición es que uno haya salido del pueblo, que sienta y piense como
 					el pueblo. Quien se dedica a la conducción debe ser profundamente
 					humanista: el conductor siempre trabaja para los demás, jámas para
-					élQuien se dedica a la conducción debe ser profundamente humanista: el
-					conductor siempre trabaja para los demás, jámas para él Yo llevo en
-					mis oídos la más maravillosa música, que, para mí, es la palabra del
-					pueblo argentino y solamente los fanáticos de amor por una causa son
-					capaces de morir por un ideal La única verdad es la realidad El
-					Justicialismo ha dejado de ser la causa de un hombre para ser la causa
-					del pueblo, y por ella sí valdría la pena darlo todo, incluso la vida
+					élQuien se dedica a la conducción debe ser profundamente humanista:
 				</p>
 			</article>
 			<img src="/images/mock-image2.png" />

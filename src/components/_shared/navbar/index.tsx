@@ -29,9 +29,9 @@ const Navbar: FC = () => {
 						Orquestando Futuros
 					</Navigation>
 				</Menu.Item>
-				{/* <Menu.Item key="/profes">
+				<Menu.Item key="/profes">
 					<Navigation href="/profes">Contenido para profes</Navigation>
-				</Menu.Item> */}
+				</Menu.Item>
 				<Menu.Item key="/blog">
 					<Navigation href="/blog">Blog</Navigation>
 				</Menu.Item>
