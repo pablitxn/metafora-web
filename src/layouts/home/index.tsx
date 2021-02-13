@@ -1,7 +1,7 @@
 import { FC, useState } from "react";
 import Hero from "./hero";
 import About from "./about";
-import Video from "./video";
+import Vision from "./vision";
 import Footer from "components/_shared/footer";
 import Navbar from "components/_shared/navbar";
 import BurgerMenu from "components/_shared/burger-menu";
@@ -25,7 +25,7 @@ const HomeLayout: FC<IHomeLayout> = ({ blogData }) => {
 			{isMobile ? <BurgerMenu /> : null}
 			<Hero />
 			<About />
-			{isDesktop ? <Video /> : null}
+			{isDesktop ? <Vision /> : null}
 			{isDesktop && blogData.length ? <LastPosts blogData={blogData} /> : null}
 			<Footer />
 		</div>

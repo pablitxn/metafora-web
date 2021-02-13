@@ -8,20 +8,21 @@ const Nosotros: FC = () => {
 			<article className="metafora__description">
 				<div className="metafora__header">
 					<Image
-						src="/logos/transparent_color.png"
+						src="/logos/transparent_color-full-size.png"
 						alt="logo"
-						width={220}
+						width={420}
 						height={200}
 					/>
 				</div>
 				<p>
-					El Justicialismo necesita apóstoles y para ser apóstol hay que estar
-					dispuesto a ser héroe, y solamente los fanáticos de amor por una causa
-					son capaces de morir por un ideal Para conducir a un pueblo la primera
-					condición es que uno haya salido del pueblo, que sienta y piense como
-					el pueblo. Quien se dedica a la conducción debe ser profundamente
-					humanista: el conductor siempre trabaja para los demás, jámas para
-					élQuien se dedica a la conducción debe ser profundamente humanista:
+					Sed iaculis egestas bibendum potenti pulvinar metus pharetra
+					ultricies, facilisis consequat ornare commodo sollicitudin integer
+					mauris neque nisl, fusce posuere tempor maecenas magna sodales eget.
+					Dis viverra cum leo metus montes aptent, potenti nibh risus arcu
+					sociosqu hendrerit aliquam, vivamus porttitor lacinia ad maecenas.
+					Inceptos rutrum magnis pellentesque cum aliquam per posuere aliquet
+					in, elementum nunc sodales mi diam interdum nibh vitae porttitor
+					phasellus, malesuada tincidunt molestie metus luctus quisque a sed.
 				</p>
 			</article>
 			<img src="/images/mock-image2.png" />
