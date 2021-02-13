@@ -1,27 +1,31 @@
-import { FC } from "react";
-import Image from "next/image";
-import "./styles.less";
-import Footer from "components/_shared/footer";
+import { FC, useState, useEffect } from "react";
+import Head from "next/head";
+import HomeLayout from "layouts/home";
 
 const Home: FC = () => {
+	const [state, setState] = useState({
+		blogData: []
+	});
+
+	useEffect(() => {
+		const getMockData = async () => {
+			const response = await fetch("http://localhost:3000/api/blog");
+			const { homeArticles: blogData } = await response.json();
+			blogData && setState({ blogData });
+		};
+		getMockData();
+	}, []);
+
 	return (
-		<div className="home">
-			<div className="home__content">
-				<img
-					alt="Picture of the author"
-					src="/logos/transparent_color-full-size.png"
-					className="home__img"
-				/>
-				<article className="home__article">
-					<h1>Prepárense ... Algo realmente genial está llegando pronto</h1>
-					<p>
-						Estamos trabajando en nuestra Web. ¡Los esperamos en febrero! Nos
-						podes contactar a info@metafora.org.ar o en nuestras redes sociales
-					</p>
-				</article>
-			</div>
-			<Footer />
-		</div>
+		<>
+			<Head>
+				<title>Fundacion Metáfora</title>
+				<meta charSet="utf-8" />
+				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+			</Head>
+
+			<HomeLayout blogData={state.blogData} />
+		</>
 	);
 };
 

@@ -1,4 +1,4 @@
-import Navigation from "components/_shared/utils/navigation";
+import Navigation from "components/_shared/navigation";
 import { Tag, Space, Button } from "antd";
 
 interface IUsePostTable {

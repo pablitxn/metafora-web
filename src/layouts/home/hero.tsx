@@ -7,10 +7,18 @@ const Hero: FC = () => {
 		<div className="hero">
 			<div className="hero__logo">
 				<Image
-					src="/logos/transparent_color.png"
+					src="/logos/transparent_color-full-size.png"
 					alt="Picture of the author"
-					width={400}
-					height={400}
+					width={700}
+					height={350}
+				/>
+			</div>
+			<div className="hero__image">
+				<Image
+					src="/images/hero-background.jpg"
+					alt="Picture of the author"
+					width={750}
+					height={500}
 				/>
 			</div>
 		</div>

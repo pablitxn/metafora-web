@@ -1,7 +1,7 @@
 import { FC, useState } from "react";
 import { Menu } from "antd";
 import { useRouter } from "next/router";
-import Navigation from "components/_shared/utils/navigation";
+import Navigation from "components/_shared/navigation";
 import "./styles.less";
 
 const Navbar: FC = () => {

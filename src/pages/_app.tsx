@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { AppProps } from "next/app";
-import "./styles.less";
+import "./app.less";
 
 const App: FC<AppProps> = ({ Component, pageProps }) => {
 	return <Component {...pageProps} />;

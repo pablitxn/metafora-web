@@ -10,7 +10,7 @@ import {
 } from "@ant-design/icons";
 import "./styles.less";
 import { useRouter } from "next/router";
-import Navigation from "components/_shared/utils/navigation";
+import Navigation from "components/_shared/navigation";
 
 const { SubMenu } = Menu;
 
