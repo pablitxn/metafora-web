@@ -1,26 +1,19 @@
-import { FC, useEffect } from "react";
-// import Image from "next/image";
-import Footer from "components/_shared/footer";
-import { useRouter } from "next/router";
-import { route } from "next/dist/next-server/server/router";
+import { FC } from "react";
+import Image from "next/image";
 import "./styles.less";
 
 const Pronto: FC = () => {
-	const router = useRouter();
-
-	useEffect(() => {
-		console.log(route);
-	}, [router]);
-
 	return (
-		<div className="home">
-			<div className="home__content">
-				<img
+		<div className="pronto">
+			<div className="pronto__content">
+				<Image
 					alt="Picture of the author"
 					src="/logos/transparent_color-full-size.png"
-					className="home__img"
+					width={600}
+					height={400}
+					className="pronto__img"
 				/>
-				<article className="home__article">
+				<article className="pronto__article">
 					<h1>Prepárense ... Algo realmente genial está llegando pronto</h1>
 					<p>
 						Estamos trabajando en nuestra Web. ¡Los esperamos en febrero! Nos
@@ -28,7 +21,6 @@ const Pronto: FC = () => {
 					</p>
 				</article>
 			</div>
-			<Footer />
 		</div>
 	);
 };

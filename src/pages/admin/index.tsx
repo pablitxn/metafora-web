@@ -2,6 +2,7 @@ import { FC, useState, useEffect, useCallback } from "react";
 import { useRouter } from "next/router";
 import usePostTable from "hooks/usePostTable";
 import AdminLayout from "layouts/admin";
+import Login from "./login";
 import { Table } from "antd";
 import "./styles.less";
 
@@ -12,10 +13,12 @@ const Admin: FC = () => {
 		router.push(`/admin/post/${id}`);
 	};
 
+	const [isLogged, setIsLogged] = useState(false);
+
 	const fetchItems = useCallback(async () => {
-		const response = await fetch("http://localhost:3030/api/blog/post");
-		const { data } = await response.json();
-		setPosts(data);
+		// const response = await fetch("http://localhost:3030/api/blog/post");
+		// const { data } = await response.json();
+		// setPosts(data);
 	}, []);
 
 	const onDelete = async (id: string) => {
@@ -30,6 +33,10 @@ const Admin: FC = () => {
 		}
 	};
 
+	const handleSubmit = () => {
+		setIsLogged(true);
+	};
+
 	const columns = usePostTable({ onEdit, onDelete, type: "published" });
 
 	useEffect(() => {
@@ -37,16 +44,22 @@ const Admin: FC = () => {
 	}, [fetchItems]);
 
 	return (
-		<div className="admin-list">
-			<AdminLayout>
-				<h1>Articulos del blog</h1>
-				<Table
-					className="admin-list__table"
-					columns={columns}
-					dataSource={posts}
-				/>
-			</AdminLayout>
-		</div>
+		<>
+			{isLogged ? (
+				<div className="admin-list">
+					<AdminLayout>
+						<h1>Articulos del blog</h1>
+						<Table
+							className="admin-list__table"
+							columns={columns}
+							dataSource={posts}
+						/>
+					</AdminLayout>
+				</div>
+			) : (
+				<Login onSubmit={handleSubmit} />
+			)}
+		</>
 	);
 };
 

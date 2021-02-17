@@ -44,7 +44,9 @@ const ArticleForm: FC<IArticleForm> = ({ onSubmit, data }) => {
 	const children = [];
 	for (let i = 10; i < 36; i++) {
 		children.push(
-			<Option key={i.toString(36) + i}>{i.toString(36) + i}</Option>
+			<Option value="" key={i.toString(36) + i}>
+				{i.toString(36) + i}
+			</Option>
 		);
 	}
 

@@ -1,0 +1,29 @@
+.form-container {
+	& h1 {
+		text-align: center;
+		font-size: 2.5rem;
+	}
+}
+
+.login-form {
+	display: flex;
+	flex-direction: column;
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__action {
+		&--submit {
+			margin: 1rem 0 2rem;
+		}
+
+		&--transparent {
+			display: flex;
+			justify-content: center;
+			font-size: 0.85rem;
+			color: rgba(25, 25, 25, 0.8);
+		}
+	}
+}
