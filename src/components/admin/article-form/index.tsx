@@ -1,6 +1,6 @@
 import { FC, useEffect, useState } from "react";
-import { Form, Input, Button, Radio, Select, Cascader } from "antd";
-import { IPost } from "interfaces/blog/post";
+import { Form, Input, Button, Radio, Select } from "antd";
+import { IPost } from "types/blog/post";
 import { SizeType } from "antd/lib/config-provider/SizeContext";
 import TextArea from "antd/lib/input/TextArea";
 import { articleMock } from "utils/mockdata";
