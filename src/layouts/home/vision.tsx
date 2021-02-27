@@ -29,7 +29,6 @@ const Vision: FC = () => {
 					Aportando respuestas éticas y fortaleciendo las capacidades de los
 					intervinientes
 				</p>
-				<Button className="vision__button">Info</Button>
 			</article>
 		</div>
 	);

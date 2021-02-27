@@ -1,8 +1,10 @@
 import { FC, ReactNode } from "react";
 import Navbar from "components/_shared/navbar";
+import BurgerMenu from "components/_shared/burger-menu";
 import Head from "next/head";
 import Footer from "components/_shared/footer";
 import { useRouter } from "next/router";
+import "./styles.less";
 
 interface IAppLayout {
 	children: ReactNode;
@@ -24,7 +26,10 @@ const AppLayout: FC<IAppLayout> = ({ children }) => {
 			</Head>
 
 			<div className="app">
-				{router.pathname !== "/pronto" && <Navbar />}
+				{router.pathname !== "/pronto" && <Navbar className="app__navbar" />}
+				{router.pathname !== "/pronto" && (
+					<BurgerMenu className="app__burger-menu" />
+				)}
 				<main>{children}</main>
 				<Footer />
 			</div>

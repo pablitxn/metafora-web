@@ -1,0 +1,35 @@
+@import "../../assets/antd-custom.less";
+
+.app {
+	@media screen and (min-width: @mobile) {
+		// padding: 1rem;
+
+		&__navbar {
+			display: none;
+		}
+
+		&__burger-menu {
+			display: initial;
+		}
+	}
+
+	@media screen and (min-width: @tablet) {
+		&__navbar {
+			display: none;
+		}
+
+		&__burger-menu {
+			display: initial;
+		}
+	}
+
+	@media screen and (min-width: @desktop) {
+		&__navbar {
+			display: initial;
+		}
+
+		&__burger-menu {
+			display: none;
+		}
+	}
+}
