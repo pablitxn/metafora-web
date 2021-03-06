@@ -1,0 +1,187 @@
+@import "../../assets/antd-custom.less";
+
+.dona {
+	// Mobile vertical
+	@media screen and (max-width: @mobile) {
+		padding: 1rem;
+
+		& header {
+			display: flex;
+			place-content: center;
+		}
+
+		&__article {
+			display: flex;
+			flex-direction: column;
+			place-content: center;
+			margin-bottom: 2rem;
+
+			& p {
+				padding: 0 1rem;
+				font-size: 1.5rem;
+				font-weight: 200;
+				margin: 0;
+				text-align: center;
+			}
+
+			& div {
+				display: flex;
+				place-content: center;
+			}
+		}
+
+		&__ilustration {
+			display: flex;
+			place-content: center;
+			flex-direction: column;
+			text-align: center;
+			gap: 0.5rem;
+
+			& div {
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+				font-weight: 200;
+			}
+		}
+	}
+
+	// Mobile horizontal --- Little tablets
+	@media screen and (min-width: @mobile) and (max-width: @tablet) {
+		padding: 1rem;
+
+		& header {
+			display: flex;
+			place-content: center;
+		}
+
+		&__article {
+			display: flex;
+			flex-direction: column;
+			place-content: center;
+			margin-bottom: 2rem;
+
+			& p {
+				padding: 0 1rem;
+				font-size: 1.5rem;
+				font-weight: 200;
+				text-align: center;
+				margin: 0;
+			}
+
+			& div {
+				display: flex;
+				place-content: center;
+			}
+		}
+
+		&__ilustration {
+			display: flex;
+			place-content: center;
+			flex-direction: column;
+			text-align: center;
+			gap: 0.5rem;
+
+			& div {
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+				font-weight: 200;
+			}
+		}
+	}
+
+	// Tablet -- Little computers
+	@media screen and (min-width: @tablet) and (max-width: @desktop) {
+		padding: 1rem;
+
+		& header {
+			display: flex;
+			place-content: center;
+		}
+
+		&__article {
+			display: flex;
+			flex-direction: column;
+			place-content: center;
+			margin-bottom: 2rem;
+
+			& p {
+				padding: 0 1rem;
+				font-size: 1.5rem;
+				font-weight: 200;
+				margin-bottom: 2rem;
+				margin: 0;
+				text-align: center;
+			}
+
+			& div {
+				display: flex;
+				place-content: center;
+			}
+		}
+
+		&__ilustration {
+			display: flex;
+			place-content: center;
+			flex-direction: column;
+			text-align: center;
+			gap: 0.5rem;
+
+			& div {
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+				font-weight: 200;
+			}
+		}
+	}
+
+	// Regular desktop
+	@media screen and (min-width: @desktop) {
+		padding: 5rem 1rem;
+		display: flex;
+		place-content: center;
+		gap: 1rem;
+
+		& header {
+			display: flex;
+			place-content: center;
+		}
+
+		&__article {
+			display: flex;
+			align-self: flex-start;
+			flex-direction: column;
+			place-content: center;
+			margin-bottom: 2rem;
+
+			& p {
+				padding: 0 1rem;
+				font-size: 1.5rem;
+				font-weight: 200;
+				margin-bottom: 2rem;
+			}
+
+			& div {
+				display: flex;
+				place-content: center;
+			}
+		}
+
+		&__ilustration {
+			display: flex;
+			place-content: center;
+			flex-direction: column;
+			text-align: center;
+			gap: 0.5rem;
+
+			& div {
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+				font-weight: 200;
+			}
+		}
+	}
+}

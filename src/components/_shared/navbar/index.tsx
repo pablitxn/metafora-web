@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import { FC, useEffect, useState } from "react";
 import { Menu } from "antd";
 import { useRouter } from "next/router";
 import Navigation from "components/_shared/navigation";
@@ -12,15 +12,25 @@ const Navbar: FC<INavbar> = ({ className }) => {
 	const router = useRouter();
 	const [state, setState] = useState({
 		collapsed: false,
-		defaultKey: [router.asPath]
+		defaultKey: [router.asPath],
+		selectedKey: [router.asPath]
 	});
+
+	const handleMenu = ({ key }) =>
+		setState((prev) => ({ ...prev, selectedKey: [key] }));
+
+	useEffect(() => {
+		setState((prev) => ({ ...prev, selectedKey: [router.asPath] }));
+	}, [router.asPath]);
 
 	return (
 		<div className={className}>
 			<Menu
 				className="navbar"
 				defaultSelectedKeys={state.defaultKey}
+				selectedKeys={state.selectedKey}
 				mode="horizontal"
+				onClick={handleMenu}
 			>
 				<Menu.Item key="/demo">
 					<Navigation href="/demo">Home </Navigation>
@@ -33,8 +43,8 @@ const Navbar: FC<INavbar> = ({ className }) => {
 						Orquestando Futuros
 					</Navigation>
 				</Menu.Item>
-				<Menu.Item key="/blog">
-					<Navigation href="/blog">Doná</Navigation>
+				<Menu.Item key="/dona">
+					<Navigation href="/dona">Doná</Navigation>
 				</Menu.Item>
 			</Menu>
 		</div>

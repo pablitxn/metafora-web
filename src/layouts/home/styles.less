@@ -183,53 +183,137 @@
 		color: #208342;
 	}
 
-	&__title {
-		width: 100%;
-		background-color: #378a554f;
-		padding: 1rem;
-		text-align: center;
-		font-size: 2rem;
-		font-weight: 400;
-	}
-	&__article {
-		& p {
-			font-size: 1.5rem;
-			padding: 4rem 2rem;
+	@media screen and (max-width: @mobile) {
+		&__title {
+			width: 100%;
+			background-color: #378a554f;
+			padding: 1rem;
+			text-align: center;
+			font-size: 2rem;
+			font-weight: 400;
 		}
-	}
 
-	@media screen and (max-width: 480px) {
 		&__article {
 			& p {
 				font-size: 1.2rem;
 				font-weight: 300;
-				padding: 2rem;
+				padding: 1rem;
+				margin: 0;
 			}
 		}
-		& video {
-			padding: 0 1rem;
+		&__video {
+			& video {
+				padding: 1rem;
+				width: 100%;
+			}
+		}
+	}
+
+	// Mobile horizontal --- Little tablets
+	@media screen and (min-width: @mobile) and (max-width: @tablet) {
+		&__title {
 			width: 100%;
+			background-color: #378a554f;
+			padding: 1rem;
+			text-align: center;
+			font-size: 2rem;
+			font-weight: 400;
+		}
+
+		&__article {
+			& p {
+				font-size: 1.5rem;
+				font-weight: 300;
+				padding: 2rem 1rem;
+			}
+		}
+		&__video {
+			& video {
+				padding: 1rem;
+				width: 100%;
+			}
+		}
+	}
+
+	// Tablet -- Little computers
+	@media screen and (min-width: @tablet) and (max-width: @desktop) {
+		&__title {
+			width: 100%;
+			background-color: #378a554f;
+			padding: 1rem;
+			text-align: center;
+			font-size: 2rem;
+			font-weight: 400;
+		}
+
+		&__article {
+			& p {
+				font-size: 1.5rem;
+				font-weight: 300;
+				padding: 2rem 1rem;
+			}
+		}
+		&__video {
+			& video {
+				padding: 1rem;
+				width: 100%;
+			}
 		}
 	}
 
 	@media screen and (min-width: @desktop) {
 		display: flex;
 
-		& video {
-			padding: 1rem;
+		&__title {
 			width: 100%;
+			background-color: #378a554f;
+			padding: 1rem;
+			text-align: center;
+			font-size: 2rem;
+			font-weight: 400;
+		}
+
+		&__video {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			& video {
+				padding: 1rem;
+				min-width: 700px;
+			}
 		}
 
 		&__article {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			width: 800px;
+			max-width: 800px;
 			padding: 1rem;
 
-			p {
+			& p {
 				font-size: 1.5rem;
+				font-weight: 300;
+				padding: 2rem 1rem;
 			}
 		}
+	}
+}
+
+//***//
+.plantilla {
+	// Mobile vertical
+	@media screen and (max-width: @mobile) {
+	}
+
+	// Mobile horizontal --- Little tablets
+	@media screen and (min-width: @mobile) and (max-width: @tablet) {
+	}
+
+	// Tablet -- Little computers
+	@media screen and (min-width: @tablet) and (max-width: @desktop) {
+	}
+
+	// Regular desktop
+	@media screen and (min-width: @desktop) {
 	}
 }

@@ -33,7 +33,7 @@ const BurgerMenu: FC<IBurgerMenu> = ({ className }) => {
 							</Navigation>
 						</li>
 						<li onClick={handleClick}>
-							<Navigation href="/blog">Doná</Navigation>
+							<Navigation href="/dona">Doná</Navigation>
 						</li>
 					</ul>
 				</nav>
