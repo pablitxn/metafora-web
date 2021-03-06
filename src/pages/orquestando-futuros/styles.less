@@ -1,81 +1,159 @@
 @import "../../assets/antd-custom.less";
 
 .orq-futuros {
-	@media screen and (min-width: @mobile) {
+	// Mobile vertical
+	@media screen and (max-width: @mobile) {
 		padding: 1rem;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
+		margin-top: 2rem;
 
 		& h1 {
-			text-align: center;
-			padding: 1rem;
-			color: #208342;
-		}
-
-		&__image {
 			display: flex;
-			align-items: center;
-			justify-content: center;
+			place-content: center;
+			font-size: 1.5rem;
 		}
-
-		& p {
-			padding: 1rem 0;
-		}
-	}
-
-	@media screen and (min-width: @tablet) {
-		padding: 1rem;
-		display: flex;
-		flex-direction: column;
-
-		& h1 {
-			text-align: center;
-			padding: 1rem;
-			color: #208342;
-		}
-		&__image {
-			display: flex;
-			align-items: center;
-			width: 100%;
-			justify-content: center;
-		}
-	}
-
-	@media screen and (min-width: @desktop) {
-		width: 100%;
-		height: 88vh;
-		background-color: rgba(210, 180, 140, 0.247);
-		display: flex;
-		justify-content: center;
-		align-items: center;
-
-		/*
-		&__content {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-direction: row;
-			background-image: url(/images/background-lightblue.jpg);
-			background-size: cover;
-			background-position: center;
-			height: 70%;
-			width: 60%;
-		}
-		*/
 
 		&__article {
-			width: 30rem;
-			margin-right: 5rem;
-			background-color: rgba(25, 25, 25, 0.2);
-			padding: 2rem;
-
-			h1 {
-				font-size: 2rem;
+			& p {
+				padding: 0 0.5rem;
+				font-size: 1.2rem;
+				font-weight: 200;
+				margin-bottom: 2rem;
 			}
+		}
+		&__image {
+			display: flex;
+			place-content: center;
+			flex-direction: column;
+			text-align: center;
+			gap: 0.5rem;
+
+			& img {
+				object-fit: cover;
+				object-position: center center;
+			}
+
+			& div {
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+				font-weight: 200;
+			}
+		}
+	}
+
+	// Mobile horizontal --- Little tablets
+	@media screen and (min-width: @mobile) and (max-width: @tablet) {
+		padding: 1rem;
+
+		& h1 {
+			font-size: 2rem;
+			display: flex;
+			place-content: center;
+		}
+
+		&__article {
+			& p {
+				padding: 0 1rem;
+				font-size: 1.2rem;
+				font-weight: 200;
+				margin-bottom: 2rem;
+			}
+		}
+		&__image {
+			display: flex;
+			place-content: center;
+			flex-direction: column;
+			text-align: center;
+			gap: 0.5rem;
+
+			& img {
+				object-fit: cover;
+				object-position: center center;
+			}
+
+			& div {
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+				font-weight: 200;
+			}
+		}
+	}
+
+	// Tablet -- Little computers
+	@media screen and (min-width: @tablet) and (max-width: @desktop) {
+		padding: 1rem;
+
+		& h1 {
+			font-size: 2rem;
+			display: flex;
+			place-content: center;
+		}
+
+		&__article {
+			& p {
+				padding: 0 1rem;
+				font-size: 1.5rem;
+				font-weight: 200;
+				margin-bottom: 2rem;
+			}
+		}
+		&__image {
+			display: flex;
+			place-content: center;
+			flex-direction: column;
+			text-align: center;
+			gap: 0.5rem;
+
+			& img {
+				object-fit: cover;
+				object-position: center center;
+			}
+
+			& div {
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+				font-weight: 200;
+			}
+		}
+	}
+
+	// Regular desktop
+	@media screen and (min-width: @desktop) {
+		padding: 9rem 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		margin-bottom: 2rem;
+
+		& h1 {
+			font-size: 2.5rem;
+			display: flex;
+			place-content: center;
+		}
+
+		&__article {
+			max-width: 600px;
+			margin-bottom: 1rem;
+
 			p {
-				font-size: 1rem;
+				font-size: 1.2rem;
+				font-weight: 200;
+			}
+		}
+		&__image {
+			display: flex;
+			place-content: center;
+			flex-direction: column;
+			text-align: center;
+			gap: 0.5rem;
+
+			& div {
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+				font-weight: 200;
 			}
 		}
 	}
