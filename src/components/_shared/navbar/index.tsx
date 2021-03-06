@@ -32,8 +32,8 @@ const Navbar: FC<INavbar> = ({ className }) => {
 				mode="horizontal"
 				onClick={handleMenu}
 			>
-				<Menu.Item key="/demo">
-					<Navigation href="/demo">Home </Navigation>
+				<Menu.Item key="/">
+					<Navigation href="/">Home </Navigation>
 				</Menu.Item>
 				<Menu.Item key="/nosotros">
 					<Navigation href="/nosotros">Metáfora</Navigation>

@@ -22,7 +22,7 @@ const BurgerMenu: FC<IBurgerMenu> = ({ className }) => {
 				<nav className="burger-menu__nav">
 					<ul>
 						<li onClick={handleClick}>
-							<Navigation href="/demo">Home </Navigation>
+							<Navigation href="/">Home </Navigation>
 						</li>
 						<li onClick={handleClick}>
 							<Navigation href="/nosotros">Metáfora</Navigation>

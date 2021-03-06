@@ -1,21 +1,8 @@
-import { FC, useState, useEffect } from "react";
+import { FC } from "react";
 import Head from "next/head";
 import HomeLayout from "layouts/home";
 
 const Home: FC = () => {
-	const [state, setState] = useState({
-		blogData: []
-	});
-
-	useEffect(() => {
-		const getMockData = async () => {
-			const response = await fetch("http://localhost:3000/api/blog");
-			const { homeArticles: blogData } = await response.json();
-			blogData && setState({ blogData });
-		};
-		getMockData();
-	}, []);
-
 	return (
 		<>
 			<Head>
@@ -24,7 +11,7 @@ const Home: FC = () => {
 				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 			</Head>
 
-			<HomeLayout blogData={state.blogData} />
+			<HomeLayout />
 		</>
 	);
 };
