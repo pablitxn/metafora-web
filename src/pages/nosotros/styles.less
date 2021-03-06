@@ -1,17 +1,84 @@
 @import "../../assets/antd-custom.less";
 
 .nosotros {
-	@media screen and (min-width: @mobile) {
+	// Mobile vertical
+	@media screen and (max-width: @mobile) {
 		padding: 1rem;
 
-		&__header {
+		& header {
 			display: flex;
 			place-content: center;
 		}
 
-		&__description {
+		&__article {
 			& p {
-				padding: 1rem;
+				padding: 0 1rem;
+				font-size: 1.2rem;
+				font-weight: 200;
+				margin-bottom: 2rem;
+			}
+		}
+		&__ilustration {
+			display: flex;
+			place-content: center;
+			flex-direction: column;
+			text-align: center;
+			gap: 0.5rem;
+
+			& div {
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+				font-weight: 200;
+			}
+		}
+	}
+
+	// Mobile horizontal --- Little tablets
+	@media screen and (min-width: @mobile) and (max-width: @tablet) {
+		padding: 1rem;
+
+		& header {
+			display: flex;
+			place-content: center;
+		}
+
+		&__article {
+			& p {
+				padding: 0 1rem;
+				font-size: 1.2rem;
+				font-weight: 200;
+				margin-bottom: 2rem;
+			}
+		}
+		&__ilustration {
+			display: flex;
+			place-content: center;
+			flex-direction: column;
+			text-align: center;
+			gap: 0.5rem;
+
+			& div {
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+				font-weight: 200;
+			}
+		}
+	}
+
+	// Tablet -- Little computers
+	@media screen and (min-width: @tablet) and (max-width: @desktop) {
+		padding: 1rem;
+
+		& header {
+			display: flex;
+			place-content: center;
+		}
+
+		&__article {
+			& p {
+				padding: 0 1rem;
 				font-size: 1.5rem;
 				font-weight: 200;
 				margin-bottom: 2rem;
@@ -19,43 +86,54 @@
 		}
 		&__ilustration {
 			display: flex;
-			justify-content: center;
-			align-items: center;
+			place-content: center;
+			flex-direction: column;
+			text-align: center;
+			gap: 0.5rem;
 
-			& img {
-				width: 700px;
+			& div {
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+				font-weight: 200;
 			}
 		}
 	}
 
-	@media screen and (min-width: @tablet) {
+	// Regular desktop
+	@media screen and (min-width: @desktop) {
+		padding: 1rem;
+		display: flex;
+		place-content: center;
+
+		& header {
+			display: flex;
+			place-content: center;
+		}
+
+		&__article {
+			max-width: 600px;
+			margin-bottom: 1rem;
+
+			p {
+				font-size: 1.2rem;
+				font-weight: 200;
+				padding: 0 1rem;
+			}
+		}
 		&__ilustration {
 			display: flex;
 			place-content: center;
-			margin-bottom: 2rem;
-		}
-	}
+			flex-direction: column;
+			text-align: center;
+			gap: 0.5rem;
 
-	@media screen and (min-width: @desktop) {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		&__header {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			margin-bottom: 2rem;
-		}
-
-		&__description {
-			padding: 1rem;
-
-			p {
-				font-size: 1.3rem;
+			& div {
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+				font-weight: 200;
 			}
-		}
-		&__ilustration {
-			width: 8500px;
 		}
 	}
 }

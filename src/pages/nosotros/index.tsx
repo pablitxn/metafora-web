@@ -4,9 +4,9 @@ import "./styles.less";
 
 const Nosotros: FC = () => {
 	return (
-		<div className="nosotros">
-			<article className="nosotros__description">
-				<header className="nosotros__header">
+		<section className="nosotros">
+			<article className="nosotros__article">
+				<header>
 					<Image
 						src="/logos/transparent_color-full-size.png"
 						alt="logo"
@@ -43,8 +43,12 @@ const Nosotros: FC = () => {
 					width={1450}
 					height={860}
 				/>
+				<div>
+					<span>¿querés saber más sobre nosotros?</span>
+					<a>acá nuestro manifiesto</a>
+				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 
