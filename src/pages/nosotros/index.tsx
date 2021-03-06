@@ -4,28 +4,46 @@ import "./styles.less";
 
 const Nosotros: FC = () => {
 	return (
-		<div className="metafora">
-			<article className="metafora__description">
-				<div className="metafora__header">
+		<div className="nosotros">
+			<article className="nosotros__description">
+				<header className="nosotros__header">
 					<Image
 						src="/logos/transparent_color-full-size.png"
 						alt="logo"
-						width={420}
+						width={400}
 						height={200}
 					/>
-				</div>
+				</header>
 				<p>
-					Sed iaculis egestas bibendum potenti pulvinar metus pharetra
-					ultricies, facilisis consequat ornare commodo sollicitudin integer
-					mauris neque nisl, fusce posuere tempor maecenas magna sodales eget.
-					Dis viverra cum leo metus montes aptent, potenti nibh risus arcu
-					sociosqu hendrerit aliquam, vivamus porttitor lacinia ad maecenas.
-					Inceptos rutrum magnis pellentesque cum aliquam per posuere aliquet
-					in, elementum nunc sodales mi diam interdum nibh vitae porttitor
-					phasellus, malesuada tincidunt molestie metus luctus quisque a sed.
+					La Metáfora alude a un recurso literario que permite sustituir una
+					palabra por otra, amplificando el sentido de lo que se quiere
+					expresar. Es muy valiosa cuando queremos describir diferentes
+					realidades, porque permite apoyarse en el simbolismo del lenguaje para
+					ampliar el sentido de lo que expresamos, y así lograr una mayor
+					comprensión. Toda Metáfora encierra una acción, ya que la sustitución
+					de un término por otro sin alterar el significado de la expresión,
+					implica que el ser hablante debe realizar actividades concretas para
+					apropiarse del sentido. Por ejemplo, en el poema de Alfonsina Storni
+					(poeta argentina 1892- 1938) “Tu me quieres blanca: Tu me quieres
+					alba, me quieres de espuma, me quieres de nácar” etc. Los múltiples
+					aspectos de la pureza se ven reflejados ampliamente en los atributos
+					descriptos, asociados al concepto de mujer y de amor. Por este motivo,
+					Fundación Metáfora enfoca sus Proyectos en ampliar el acceso de todos
+					los participantes, promoviendo el desarrollo de las capacidades de las
+					contrapartes intervinientes ( organizaciones de la sociedad civil,
+					universidades, empresas, organismos nacionales e internacionales,
+					etc.) para que las intervenciones permitan activar las respuestas
+					justas que ayuden a construir un mundo más sustentable y solidario.
 				</p>
 			</article>
-			<img src="/images/mock-image2.png" />
+			<div className="nosotros__ilustration">
+				<Image
+					src="/images/mock-image2.png"
+					alt="ilustration"
+					width={1450}
+					height={860}
+				/>
+			</div>
 		</div>
 	);
 };

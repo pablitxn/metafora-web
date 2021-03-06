@@ -1,10 +1,21 @@
 import { FC } from "react";
-import { Button } from "antd";
 import "./styles.less";
 
 const Vision: FC = () => {
 	return (
 		<div className="vision">
+			<article className="vision__article">
+				<h2 className="vision__title">Visión</h2>
+				<p>
+					Trabajamos hace más de doce años en forma directa con diversas
+					comunidades en diferentes contextos, implementando proyectos
+					educativos en el campo de la educación formal y no formal, para la
+					integración de familias en situación de vulnerabilidad. Enfocados en
+					el trabajo en redes, desarrollamos modelos asociativos con otras
+					organizaciones locales, promoviendo la participación y asegurando la
+					sustentabilidad de los proyectos.
+				</p>
+			</article>
 			<div className="vision__video">
 				<video
 					loop
@@ -21,15 +32,6 @@ const Vision: FC = () => {
 					Your browser does not support the video tag.
 				</video>
 			</div>
-			<article className="vision__article">
-				<h2>Visión</h2>
-				<p>
-					Metáfora trabaja por la construcción de un mundo sustentable para
-					todas las sociedades y personas. generando modelos participativos.
-					Aportando respuestas éticas y fortaleciendo las capacidades de los
-					intervinientes
-				</p>
-			</article>
 		</div>
 	);
 };

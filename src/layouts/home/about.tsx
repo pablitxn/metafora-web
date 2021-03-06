@@ -4,25 +4,25 @@ import "./styles.less";
 
 const About: FC = () => {
 	return (
-		<div className="about">
-			<h2>Nuestra misión</h2>
-			<div className="about__hero">
-				<h3>
+		<section className="about">
+			<h2 className="about__title">Nuestra misión</h2>
+			<article className="about__article">
+				<p>
 					Promover <br />
 					<strong>la cultura de la sustentabilidad</strong>
 					<br />
 					a través
 					<br />
 					de <strong>proyectos educativos innovadores</strong>
-				</h3>
+				</p>
 				<Image
 					src="/images/mar-chiquita.jpg"
 					alt="logo"
 					width={620}
-					height={500}
+					height={300}
 				/>
-			</div>
-		</div>
+			</article>
+		</section>
 	);
 };
 

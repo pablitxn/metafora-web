@@ -31,7 +31,7 @@ const AppLayout: FC<IAppLayout> = ({ children }) => {
 					<BurgerMenu className="app__burger-menu" />
 				)}
 				<main>{children}</main>
-				<Footer />
+				<Footer className="app__footer" />
 			</div>
 		</>
 	);

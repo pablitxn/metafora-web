@@ -1,5 +1,6 @@
 import { FC } from "react";
 import "./styles.less";
+import Image from "next/image";
 
 const OrquestandoFuturos: FC = () => {
 	return (
@@ -8,14 +9,25 @@ const OrquestandoFuturos: FC = () => {
 				<article className="orq-futuros__article">
 					<h1>Orquestando futuros</h1>
 					<p>
-						El Justicialismo necesita apóstoles y para ser apóstol hay que estar
-						dispuesto a ser héroe, y solamente los fanáticos de amor por una
-						causa son capaces de morir por un ideal Para conducir a un pueblo la
-						primera condición es que uno haya salido del pueblo, que sienta y
-						piense como el pueblo.
+						Phasellus egestas primis nascetur leo semper ante ligula scelerisque
+						pulvinar, inceptos rutrum a in accumsan eu penatibus senectus. Nisi
+						himenaeos nascetur ut ante parturient curabitur quis natoque class,
+						eu morbi venenatis mi facilisis magnis pulvinar accumsan nunc in,
+						dui montes feugiat lectus suscipit litora massa leo. Vivamus
+						hendrerit sociosqu luctus per nisl tristique tincidunt tempus cum,
+						dictumst egestas placerat torquent in ultricies est volutpat nullam
+						mollis, mi primis malesuada augue morbi metus cubilia velit.
 					</p>
 				</article>
-				<img src="/images/orq-futuros.jpg" />
+				<div className="orq-futuros__image">
+					<Image
+						className="orq-futuros__image"
+						src="/images/orq-futuros.jpg"
+						alt="logo"
+						width={400}
+						height={400}
+					/>
+				</div>
 			</div>
 		</div>
 	);

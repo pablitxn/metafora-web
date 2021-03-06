@@ -21,18 +21,18 @@ const BurgerMenu: FC<IBurgerMenu> = ({ className }) => {
 			{open ? (
 				<nav className="burger-menu__nav">
 					<ul>
-						<li>
+						<li onClick={handleClick}>
 							<Navigation href="/demo">Home </Navigation>
 						</li>
-						<li>
+						<li onClick={handleClick}>
 							<Navigation href="/nosotros">Metáfora</Navigation>
 						</li>
-						<li>
+						<li onClick={handleClick}>
 							<Navigation href="/orquestando-futuros">
 								Orquestando Futuros
 							</Navigation>
 						</li>
-						<li>
+						<li onClick={handleClick}>
 							<Navigation href="/blog">Doná</Navigation>
 						</li>
 					</ul>

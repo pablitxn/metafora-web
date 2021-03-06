@@ -1,9 +1,19 @@
 @import "../../assets/antd-custom.less";
 
 .app {
-	@media screen and (min-width: @mobile) {
-		// padding: 1rem;
+	position: relative;
+	padding-bottom: 4rem;
 
+	& main {
+		margin-bottom: 1rem;
+	}
+
+	&__footer {
+		position: absolute;
+		bottom: 0;
+	}
+
+	@media screen and (max-width: @tablet) {
 		&__navbar {
 			display: none;
 		}
@@ -13,7 +23,7 @@
 		}
 	}
 
-	@media screen and (min-width: @tablet) {
+	@media screen and (min-width: @tablet) and (max-width: @desktop) {
 		&__navbar {
 			display: none;
 		}

@@ -1,28 +1,61 @@
-.metafora {
-	width: 100%;
-	height: 88vh;
-	background-color: rgba(210, 180, 140, 0.247);
-	display: flex;
-	justify-content: center;
-	align-items: center;
+@import "../../assets/antd-custom.less";
 
-	&__header {
+.nosotros {
+	@media screen and (min-width: @mobile) {
+		padding: 1rem;
+
+		&__header {
+			display: flex;
+			place-content: center;
+		}
+
+		&__description {
+			& p {
+				padding: 1rem;
+				font-size: 1.5rem;
+				font-weight: 200;
+				margin-bottom: 2rem;
+			}
+		}
+		&__ilustration {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			& img {
+				width: 700px;
+			}
+		}
+	}
+
+	@media screen and (min-width: @tablet) {
+		&__ilustration {
+			display: flex;
+			place-content: center;
+			margin-bottom: 2rem;
+		}
+	}
+
+	@media screen and (min-width: @desktop) {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		margin-bottom: 2rem;
-	}
-
-	&__description {
-		background-color: rgba(25, 25, 25, 0.2);
-		padding: 2rem 6rem;
-		height: 63.5%;
-
-		h1 {
-			font-size: 2rem;
+		&__header {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 2rem;
 		}
-		p {
-			font-size: 1rem;
+
+		&__description {
+			padding: 1rem;
+
+			p {
+				font-size: 1.3rem;
+			}
+		}
+		&__ilustration {
+			width: 8500px;
 		}
 	}
 }

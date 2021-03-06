@@ -17,8 +17,9 @@ const Hero: FC = () => {
 				<Image
 					src="/images/hero-background.jpg"
 					alt="Picture of the author"
-					width={750}
-					height={500}
+					layout="intrinsic"
+					width={1200}
+					height={800}
 				/>
 			</div>
 		</div>
