@@ -30,16 +30,16 @@ const Draft: FC = () => {
 
 	const columns = usePostTable({ onPublish, onDelete, type: "draft" });
 	return (
-		<div className="admin-list">
-			<AdminLayout>
-				<h1>Guardados</h1>
+		<AdminLayout>
+			<div className="admin-draft">
+				<h2>Guardados</h2>
 				<Table
-					className="admin-list__table"
+					className="admin-draft__table"
 					columns={columns}
 					dataSource={data}
 				/>
-			</AdminLayout>
-		</div>
+			</div>
+		</AdminLayout>
 	);
 };
 

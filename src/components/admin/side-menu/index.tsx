@@ -6,6 +6,9 @@ import {
 	FileAddOutlined,
 	SaveOutlined,
 	TeamOutlined,
+	CommentOutlined,
+	BarChartOutlined,
+	MailOutlined,
 	CalendarOutlined
 } from "@ant-design/icons";
 import "./styles.less";
@@ -60,10 +63,20 @@ const SideMenu: FC<ISideMenu> = ({ handleOption }) => {
 						icon={<FileSearchOutlined />}
 						title="Reportes y métricas"
 					>
-						<Menu.Item key="21">Opcion 10 </Menu.Item>
-						<Menu.Item key="22">Opcion 11 </Menu.Item>
+						<Menu.Item key="21" icon={<BarChartOutlined />}>
+							Visitas web
+						</Menu.Item>
+						<Menu.Item key="25" icon={<BarChartOutlined />}>
+							Visitas blog
+						</Menu.Item>
+						<Menu.Item key="23" icon={<CommentOutlined />}>
+							Comentarios
+						</Menu.Item>
 					</SubMenu>
 				</SubMenu>
+				<Menu.Item key="22" icon={<MailOutlined />}>
+					Mensajes de contacto
+				</Menu.Item>
 			</Menu>
 		</div>
 	);

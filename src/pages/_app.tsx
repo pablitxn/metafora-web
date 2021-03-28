@@ -19,9 +19,11 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
 			) : null}
 
 			{!isAdminRoute ? (
-				<AppLayout>
-					<Component {...pageProps} />
-				</AppLayout>
+				<UserProvider>
+					<AppLayout>
+						<Component {...pageProps} />
+					</AppLayout>
+				</UserProvider>
 			) : null}
 		</>
 	);

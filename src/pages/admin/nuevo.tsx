@@ -23,14 +23,14 @@ const CreateArticle: FC = () => {
 	};
 
 	return (
-		<div className="admin-create">
-			<AdminLayout>
-				<h1>Crear nuevo posteo en el blog</h1>
+		<AdminLayout>
+			<div className="admin-create">
+				<h2>Crear nuevo posteo en el blog</h2>
 				<div className="admin-create__content">
 					<ArticleForm onSubmit={onSubmit} />
 				</div>
-			</AdminLayout>
-		</div>
+			</div>
+		</AdminLayout>
 	);
 };
 
