@@ -1,10 +1,11 @@
 import { FC, useState, useEffect, useCallback } from "react";
+import { Table } from "antd";
 import { useRouter } from "next/router";
+import Image from "next/image";
 import usePostTable from "hooks/usePostTable";
 import AdminLayout from "layouts/admin";
-import { Table } from "antd";
-import "./styles.less";
 import { useUser } from "@auth0/nextjs-auth0";
+import "./styles.less";
 
 const Admin: FC = () => {
 	const { user, error, isLoading } = useUser();
@@ -58,7 +59,17 @@ const Admin: FC = () => {
 		);
 	}
 
-	return <a href="/api/auth/login">Login</a>;
+	return (
+		<div className="sign-in">
+			<Image
+				src="/logos/transparent_color-full-size.png"
+				alt="ilustration"
+				width={450}
+				height={250}
+			/>
+			<a href="/api/auth/login">Login</a>
+		</div>
+	);
 };
 
 export default Admin;
