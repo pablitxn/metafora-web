@@ -19,6 +19,15 @@ body,
 	display: flex;
 	flex-direction: row;
 	background-color: rgba(250, 235, 215, 0.582);
+	position: relative;
+
+	&__header {
+		position: absolute;
+		right: 0;
+		top: 0;
+		padding: 1.5rem;
+		z-index: 100;
+	}
 
 	&__content {
 		flex: 1;

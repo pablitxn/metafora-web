@@ -1,6 +1,12 @@
 import Navigation from "components/_shared/navigation";
 import { Tag, Space, Button } from "antd";
 
+/**
+ * TODO:
+ * - Improve the typing
+ * -
+ */
+
 interface IUsePostTable {
 	onEdit?: (id: string) => void;
 	onDelete: (id: string) => void;
@@ -11,6 +17,13 @@ interface IUsePostTable {
 const PUBLISHED = "published";
 const DRAFT = "draft";
 
+/**
+ *	Tool to create the columns that the table will use in their actions
+ * @param {function} onEdit - Callback function on edit action
+ * @param {function} onDelete - Callback function on delete action
+ * @param {string} type - Type of Table: "published" | "draft"
+ * @returns columns formatted for the Post Table
+ */
 const usePostTable = ({
 	onEdit,
 	onDelete,

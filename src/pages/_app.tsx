@@ -3,19 +3,27 @@ import { AppProps } from "next/app";
 import AppLayout from "layouts/app";
 import "./app.less";
 import { useRouter } from "next/router";
+import { UserProvider } from "@auth0/nextjs-auth0";
 
 const App: FC<AppProps> = ({ Component, pageProps }) => {
 	const router = useRouter();
 	const adminRegex = new RegExp("/admin");
+	const isAdminRoute = adminRegex.test(router.pathname);
 
 	return (
 		<>
-			{adminRegex.test(router.pathname) ? <Component {...pageProps} /> : null}
-
-			{!adminRegex.test(router.pathname) ? (
-				<AppLayout>
+			{isAdminRoute ? (
+				<UserProvider>
 					<Component {...pageProps} />
-				</AppLayout>
+				</UserProvider>
+			) : null}
+
+			{!isAdminRoute ? (
+				<UserProvider>
+					<AppLayout>
+						<Component {...pageProps} />
+					</AppLayout>
+				</UserProvider>
 			) : null}
 		</>
 	);

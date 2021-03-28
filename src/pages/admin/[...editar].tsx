@@ -18,7 +18,6 @@ const EditArticle: FC = () => {
 	}, []);
 
 	const onSubmit = async (formData: any) => {
-		console.log("me ejectu");
 		delete formData.id;
 		try {
 			const response = await fetch(

@@ -67,10 +67,6 @@ const ArticleForm: FC<IArticleForm> = ({ onSubmit, data }) => {
 			size={componentSize as SizeType}
 		>
 			<Form.Item>
-				<Button onClick={handleAutoComplete}>autocompletar ;)</Button>
-			</Form.Item>
-
-			<Form.Item>
 				<span>Titulo</span>
 				<Input
 					type="text"
@@ -142,6 +138,7 @@ const ArticleForm: FC<IArticleForm> = ({ onSubmit, data }) => {
 			<Form.Item>
 				<Button onClick={handleSubmit}>Postear</Button>
 				<Button>Guardar y postear después</Button>
+				<Button onClick={handleAutoComplete}>autocompletar ;)</Button>
 			</Form.Item>
 		</Form>
 	);
