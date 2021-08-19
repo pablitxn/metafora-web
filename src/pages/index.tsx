@@ -1,6 +1,7 @@
 import { FC } from "react";
 import Head from "next/head";
-import HomeLayout from "layouts/home";
+// import HomeLayout from "layouts/home";
+import NewHomeLayout from "layouts/new-home";
 
 const Home: FC = () => {
 	return (
@@ -11,7 +12,7 @@ const Home: FC = () => {
 				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 			</Head>
 
-			<HomeLayout />
+			<NewHomeLayout />
 		</>
 	);
 };

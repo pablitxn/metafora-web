@@ -1,0 +1,37 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+	padding: 0 5rem;
+
+	&__navigation {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+		gap: 1.5rem;
+
+		a {
+			color: black;
+			font-weight: 500;
+			text-decoration: none;
+		}
+	}
+
+	&__social-media {
+		display: flex;
+		flex-direction: row;
+		gap: 1rem;
+
+		svg {
+			cursor: pointer;
+		}
+	}
+}
+
+.divider {
+	width: 2px;
+	height: 1.5rem;
+	background-color: black;
+}
