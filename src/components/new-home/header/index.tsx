@@ -10,8 +10,8 @@ const Header: FunctionComponent = () => {
 			<Image
 				src="/logos/transparent_color-full-size.png"
 				alt="Picture of the author"
-				width={200}
-				height={100}
+				width={250}
+				height={125}
 			/>
 			<div className="header__navigation">
 				<Navigation href="/">Orquestando Futuros</Navigation>
