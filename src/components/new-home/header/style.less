@@ -3,26 +3,32 @@
 	justify-content: space-between;
 	align-items: center;
 	flex-direction: row;
-	padding: 0 5rem;
+	padding: 1rem 7rem 0 5rem;
+	position: absolute;
+	z-index: 2;
+	width: 100%;
 
 	&__navigation {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		flex-direction: row;
-		gap: 1.5rem;
+		gap: 2.5rem;
+		color: #feffdf;
 
 		a {
-			color: black;
+			pointer-events: none;
 			font-weight: 500;
 			text-decoration: none;
+			color: #feffdf;
+			font-size: 1.1rem;
 		}
 	}
 
 	&__social-media {
 		display: flex;
 		flex-direction: row;
-		gap: 1rem;
+		gap: 1.5rem;
 
 		svg {
 			cursor: pointer;
@@ -33,5 +39,5 @@
 .divider {
 	width: 2px;
 	height: 1.5rem;
-	background-color: black;
+	background-color: #feffdf;
 }

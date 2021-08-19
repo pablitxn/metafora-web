@@ -1,10 +1,10 @@
 import React, { FunctionComponent } from "react";
 import Header from "components/new-home/header";
-// import {} from './';
+import "./style.less";
 
 const NewHome: FunctionComponent = () => {
 	return (
-		<div>
+		<div className="home-layout">
 			<Header />
 		</div>
 	);
