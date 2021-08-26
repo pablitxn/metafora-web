@@ -9,7 +9,6 @@ const NewHome: FunctionComponent = () => {
 
 	return (
 		<div className="home-layout">
-			<h1>tu nviejaaaa</h1>
 			<Header />
 			<Navigation />
 			<HomeContent selected={MENU_SELECTED_MOCKED} />
