@@ -1,8 +1,8 @@
-import { FC } from "react";
+import { FunctionComponent } from "react";
 import Head from "next/head";
-import NewHomeLayout from "layouts/new-home";
+import HomeLayout from "layouts/home";
 
-const Home: FC = () => {
+const Home: FunctionComponent = () => {
 	return (
 		<>
 			<Head>
@@ -21,7 +21,7 @@ const Home: FC = () => {
 				/>
 			</Head>
 
-			<NewHomeLayout />
+			<HomeLayout />
 		</>
 	);
 };

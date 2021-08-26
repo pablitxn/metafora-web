@@ -1,5 +1,5 @@
 // Types
-import { FC, ReactNode } from "react";
+import { FunctionComponent, ReactNode } from "react";
 // Router
 import Link from "next/link";
 
@@ -9,7 +9,11 @@ interface INavigation {
 	href: string;
 }
 
-const Navigation: FC<INavigation> = ({ className, href, children }) => {
+const Navigation: FunctionComponent<INavigation> = ({
+	className,
+	href,
+	children
+}) => {
 	return (
 		<Link href={href}>
 			<a className={className}>{children}</a>
