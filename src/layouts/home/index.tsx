@@ -1,17 +1,21 @@
-import { FC } from "react";
-import Hero from "./hero";
-import About from "./about";
-import Vision from "./vision";
-import "./styles.less";
+import React, { FunctionComponent } from "react";
+import Background from "components/home/background";
+import Header from "components/home/header";
+import Navigation from "components/home/navigation";
+import HomeContent from "components/home/home-content";
+import "./style.less";
 
-const HomeLayout: FC = () => {
+const NewHome: FunctionComponent = () => {
+	const MENU_SELECTED_MOCKED = "01";
+
 	return (
 		<div className="home-layout">
-			<Hero />
-			<About />
-			<Vision />
+			<Header />
+			<Navigation />
+			<Background />
+			<HomeContent selected={MENU_SELECTED_MOCKED} />
 		</div>
 	);
 };
 
-export default HomeLayout;
+export default NewHome;
