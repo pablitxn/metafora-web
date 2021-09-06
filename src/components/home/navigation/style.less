@@ -5,7 +5,7 @@
 	position: absolute;
 	top: 0;
 	left: 5rem;
-	z-index: 1;
+	z-index: 3;
 
 	display: flex;
 	justify-content: center;
@@ -20,17 +20,27 @@
 		gap: 2rem;
 		padding: 0;
 
-		li {
+		& li {
 			cursor: pointer;
-			font-size: 1.25rem;
-			color: #012e0f;
-			font-family: "Poppins", sans-serif;
+			z-index: 20;
+
+			& button {
+				background-color: transparent;
+				border: none;
+				outline: none;
+				cursor: pointer;
+				font-size: 1.25rem;
+				color: #012e0f;
+				font-family: "Poppins", sans-serif;
+			}
 		}
 
-		.mocked {
-			padding: 0.25rem 2rem;
-			border: 2px solid #012e0f;
-			font-weight: 700;
+		.active {
+			& button {
+				padding: 0.25rem 2rem;
+				border: 2px solid #012e0f;
+				font-weight: 700;
+			}
 		}
 	}
 }

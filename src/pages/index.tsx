@@ -4,7 +4,7 @@ import HomeLayout from "layouts/home";
 
 const Home: FunctionComponent = () => {
 	return (
-		<>
+		<div>
 			<Head>
 				<title>Fundacion Metáfora</title>
 				<meta charSet="utf-8" />
@@ -22,7 +22,7 @@ const Home: FunctionComponent = () => {
 			</Head>
 
 			<HomeLayout />
-		</>
+		</div>
 	);
 };
 

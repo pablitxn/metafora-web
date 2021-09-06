@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from "react";
 import Image from "next/image";
-import Navigation from "components/_shared/navigation";
+import Navigation from "components/_shared/navigation-anchor";
 import { Instagram, Facebook, Mail } from "react-feather";
 import "./style.less";
 
