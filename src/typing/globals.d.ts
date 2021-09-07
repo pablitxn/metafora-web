@@ -4,3 +4,8 @@ interface IHomeNavigationHook {
 }
 
 type Page = '01' | '02' | '03';
+
+declare module '*.scss' {
+  const content: Record<string, string>;
+  export default content;
+}

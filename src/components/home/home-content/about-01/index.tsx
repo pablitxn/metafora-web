@@ -1,17 +1,17 @@
-import React, { FunctionComponent } from 'react';
-import './style.less';
+import { FunctionComponent } from 'react';
+import { About01Container, CardContent, Divider, Title, Button } from './styles';
 
 const About01: FunctionComponent = () => {
   return (
-    <div className="about-01">
-      <article className="about-01__content">
-        <h2 className="about-01__title">Seamos la voz que defienda al mundo que habitamos</h2>
-        <div className="about-01__divider" />
-        <button type="button" className="about-01__button">
+    <About01Container>
+      <CardContent>
+        <Title>Seamos la voz que defienda al mundo que habitamos</Title>
+        <Divider />
+        <Button type="button" className="about-01__button">
           Sumate
-        </button>
-      </article>
-    </div>
+        </Button>
+      </CardContent>
+    </About01Container>
   );
 };
 
