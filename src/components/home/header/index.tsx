@@ -1,5 +1,4 @@
 import React, { FunctionComponent } from 'react';
-import Image from 'next/image';
 import Navigation from 'components/_shared/navigation-anchor';
 import { Instagram, Facebook, Mail } from 'react-feather';
 import './style.less';
@@ -7,9 +6,9 @@ import './style.less';
 const Header: FunctionComponent = () => {
   return (
     <header className="header">
-      <Image
+      <img
         src="/logos/transparent_color-full-size.png"
-        alt="Picture of the author"
+        alt="Logo de fundacion metáfora"
         width={200}
         height={100}
       />
