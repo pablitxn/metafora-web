@@ -1,16 +1,16 @@
-import { useState, useEffect } from "react";
+import { useState } from 'react';
 
-const useHomeNavigation = () => {
-	const [state, setState] = useState({
-		currentPage: "01" as Page
-	});
-	const { currentPage } = state;
+const useHomeNavigation = (): IHomeNavigationHook => {
+  const [state, setState] = useState({
+    currentPage: '01' as Page,
+  });
+  const { currentPage } = state;
 
-	const handleNavigation = (newPage: Page) => {
-		setState({ currentPage: newPage });
-	};
+  const handleNavigation = (pageId: Page) => {
+    setState({ currentPage: pageId });
+  };
 
-	return { handleNavigation, currentPage };
+  return { handleNavigation, currentPage };
 };
 
 export default useHomeNavigation;
