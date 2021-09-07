@@ -9,7 +9,12 @@ const About01: FunctionComponent = () => {
 					Seamos la voz que defienda al mundo que habitamos
 				</h2>
 				<div className="about-01__divider" />
-				<button className="about-01__button">Sumate</button>
+				<button
+					onClick={() => console.log("asdasdas")}
+					className="about-01__button"
+				>
+					Sumate
+				</button>
 			</article>
 		</div>
 	);
