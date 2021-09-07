@@ -1,3 +1,3 @@
 interface IWhatsappProps {
-	className?: string;
+  className?: string;
 }

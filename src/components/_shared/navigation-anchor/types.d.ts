@@ -1,4 +1,4 @@
 interface INavigationAnchorProps {
-	className?: string;
-	href: string;
+  className?: string;
+  href: string;
 }
