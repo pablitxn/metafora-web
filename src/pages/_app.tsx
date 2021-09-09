@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react';
 import { AppProps } from 'next/app';
-import './app.less';
+import './globals.css';
 
 const App: FunctionComponent<AppProps> = ({ Component, pageProps }) => {
   // eslint-disable-next-line react/jsx-props-no-spreading

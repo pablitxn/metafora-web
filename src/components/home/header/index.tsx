@@ -1,27 +1,28 @@
-import React, { FunctionComponent } from 'react';
-import Navigation from 'components/_shared/navigation-anchor';
+import { FunctionComponent } from 'react';
 import { Instagram, Facebook, Mail } from 'react-feather';
-import './style.less';
+import Navigation from 'components/_shared/navigation-anchor';
+import {
+  HeaderContainer,
+  HeaderImage,
+  NavigationContainer,
+  Divider,
+  SocialMediaContainer,
+} from './styles';
 
 const Header: FunctionComponent = () => {
   return (
-    <header className="header">
-      <img
-        src="/logos/transparent_color-full-size.png"
-        alt="Logo de fundacion metáfora"
-        width={200}
-        height={100}
-      />
-      <div className="header__navigation">
+    <HeaderContainer>
+      <HeaderImage src="/logos/transparent_color-full-size.png" alt="Logo de fundacion metáfora" />
+      <NavigationContainer>
         <Navigation href="/">Orquestando Futuros</Navigation>
-        <div className="divider" />
-        <div className="header__social-media">
+        <Divider />
+        <SocialMediaContainer>
           <Instagram />
           <Facebook />
           <Mail />
-        </div>
-      </div>
-    </header>
+        </SocialMediaContainer>
+      </NavigationContainer>
+    </HeaderContainer>
   );
 };
 
