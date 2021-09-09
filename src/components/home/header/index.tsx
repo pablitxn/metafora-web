@@ -3,7 +3,7 @@ import { Instagram, Facebook, Mail } from 'react-feather';
 import Navigation from 'components/_shared/navigation-anchor';
 import {
   HeaderContainer,
-  Image,
+  HeaderImage,
   NavigationContainer,
   Divider,
   SocialMediaContainer,
@@ -12,7 +12,7 @@ import {
 const Header: FunctionComponent = () => {
   return (
     <HeaderContainer>
-      <Image src="/logos/transparent_color-full-size.png" alt="Logo de fundacion metáfora" />
+      <HeaderImage src="/logos/transparent_color-full-size.png" alt="Logo de fundacion metáfora" />
       <NavigationContainer>
         <Navigation href="/">Orquestando Futuros</Navigation>
         <Divider />

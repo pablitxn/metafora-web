@@ -23,16 +23,15 @@ export const List = styled.ul`
   padding: 0;
 `;
 
-export const ListItem = styled.li`
+export const ListItem = styled.li<{ isActive: boolean }>`
   cursor: pointer;
   z-index: 20;
-
-  .active {
-    & button {
-      padding: 0.25rem 2rem;
-      border: 2px solid #012e0f;
-      font-weight: 700;
-    }
+  & button {
+    ${({ isActive }) =>
+      isActive &&
+      `padding: 0.25rem 2rem;
+    border: 2px solid #012e0f;
+    font-weight: 700;`}
   }
 `;
 

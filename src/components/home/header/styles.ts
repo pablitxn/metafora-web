@@ -5,7 +5,7 @@ export const HeaderContainer = styled.header`
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  padding: 1rem 3rem 0 3rem;
+  padding: 0 3rem;
   width: 100%;
 `;
 
@@ -16,6 +16,7 @@ export const NavigationContainer = styled.nav`
   flex-direction: row;
   gap: 2.5rem;
   color: #feffdf;
+  z-index: 2;
 
   a {
     pointer-events: none;
@@ -26,9 +27,9 @@ export const NavigationContainer = styled.nav`
   }
 `;
 
-export const Image = styled.img`
-  height: 200px;
-  width: 200px;
+export const HeaderImage = styled.img`
+  height: 150px;
+  width: 250px;
 `;
 
 export const Divider = styled.div`
