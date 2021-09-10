@@ -4,13 +4,13 @@ module.exports = {
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },
-  target: "serverless",
+  target: 'serverless',
   async rewrites() {
     return [
       // Rewrite everything to `pages/index`
       {
-        source: "/:any*",
-        destination: "/",
+        source: '/:any*',
+        destination: '/',
       },
     ];
   },
