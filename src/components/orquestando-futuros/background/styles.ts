@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const BackgroundContainer = styled.div`
+  position: absolute;
+  top: 0;
   display: flex;
   width: 100%;
   height: 100vh;

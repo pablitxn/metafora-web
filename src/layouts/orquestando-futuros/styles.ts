@@ -6,5 +6,6 @@ export const OrquestandoContainer = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   overflow: hidden;
 `;

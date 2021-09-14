@@ -1,4 +1,4 @@
-import { FunctionComponent } from 'react';
+import { FunctionComponent, useState } from 'react';
 import {
   MainBody,
   Title,
@@ -6,8 +6,8 @@ import {
   Canvas,
   Description,
   Paragraph,
-  Donation,
-  DescriptionDono,
+  // Donation,
+  // DescriptionDono,
   Button,
   Ellipse,
 } from './styles';
@@ -15,11 +15,15 @@ import {
 import MoreInfo from './more-info';
 
 const OrquestandoFuturosContent: FunctionComponent = () => {
+  const [isActive, setIsActive] = useState(false);
+
+  const handleClick = () => setIsActive((prev) => !prev);
+
   return (
     <MainBody>
       <Canvas>
         <Title>
-          <MoreInfo />
+          <MoreInfo isActive={isActive} handleClick={handleClick} />
           <Text>Compongamos un futuro juntos</Text>
         </Title>
         <Description>
@@ -28,13 +32,15 @@ const OrquestandoFuturosContent: FunctionComponent = () => {
             musical de lxs jóvenes de Orquestas Escuelas. Queremos ser el puente para que lxs
             jóvenes puedan continuar su carrera musical sea esta profesional, sea a través de
             estudios académicos formales (conservatorio o universitarios) o el desarrollo musical
-            amateur.{' '}
+            amateur.
+            <br /> <br />
+            puedes ayudarnos desde una mínima donación.
           </Paragraph>
-        </Description>
-        <Donation>
-          <DescriptionDono>puedes ayudarnos desde una mínima donación.</DescriptionDono>
           <Button>Donar</Button>
-        </Donation>
+        </Description>
+        {/* <Donation> */}
+        {/* <DescriptionDono>puedes ayudarnos desde una mínima donación.</DescriptionDono> */}
+        {/* </Donation> */}
         <Ellipse />
       </Canvas>
     </MainBody>

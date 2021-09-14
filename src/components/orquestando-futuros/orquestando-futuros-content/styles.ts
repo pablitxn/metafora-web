@@ -1,19 +1,20 @@
 import styled from 'styled-components';
 
 export const MainBody = styled.div`
-  position: absolute;
   display: flex;
-  height: 100vh;
   width: 100%;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
 `;
 export const Canvas = styled.div`
-  /* position: relative; */
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
 `;
 export const Title = styled.div`
   display: flex;
-  margin-top: 12rem;
-  margin-left: 23rem;
   justify-content: center;
 `;
 
@@ -36,23 +37,18 @@ export const Text = styled.h1`
 `;
 export const Description = styled.div`
   display: flex;
-  width: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   margin-top: 1.5rem;
 `;
 export const Paragraph = styled.p`
-  /* width: 255px;
-  height: 272px; */
-
   width: 14rem;
-
-  margin-left: 35rem;
 
   font-family: 'Josefin Sans', sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 1.31em;
-  /* or 21px */
 
   display: flex;
   align-items: center;
@@ -60,10 +56,7 @@ export const Paragraph = styled.p`
   color: #ffffff;
 `;
 export const Donation = styled.div`
-  position: absolute;
   width: 17.7%;
-  top: 78%;
-  left: 60%;
 `;
 export const DescriptionDono = styled.div`
   font-family: Josefin Sans;
@@ -79,14 +72,7 @@ export const DescriptionDono = styled.div`
   color: #ffffff;
 `;
 export const Button = styled.div`
-  /* position: relative;
-  width: 149px;
-  height: 42px;
-  left: 857px;
-  top: 591px; */
-
-  width: 58.43137255%;
-  height: 5.57%;
+  width: 100%;
 
   border: 2px solid #88e2d0;
   box-sizing: border-box;
@@ -97,7 +83,6 @@ export const Button = styled.div`
   flex-direction: column;
 
   color: #88e2d0;
-  font-family: Josefin Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 1.25rem;

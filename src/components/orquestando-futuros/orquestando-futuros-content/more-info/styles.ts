@@ -1,14 +1,6 @@
 import styled from 'styled-components';
 
-export const MoreInfoContainer = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background: rgba(219, 43, 118, 0.74);
-  z-index: 5;
-`;
+export const MoreInfoContainer = styled.div``;
 
 export const Icon = styled.div`
   display: flex;
@@ -25,9 +17,19 @@ export const Icon = styled.div`
   border-radius: 50%;
 
   background: #000000;
+  user-select: none;
+  cursor: pointer;
 `;
 
-export const ExpandedInfo = styled.div``;
+export const ExpandedInfo = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(219, 43, 118, 0.74);
+  z-index: 5;
+`;
 export const Canvas = styled.div`
   position: relative;
   width: 1366px;
@@ -38,24 +40,26 @@ export const Canvas = styled.div`
   background: black;
 
   display: flex;
+  justify-content: center;
 `;
 
 export const Description = styled.div`
   position: relative;
   top: 252px;
   display: flex;
+  width: 283px;
   height: 100vh;
   flex-direction: column;
   /* align-items: center; */
   justify-content: center;
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
 `;
 
-export const Title = styled.h1`
+export const Title = styled.h2`
   font-family: 'Bebas Neue';
   font-style: normal;
   font-weight: normal;
-  font-size: 40px;
+  font-size: 2.5rem;
   line-height: 1.155rem;
   /* or 46px */
 
@@ -64,7 +68,7 @@ export const Title = styled.h1`
 
   color: #e26f0d;
 `;
-export const Paragraph = styled.p`
+export const Text = styled.p`
   font-family: 'Josefin Sans';
   font-style: normal;
   font-weight: normal;
