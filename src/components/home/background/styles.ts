@@ -23,9 +23,9 @@ export const Canvas = styled.div`
 
 export const Plant = styled.img<AnimatedElement>`
   z-index: 10;
-  height: 550px;
-  bottom: 0;
-  left: 25%;
+  height: 750px;
+  bottom: -30%;
+  left: 20%;
 
   ${({ currentPage }): string => {
     if (currentPage === '01') {
@@ -36,45 +36,89 @@ export const Plant = styled.img<AnimatedElement>`
     }
     if (currentPage === '02') {
       return `
-      transform: translateY(-50px);
+      transform: translateY(-150px);
       transition: transform 0.5s ease-in-out;
       `;
     }
     if (currentPage === '03') {
       return `
-      transform: translateY(-100px);
+      transform: translateY(-280px);
       transition: transform 0.5s ease-in-out;
       `;
     }
     return '';
   }}
 `;
+
 export const Core = styled.img`
   width: 400px;
   height: 400px;
   bottom: 28%;
   left: 28%;
 `;
-export const LineA = styled.img<AnimatedElement>`
-  width: 60px;
-  height: 500px;
-  left: 36%;
-  bottom: -2rem;
+
+export const LinesCanvas = styled.div`
+  position: relative;
+  width: 130px;
+  height: 650px;
+  bottom: 10rem;
+  overflow: hidden;
+  left: 38%;
+  border: solid 2px blue;
   z-index: 9;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 `;
-export const LineB = styled.img<AnimatedElement>`
-  width: 60px;
-  height: 500px;
-  left: 39%;
-  bottom: -2rem;
+
+export const LinesContainer = styled.div<AnimatedElement>`
+  width: 100%;
+  padding: -3rem;
+  overflow: hidden;
+  border: solid 1px red;
   z-index: 9;
+  ${({ currentPage }): string => {
+    if (currentPage === '01') {
+      return `
+      height: 50%;
+      transition: height 1.25s ease-in-out;
+      `;
+    }
+    if (currentPage === '02') {
+      return `
+      height: 75%;
+      transition: height 1.25s ease-in-out;
+      `;
+    }
+    if (currentPage === '03') {
+      return `
+      height: 100%;
+      transition: height 1.25s ease-in-out;
+      `;
+    }
+    return '';
+  }}
 `;
-export const LineC = styled.img<AnimatedElement>`
+
+export const LineA = styled.img`
+  position: absolute;
   width: 60px;
-  height: 500px;
-  left: 42%;
-  bottom: -2rem;
-  z-index: 9;
+  height: 600px;
+  z-index: 10;
+`;
+export const LineB = styled.img`
+  position: absolute;
+  width: 60px;
+  height: 600px;
+  left: 25%;
+  z-index: 10;
+`;
+export const LineC = styled.img`
+  position: absolute;
+  width: 60px;
+  height: 600px;
+  left: 52%;
+  z-index: 10;
 `;
 
 export const Circle11 = styled.img`
