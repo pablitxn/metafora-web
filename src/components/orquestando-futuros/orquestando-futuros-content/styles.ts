@@ -8,29 +8,30 @@ export const MainBody = styled.div`
   justify-content: center;
 `;
 export const Canvas = styled.div`
+  width: 34%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
+  margin-left: 19em;
 `;
 export const Title = styled.div`
   display: flex;
   justify-content: center;
+  border-bottom: 2px solid #ffffff;
 `;
 
 export const Text = styled.h1`
-  width: 29vw;
+  /* width: 29vw; */
   height: 6.1vh;
 
   margin: 0;
   padding-left: 1rem;
-  border-bottom: 2px solid #ffffff;
 
   font-family: 'Bebas Neue';
   font-style: normal;
   font-weight: normal;
   font-size: 1.55rem;
-  /* line-height: 115.5%; */
   text-transform: uppercase;
 
   color: #ffffff;
@@ -55,28 +56,14 @@ export const Paragraph = styled.p`
 
   color: #ffffff;
 `;
-export const Donation = styled.div`
-  width: 17.7%;
-`;
-export const DescriptionDono = styled.div`
-  font-family: Josefin Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 0.9375rem;
-  line-height: 1.305rem;
-  /* or 20px */
 
-  display: flex;
-  align-items: center;
-
-  color: #ffffff;
-`;
 export const Button = styled.div`
-  width: 100%;
-
+  width: 58%;
+  height: 2.625rem;
   border: 2px solid #88e2d0;
   box-sizing: border-box;
 
+  display: flex;
   justify-content: center;
   align-content: center;
   text-align: center;

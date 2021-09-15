@@ -1,16 +1,5 @@
 import { FunctionComponent, useState } from 'react';
-import {
-  MainBody,
-  Title,
-  Text,
-  Canvas,
-  Description,
-  Paragraph,
-  // Donation,
-  // DescriptionDono,
-  Button,
-  Ellipse,
-} from './styles';
+import { MainBody, Title, Text, Canvas, Description, Paragraph, Button, Ellipse } from './styles';
 
 import MoreInfo from './more-info';
 
@@ -38,9 +27,6 @@ const OrquestandoFuturosContent: FunctionComponent = () => {
           </Paragraph>
           <Button>Donar</Button>
         </Description>
-        {/* <Donation> */}
-        {/* <DescriptionDono>puedes ayudarnos desde una mínima donación.</DescriptionDono> */}
-        {/* </Donation> */}
         <Ellipse />
       </Canvas>
     </MainBody>
