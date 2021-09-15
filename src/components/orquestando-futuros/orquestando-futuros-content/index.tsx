@@ -1,5 +1,15 @@
 import { FunctionComponent, useState } from 'react';
-import { MainBody, Title, Text, Canvas, Description, Paragraph, Button, Ellipse } from './styles';
+import Whatsapp from '../../_shared/whatsapp-icon';
+import {
+  OrquestandoContainer,
+  Title,
+  TitleText,
+  Canvas,
+  Description,
+  Text,
+  Button,
+  Ellipse,
+} from './styles';
 
 import MoreInfo from './more-info';
 
@@ -9,14 +19,14 @@ const OrquestandoFuturosContent: FunctionComponent = () => {
   const handleClick = () => setIsActive((prev) => !prev);
 
   return (
-    <MainBody>
+    <OrquestandoContainer>
       <Canvas>
         <Title>
           <MoreInfo isActive={isActive} handleClick={handleClick} />
-          <Text>Compongamos un futuro juntos</Text>
+          <TitleText>Compongamos un futuro juntos</TitleText>
         </Title>
         <Description>
-          <Paragraph>
+          <Text>
             Orquestando Futuros es un espacio orientador y facilitador de la continuidad del hacer
             musical de lxs jóvenes de Orquestas Escuelas. Queremos ser el puente para que lxs
             jóvenes puedan continuar su carrera musical sea esta profesional, sea a través de
@@ -24,12 +34,13 @@ const OrquestandoFuturosContent: FunctionComponent = () => {
             amateur.
             <br /> <br />
             puedes ayudarnos desde una mínima donación.
-          </Paragraph>
+          </Text>
           <Button>Donar</Button>
         </Description>
-        <Ellipse />
       </Canvas>
-    </MainBody>
+      <Ellipse />
+      <Whatsapp className="whatsapp-icon" />
+    </OrquestandoContainer>
   );
 };
 

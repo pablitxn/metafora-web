@@ -1,12 +1,20 @@
 import styled from 'styled-components';
 
-export const MainBody = styled.div`
+export const OrquestandoContainer = styled.div`
   display: flex;
   width: 100%;
   z-index: 2;
   align-items: center;
   justify-content: center;
+  flex-wrap: nowrap;
+
+  & .whatsapp-icon {
+    position: absolute;
+    right: 3rem;
+    bottom: 3rem;
+  }
 `;
+
 export const Canvas = styled.div`
   width: 34%;
   display: flex;
@@ -15,13 +23,14 @@ export const Canvas = styled.div`
   align-items: flex-end;
   margin-left: 19em;
 `;
+
 export const Title = styled.div`
   display: flex;
   justify-content: center;
   border-bottom: 2px solid #ffffff;
 `;
 
-export const Text = styled.h1`
+export const TitleText = styled.h1`
   /* width: 29vw; */
   height: 6.1vh;
 
@@ -36,6 +45,7 @@ export const Text = styled.h1`
 
   color: #ffffff;
 `;
+
 export const Description = styled.div`
   display: flex;
   flex-direction: column;
@@ -43,7 +53,8 @@ export const Description = styled.div`
   justify-content: center;
   margin-top: 1.5rem;
 `;
-export const Paragraph = styled.p`
+
+export const Text = styled.p`
   width: 14rem;
 
   font-family: 'Josefin Sans', sans-serif;
@@ -75,12 +86,16 @@ export const Button = styled.div`
   font-size: 1.25rem;
   line-height: 1.155rem;
 `;
+
 export const Ellipse = styled.div`
   position: absolute;
-  width: 37%;
-  height: 75%;
+  /* width: 37%;
+  height: 75%; */
   top: 16%;
   left: 82%;
+
+  width: 35.25rem;
+  height: 35.25rem;
 
   border-radius: 50%;
 

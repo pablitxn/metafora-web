@@ -5,8 +5,8 @@ export const MoreInfoContainer = styled.div``;
 export const Icon = styled.div`
   display: flex;
 
-  width: 32px;
-  height: 32px;
+  width: 2rem;
+  height: 2rem;
 
   color: white;
   justify-content: center;
@@ -29,39 +29,42 @@ export const ExpandedInfo = styled.div`
   height: 100vh;
   background: rgba(219, 43, 118, 0.74);
   z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 export const Canvas = styled.div`
-  position: relative;
-  width: 1366px;
-  height: 1366px;
-  left: 116px;
-  top: -252px;
+  /* position: relative; */
+  /* left: 116px;
+  top: -252px; */
+  /* width: 1366px;
+  height: 1366px; */
+  width: 85.375rem;
+  height: 85.375rem;
   border-radius: 50%;
   background: black;
 
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 13rem;
 `;
 
 export const Description = styled.div`
   position: relative;
-  top: 252px;
   display: flex;
-  width: 283px;
+  width: 21%;
   height: 100vh;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: center;
-  /* justify-content: flex-start; */
 `;
 
-export const Title = styled.h2`
-  font-family: 'Bebas Neue';
+export const Title = styled.h1`
+  font-family: 'Bebas Neue', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 2.5rem;
   line-height: 1.155rem;
-  /* or 46px */
 
   display: flex;
   align-items: center;
@@ -69,11 +72,10 @@ export const Title = styled.h2`
   color: #e26f0d;
 `;
 export const Text = styled.p`
-  font-family: 'Josefin Sans';
+  font-family: 'Josefin Sans', sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 1.305rem;
-  /* or 21px */
 
   display: flex;
   align-items: center;
@@ -81,8 +83,10 @@ export const Text = styled.p`
   color: #e26f0d;
 `;
 export const Image = styled.img`
-  margin-top: 500px;
+  /* margin-top: 500px; */
   display: block;
-  width: auto;
-  height: 290px;
+  /* width: auto;
+  height: 290px; */
+  width: 50%;
+  height: auto;
 `;
