@@ -4,7 +4,7 @@ import {
   OrquestandoContainer,
   Title,
   TitleText,
-  Canvas,
+  Content,
   Description,
   Text,
   Button,
@@ -20,7 +20,7 @@ const OrquestandoFuturosContent: FunctionComponent = () => {
 
   return (
     <OrquestandoContainer>
-      <Canvas>
+      <Content>
         <Title>
           <MoreInfo isActive={isActive} handleClick={handleClick} />
           <TitleText>Compongamos un futuro juntos</TitleText>
@@ -37,7 +37,7 @@ const OrquestandoFuturosContent: FunctionComponent = () => {
           </Text>
           <Button>Donar</Button>
         </Description>
-      </Canvas>
+      </Content>
       <Ellipse />
       <Whatsapp className="whatsapp-icon" />
     </OrquestandoContainer>

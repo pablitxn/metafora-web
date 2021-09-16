@@ -15,7 +15,7 @@ export const OrquestandoContainer = styled.div`
   }
 `;
 
-export const Canvas = styled.div`
+export const Content = styled.div`
   width: 34%;
   display: flex;
   flex-direction: column;
@@ -37,7 +37,7 @@ export const TitleText = styled.h1`
   margin: 0;
   padding-left: 1rem;
 
-  font-family: 'Bebas Neue';
+  font-family: 'Bebas Neue', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1.55rem;
