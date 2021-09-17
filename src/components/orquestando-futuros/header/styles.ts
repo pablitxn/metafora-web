@@ -7,15 +7,12 @@ export const HeaderContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  /* padding: 0 3rem; */
   width: 100%;
-  padding: 3%;
+  padding: 2.75rem;
 `;
 
 export const Logo = styled.img`
-  /* margin-top: 2.8125rem; */
-  /* margin-left: 6.8125rem; */
-  margin-left: 4%;
+  margin-left: 3.75rem;
 `;
 
 export const NavigationContainer = styled.nav`
@@ -25,8 +22,7 @@ export const NavigationContainer = styled.nav`
   flex-direction: row;
   gap: 2.5rem;
   color: #feffdf;
-  margin-right: 7%;
-  /* margin-top: 2%; */
+  margin-right: 6rem;
   a {
     pointer-events: none;
     font-weight: 500;
@@ -37,7 +33,7 @@ export const NavigationContainer = styled.nav`
 `;
 
 export const Divider = styled.div`
-  width: 2px;
+  width: 0.125rem;
   height: 1.5rem;
   background-color: #feffdf;
 `;

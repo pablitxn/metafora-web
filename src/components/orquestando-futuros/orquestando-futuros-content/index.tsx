@@ -10,7 +10,6 @@ import {
   Button,
   Ellipse,
 } from './styles';
-
 import MoreInfo from './more-info';
 
 const OrquestandoFuturosContent: FunctionComponent = () => {
@@ -35,7 +34,7 @@ const OrquestandoFuturosContent: FunctionComponent = () => {
             <br /> <br />
             puedes ayudarnos desde una mínima donación.
           </Text>
-          <Button>Donar</Button>
+          <Button type="button">Donar</Button>
         </Description>
       </Content>
       <Ellipse />

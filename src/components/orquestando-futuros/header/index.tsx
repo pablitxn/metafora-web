@@ -12,7 +12,7 @@ import {
 const Header: FunctionComponent = () => {
   return (
     <HeaderContainer>
-      <Logo src="/logos/orquestando-1.png" alt="logo" />
+      <Logo src="/logos/orquestando-1.png" alt="logo de orquestando futuros" />
       <NavigationContainer>
         <Navigation href="/">Fundacion Metafora</Navigation>
         <Divider />

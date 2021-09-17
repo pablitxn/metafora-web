@@ -4,24 +4,19 @@ export const BackgroundContainer = styled.div`
   position: absolute;
   top: 0;
   display: flex;
+  justify-content: flex-start;
   width: 100%;
   height: 100vh;
   background: #e26f0d;
 `;
 
-export const Canvas = styled.div`
-  display: flex;
-  width: 100%;
-  justify-content: flex-start;
-`;
-
 export const Photo = styled.img`
-  width: 50vw;
-  height: 100vh;
+  width: 50%;
+  height: 100%;
 `;
 
 export const GradientRec = styled.div`
-  width: 5vw;
-  height: 100vh;
+  width: 5%;
+  height: 100%;
   background: linear-gradient(180deg, #ff807e 0%, #db2b76 46.35%, #23afaf 100%);
 `;

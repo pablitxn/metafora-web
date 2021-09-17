@@ -4,18 +4,14 @@ export const MoreInfoContainer = styled.div``;
 
 export const Icon = styled.div`
   display: flex;
-
   width: 2rem;
   height: 2rem;
-
   color: white;
   justify-content: center;
   align-content: center;
   text-align: center;
   flex-direction: column;
-
   border-radius: 50%;
-
   background: #000000;
   user-select: none;
   cursor: pointer;
@@ -34,11 +30,6 @@ export const ExpandedInfo = styled.div`
   align-items: center;
 `;
 export const Canvas = styled.div`
-  /* position: relative; */
-  /* left: 116px;
-  top: -252px; */
-  /* width: 1366px;
-  height: 1366px; */
   width: 85.375rem;
   height: 85.375rem;
   border-radius: 50%;
@@ -54,7 +45,7 @@ export const Description = styled.div`
   position: relative;
   display: flex;
   width: 21%;
-  height: 100vh;
+  height: 100%;
   flex-direction: column;
   justify-content: center;
 `;
@@ -83,10 +74,7 @@ export const Text = styled.p`
   color: #e26f0d;
 `;
 export const Image = styled.img`
-  /* margin-top: 500px; */
   display: block;
-  /* width: auto;
-  height: 290px; */
   width: 50%;
   height: auto;
 `;
