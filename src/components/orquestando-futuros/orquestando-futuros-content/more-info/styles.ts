@@ -29,7 +29,7 @@ export const ExpandedInfo = styled.div`
   justify-content: center;
   align-items: center;
 `;
-export const Canvas = styled.div`
+export const Background = styled.div`
   width: 85.375rem;
   height: 85.375rem;
   border-radius: 50%;

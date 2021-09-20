@@ -9,6 +9,7 @@ import {
   Text,
   Button,
   Ellipse,
+  EllipseText,
 } from './styles';
 import MoreInfo from './more-info';
 
@@ -32,12 +33,23 @@ const OrquestandoFuturosContent: FunctionComponent = () => {
             estudios académicos formales (conservatorio o universitarios) o el desarrollo musical
             amateur.
             <br /> <br />
+          </Text>
+          <Text isBolded>
             puedes ayudarnos desde una mínima donación.
+            <br /> <br />
           </Text>
           <Button type="button">Donar</Button>
         </Description>
       </Content>
-      <Ellipse />
+      <Ellipse>
+        <EllipseText>
+          <Text>Mas de </Text>
+          <Text isBolded isBigger>
+            350
+          </Text>
+          <Text isBolded>voluntarios </Text>
+        </EllipseText>
+      </Ellipse>
       <Whatsapp className="whatsapp-icon" />
     </OrquestandoContainer>
   );

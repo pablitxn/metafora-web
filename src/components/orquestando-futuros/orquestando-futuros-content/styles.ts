@@ -16,7 +16,6 @@ export const OrquestandoContainer = styled.div`
 `;
 
 export const Content = styled.div`
-  width: 34%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,16 +25,14 @@ export const Content = styled.div`
 
 export const Title = styled.div`
   display: flex;
+  height: 6%;
   justify-content: center;
   border-bottom: 0.125rem solid #ffffff;
 `;
 
 export const TitleText = styled.h1`
-  height: 6%;
-
   margin: 0;
   padding-left: 1rem;
-
   font-family: 'Bebas Neue', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -46,6 +43,7 @@ export const TitleText = styled.h1`
 `;
 
 export const Description = styled.div`
+  width: 14rem;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -53,18 +51,14 @@ export const Description = styled.div`
   margin-top: 1.5rem;
 `;
 
-export const Text = styled.p`
-  width: 14rem;
-
+export const Text = styled.p<TextPromps>`
   font-family: 'Josefin Sans', sans-serif;
   font-style: normal;
-  font-weight: normal;
   line-height: 1.31em;
-
-  display: flex;
-  align-items: center;
-
+  ${({ isBigger }) => isBigger && `font-size: 3.75rem;`}
+  ${({ isBolded }) => (isBolded ? `font-weight: bold;` : `font-weight: normal;`)}
   color: #ffffff;
+  margin: 0;
 `;
 
 export const Button = styled.button`
@@ -93,4 +87,18 @@ export const Ellipse = styled.div`
   border-radius: 50%;
 
   background: linear-gradient(180deg, #db2b76 0%, rgba(219, 43, 118, 0) 100%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const EllipseText = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20rem;
+  margin-bottom: 5rem;
 `;

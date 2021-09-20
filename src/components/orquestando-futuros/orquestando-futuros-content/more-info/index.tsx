@@ -3,7 +3,7 @@ import {
   Icon,
   MoreInfoContainer,
   ExpandedInfo,
-  Canvas,
+  Background,
   Title,
   Text,
   Description,
@@ -16,7 +16,7 @@ const MoreInfo: FunctionComponent<MoreInfoProps> = ({ isActive, handleClick }) =
       {!isActive && <Icon onClick={handleClick}>+</Icon>}
       {isActive && (
         <ExpandedInfo onClick={handleClick}>
-          <Canvas>
+          <Background>
             <Description>
               <Title>+INFO</Title>
               <Text>
@@ -29,7 +29,7 @@ const MoreInfo: FunctionComponent<MoreInfoProps> = ({ isActive, handleClick }) =
               </Text>
             </Description>
             <Image src="/images/camada-egresados-1.png" alt="camada de egresados" />
-          </Canvas>
+          </Background>
         </ExpandedInfo>
       )}
     </MoreInfoContainer>
