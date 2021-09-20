@@ -6,7 +6,6 @@ export const OrquestandoContainer = styled.div`
   z-index: 2;
   align-items: center;
   justify-content: center;
-  flex-wrap: nowrap;
 
   & .whatsapp-icon {
     position: absolute;
@@ -18,9 +17,9 @@ export const OrquestandoContainer = styled.div`
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: flex-end;
   margin-left: 19rem;
+  margin-top: 1rem;
 `;
 
 export const Title = styled.div`

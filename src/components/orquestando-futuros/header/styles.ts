@@ -12,6 +12,8 @@ export const HeaderContainer = styled.div`
 `;
 
 export const Logo = styled.img`
+  width: 11.375rem;
+  height: 4.3125rem;
   margin-left: 3.75rem;
 `;
 
