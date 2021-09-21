@@ -50,7 +50,7 @@ export const Description = styled.div`
   margin-top: 1.5rem;
 `;
 
-export const Text = styled.p<TextPromps>`
+export const Text = styled.p<TextProps>`
   font-family: 'Josefin Sans', sans-serif;
   font-style: normal;
   line-height: 1.31em;

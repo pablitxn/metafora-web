@@ -1,4 +1,4 @@
-interface TextPromps {
+interface TextProps {
   isBolded?: boolean;
   isBigger?: boolean;
 }
