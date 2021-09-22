@@ -1,8 +1,6 @@
 import { FunctionComponent } from 'react';
-import useHomeNavigation from 'hooks/useHomeNavigation';
 // import Header from 'components/orquestando-futuros/mobile/header';
 // import Footer from 'components/orquestando-futuros/mobile/navigation';
-import HomeContent from 'components/home/home-content';
 import {
   OrqFuturosLayoutMobile,
   TitlePage,
@@ -16,11 +14,9 @@ import {
 } from './styles';
 
 const Home: FunctionComponent = () => {
-  const { currentPage, handleNavigation } = useHomeNavigation();
-
   return (
     <OrqFuturosLayoutMobile>
-      {/*<Header>*/}
+      {/* <Header> */}
       <TitlePage>Compongamos un futuro juntos</TitlePage>
       <Card>
         <CardContainerOrange>
@@ -45,9 +41,6 @@ const Home: FunctionComponent = () => {
           <Button>Donar</Button>
         </CardContainerBlack>
       </Card>
-      <footer>
-        <text>info@metafora.org.ar</text>
-      </footer>
     </OrqFuturosLayoutMobile>
   );
 };

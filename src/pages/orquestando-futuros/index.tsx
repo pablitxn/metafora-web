@@ -11,7 +11,7 @@ const OrquestandoFuturos: FunctionComponent = () => {
   useEffect(() => {
     if (window.innerWidth < 480) setState({ isMobile: true });
     if (window.innerWidth > 480) setState({ isMobile: false });
-  }, [window.innerWidth]);
+  }, []);
 
   return (
     <>

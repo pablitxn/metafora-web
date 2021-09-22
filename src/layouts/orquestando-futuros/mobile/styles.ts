@@ -1,4 +1,3 @@
-import Header from 'components/home/header';
 import styled from 'styled-components';
 
 export const OrqFuturosLayoutMobile = styled.div``;
