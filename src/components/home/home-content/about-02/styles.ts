@@ -14,7 +14,7 @@ export const CardContainer = styled.div`
 `;
 
 export const CardContent = styled.div`
-  padding-left: 30px;
+  padding-left: 1.8rem;
 `;
 
 export const Divider = styled.div`
@@ -41,8 +41,10 @@ export const Card = styled.div`
 `;
 
 export const CardIcon = styled.img`
-  width: 160px;
-  height: 170px;
+  width: 10.5rem;
+  height: 10.6rem;
+  border: 2px solid #93cb0a;
+  padding: 0.5rem;
 `;
 export const Description = styled.p`
   font-family: 'Josefin Sans', sans-serif;

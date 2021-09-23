@@ -15,28 +15,25 @@ const About02: FunctionComponent = () => {
     <About02Container>
       <CardContainer>
         <Card>
-          <CardIcon
-            src="https://elcomercio.pe/resizer/pEmUqABPk7acTtznDSPfkGqCWxA=/1200x1200/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/DFB7IGD4LJAFRKGULDHU72RS7M.jpg"
-            alt="icono del eva"
-          />
+          <CardIcon src="/images/mountain.png" alt="montaña icono con bandera" />
           <CardContent>
-            <Title>mision</Title>
+            <Title>Misión</Title>
             <Divider />
             <Description>
               implementar proyectos que <br />
               generen oportunidades para la <br />
-              inclusion educativa, social, laboral
+              inclusión educativa, social, laboral
               <br /> y profesional.
             </Description>
           </CardContent>
         </Card>
         <Card>
-          <CardIcon src="https://elcomercio.pe/resizer/pEmUqABPk7acTtznDSPfkGqCWxA=/1200x1200/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/DFB7IGD4LJAFRKGULDHU72RS7M.jpg" />
+          <CardIcon src="/images/anteojito.png" alt="anteojos icono" />
           <CardContent>
-            <Title>vision</Title>
+            <Title>Visión</Title>
             <Divider />
             <Description>
-              Trabajamos por la construccion de
+              Trabajamos por la construcción de
               <br /> un mundo sustentable para todes.
               <br /> Generando modelos participativos
               <br /> y fortaleciendo las capacidades de
