@@ -2,6 +2,7 @@ import React, { FunctionComponent } from 'react';
 import Head from 'next/head';
 import { AppProps } from 'next/app';
 import './globals.css';
+
 const SafeHydrate: FunctionComponent = ({ children }) => {
   return <div suppressHydrationWarning>{typeof window === 'undefined' ? null : children}</div>;
 };
