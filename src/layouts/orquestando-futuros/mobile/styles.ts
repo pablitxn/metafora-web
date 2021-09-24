@@ -7,20 +7,22 @@ export const TitlePage = styled.h1`
   font-size: 30px;
   letter-spacing: 1px;
 `;
-export const Card = styled.div`
+
+export const CardContainer = styled.div`
   background-color: blue;
+  color: white;
 `;
-export const CardContainerOrange = styled.div`
+
+export const CardOrange = styled.div`
   height: 332px;
   width: 100%;
   left: 0px;
   background-color: #e26f0d;
   padding: 26px 85px 16px 66px;
   text-align: center;
-  color: white;
 `;
 
-export const CardContainerBlack = styled.div`
+export const CardBlack = styled.div`
   height: 511px;
   width: 100%;
   background-color: #000000;
@@ -32,31 +34,30 @@ export const Title = styled.h2`
   font-family: 'Bebas Neue', sans-serif;
   text-transform: uppercase;
   text-align: left;
-  color: white;
   font-size: 30px;
   font-weight: 400;
   margin: 0px 0px 0px 0px;
 `;
+
 export const Subtitle = styled.h3`
-  font-family: 'bebas neue', sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
   text-transform: uppercase;
   padding: 50px 0px 1px 0px;
   text-align: left;
-  color: white;
   font-size: 20px;
   font-weight: 400;
   margin: 0px 0px 0px 0px;
 `;
+
 export const Text = styled.p`
-  color: white;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
   line-height: 16px;
   letter-spacing: 1px;
   text-align: left;
 `;
+
 export const Button = styled.button`
   width: 84px;
   height: 25px;

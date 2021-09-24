@@ -4,9 +4,9 @@ import { FunctionComponent } from 'react';
 import {
   OrqFuturosLayoutMobile,
   TitlePage,
-  Card,
-  CardContainerOrange,
-  CardContainerBlack,
+  CardContainer,
+  CardOrange,
+  CardBlack,
   Title,
   Subtitle,
   Text,
@@ -18,8 +18,8 @@ const Home: FunctionComponent = () => {
     <OrqFuturosLayoutMobile>
       {/* <Header> */}
       <TitlePage>Compongamos un futuro juntos</TitlePage>
-      <Card>
-        <CardContainerOrange>
+      <CardContainer>
+        <CardOrange>
           <Title>Nosotros</Title>
           <Text>
             Orquestando Futuros es un espacio orientador y facilitador de la continuidad del hacer
@@ -28,9 +28,9 @@ const Home: FunctionComponent = () => {
             estudios académicos formales (conservatorio o universitarios) o el desarrollo musical
             amateur.
           </Text>
-        </CardContainerOrange>
-        <CardContainerBlack>
-          <Title>¿Como puedo ayudar?</Title>
+        </CardOrange>
+        <CardBlack>
+          <Title>¿Cómo puedo ayudar?</Title>
           <Text>
             Puedes alcanzandonos alguno de los materiales y/o instrumentos que estamos buscando.
             Para saber cuales son contactarte con nosotros.
@@ -39,8 +39,8 @@ const Home: FunctionComponent = () => {
           <Title>¿puedo ayudar de otra forma?</Title>
           <Text>Tambien puedes ayudarnos desde una mínima donación.</Text>
           <Button>Donar</Button>
-        </CardContainerBlack>
-      </Card>
+        </CardBlack>
+      </CardContainer>
     </OrqFuturosLayoutMobile>
   );
 };
