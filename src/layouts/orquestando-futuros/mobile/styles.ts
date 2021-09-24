@@ -29,23 +29,26 @@ export const CardContainerBlack = styled.div`
 `;
 
 export const Title = styled.h2`
-  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-  font-family: bebas neue;
+  font-family: 'Bebas Neue', sans-serif;
   text-transform: uppercase;
   text-align: left;
   color: white;
   font-size: 30px;
+  font-weight: 400;
+  margin: 0px 0px 0px 0px;
 `;
 export const Subtitle = styled.h3`
+  font-family: 'bebas neue', sans-serif;
   text-transform: uppercase;
+  padding: 50px 0px 1px 0px;
   text-align: left;
   color: white;
   font-size: 20px;
+  font-weight: 400;
 `;
 export const Text = styled.p`
-  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
   color: white;
-  font-family: 'Josefin Sans';
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
