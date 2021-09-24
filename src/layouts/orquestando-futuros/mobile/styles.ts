@@ -45,6 +45,7 @@ export const Subtitle = styled.h3`
   color: white;
   font-size: 20px;
   font-weight: 400;
+  margin: 0px 0px 0px 0px;
 `;
 export const Text = styled.p`
   color: white;
