@@ -1,5 +1,18 @@
 import { FunctionComponent } from 'react';
-import { Card, Description, Image, HomeContainer, Plant, Text, Title, Button } from './styles';
+import {
+  Card,
+  Description,
+  Image,
+  HomeContainer,
+  Plant,
+  Text,
+  Title,
+  SubTitle,
+  Button,
+  TitleContainer,
+  CardContainer,
+  ImageTitle,
+} from './styles';
 
 const HomeContent: FunctionComponent = () => {
   const green = {
@@ -26,7 +39,7 @@ const HomeContent: FunctionComponent = () => {
       </Card>
       <Card rgb={cream}>
         <Description>
-          <Title>¿Quiénes somos?</Title>
+          <Title isBolded>¿Quiénes somos?</Title>
           <Text>
             Somos una organización joven,
             <br /> apasionada por ser parte de la
@@ -40,14 +53,24 @@ const HomeContent: FunctionComponent = () => {
         <Image src="/images/globe.png" />
       </Card>
       <Card rgb={yellow}>
-        <Title>
+        <SubTitle>
           Promovemos una cultura de
           <br /> sustentabilidad a través
           <br /> de la educación ambiental.
-        </Title>
+        </SubTitle>
       </Card>
       <Card rgb={green}>
-        <Title>Misión</Title>
+        <CardContainer>
+          <TitleContainer>
+            <Title>Misión</Title>
+            <ImageTitle src="/images/mountain.png" />
+          </TitleContainer>
+          <Text>
+            Implementar Proyectos que generen oportunidades
+            <br /> para la inclusión educativa, social, laboral y
+            <br /> profesional.
+          </Text>
+        </CardContainer>
       </Card>
     </HomeContainer>
   );

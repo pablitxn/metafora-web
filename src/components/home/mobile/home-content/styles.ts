@@ -7,7 +7,7 @@ export const HomeContainer = styled.div`
   flex-direction: column;
   overflow: visible;
   font-family: 'Josefin Sans', sans-serif;
-  line-height: 1.15rem;
+  line-height: 1rem;
 `;
 
 export const Card = styled.div<CardProps>`
@@ -33,12 +33,25 @@ export const Description = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 4rem;
-  margin-right: 1.2rem;
+  margin: 3rem 1.2rem 2rem 4rem;
 `;
 
-export const Title = styled.h3`
+export const Title = styled.h3<TitleProps>`
+  ${({ isBolded }) => (isBolded ? `font-weight: bold;` : `font-weight: normal;`)}
   font-size: 1.25rem;
+`;
+
+/* Placeholder Name */
+export const SubTitle = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin: 2rem;
+  color: rgb(253, 255, 222);
 `;
 
 export const Text = styled.p`
@@ -58,4 +71,23 @@ export const Button = styled.button`
   font-size: 1rem;
   line-height: 1.15rem;
   margin-top: 2rem;
+`;
+
+export const TitleContainer = styled.div`
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid rgb(254, 255, 223);
+`;
+
+export const CardContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+`;
+
+export const ImageTitle = styled.img`
+  display: block;
+  width: 1.8rem;
 `;

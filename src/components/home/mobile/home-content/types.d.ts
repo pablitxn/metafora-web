@@ -5,3 +5,7 @@ interface CardProps {
     blue: number;
   };
 }
+
+interface TitleProps {
+  isBolded?: boolean;
+}
