@@ -13,10 +13,27 @@ export const HomeContainer = styled.div`
 export const Card = styled.div<CardProps>`
   display: flex;
   width: 100%;
-  ${({ rgb }) => {
-    const { red, green, blue } = rgb;
+  ${({ background }) => {
+    const { red, green, blue } = background;
     return `background: rgb(${red}, ${green}, ${blue})`;
   }}
+`;
+
+export const PlantContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const TextContainer = styled.div`
+  position: relative;
+  top: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 5;
 `;
 
 export const Plant = styled.img`
@@ -25,6 +42,18 @@ export const Plant = styled.img`
   width: 18.75rem;
   top: 3rem;
   margin-left: 2rem;
+`;
+
+export const Dot = styled.img<DotProps>`
+  position: absolute;
+  ${({ position }) => {
+    const { top, left } = position;
+    return `top: ${top}; 
+            left: ${left};`;
+  }}
+  ${({ size }) =>
+    `width: ${size}; 
+    height: ${size};`}
 `;
 
 export const Image = styled.img``;
@@ -37,8 +66,24 @@ export const Description = styled.div`
 `;
 
 export const Title = styled.h3<TitleProps>`
-  ${({ isBolded }) => (isBolded ? `font-weight: bold;` : `font-weight: normal;`)}
   font-size: 1.25rem;
+
+  ${({ isBolded }) => (isBolded ? `font-weight: bold;` : `font-weight: normal;`)}
+  ${({ minMargin }) => minMargin && `margin: 0.1rem;`}
+  ${({ textColor }) => {
+    if (textColor) {
+      const { red, green, blue } = textColor;
+      return `color: rgb(${red}, ${green}, ${blue})`;
+    }
+    return ``;
+  }}
+  ${({ background }) => {
+    if (background) {
+      const { red, green, blue } = background;
+      return `background: rgb(${red}, ${green}, ${blue})`;
+    }
+    return ``;
+  }}
 `;
 
 /* Placeholder Name */
@@ -54,9 +99,16 @@ export const SubTitle = styled.div`
   color: rgb(253, 255, 222);
 `;
 
-export const Text = styled.p`
+export const Text = styled.p<TextProps>`
   font-size: 0.75rem;
   margin: 0;
+  ${({ textColor }) => {
+    if (textColor) {
+      const { red, green, blue } = textColor;
+      return `color: rgb(${red}, ${green}, ${blue})`;
+    }
+    return ``;
+  }}
 `;
 
 export const Button = styled.button`
@@ -73,18 +125,28 @@ export const Button = styled.button`
   margin-top: 2rem;
 `;
 
-export const TitleContainer = styled.div`
-  display: flex;
-  justify-content: space-around;
-  border-bottom: 2px solid rgb(254, 255, 223);
-`;
-
 export const CardContainer = styled.div`
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-content: center;
   flex-direction: column;
+  align-items: center;
+  margin-bottom: 3.5rem;
+`;
+
+export const Content = styled.div`
+  width: 17.5rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.5rem;
+`;
+
+export const TitleContainer = styled.div`
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid rgb(254, 255, 223);
+  margin-bottom: 0.75rem;
 `;
 
 export const ImageTitle = styled.img`
