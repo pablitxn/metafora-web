@@ -19,6 +19,7 @@ import {
 } from './styles';
 
 const HomeContent: FunctionComponent = () => {
+  /* to refactor with styled sheet */
   const green = {
     red: 1,
     green: 46,
@@ -60,32 +61,13 @@ const HomeContent: FunctionComponent = () => {
               que habitamos
             </Title>
           </TextContainer>
-          <Plant src="/images/plant-in-circle.png" />
-          <Dot
-            src="/images/dot-small.png"
-            size="1.5rem"
-            position={{ top: '11rem', left: '3.5rem;' }}
-          />
-          <Dot
-            src="/images/dot-small.png"
-            size="1.5rem"
-            position={{ top: '7rem', left: '20rem;' }}
-          />
-          <Dot
-            src="/images/dot-small.png"
-            size="1.5rem"
-            position={{ top: '23rem', left: '6rem;' }}
-          />
-          <Dot
-            src="/images/dot-small.png"
-            size="1rem"
-            position={{ top: '13rem', left: '8.8rem;' }}
-          />
-          <Dot
-            src="/images/dot-small.png"
-            size="1rem"
-            position={{ top: '20rem', left: '22rem;' }}
-          />
+
+          <Plant src="/images/plant-in-circle.png" alt="planta en circulo" />
+          <Dot size="0.69rem" position={{ top: '11rem', left: '3.5rem;' }} />
+          <Dot size="0.69rem" position={{ top: '7rem', left: '20rem;' }} />
+          <Dot size="0.69rem" position={{ top: '24rem', left: '7rem;' }} />
+          <Dot size="0.5rem" position={{ top: '13rem', left: '8.8rem;' }} />
+          <Dot size="0.5rem" position={{ top: '20rem', left: '22rem;' }} />
         </PlantContainer>
       </Card>
 
@@ -104,7 +86,7 @@ const HomeContent: FunctionComponent = () => {
           </Text>
           <Button type="button">Sumate</Button>
         </Description>
-        <Image src="/images/globe.png" />
+        <Image src="/images/globe.png" alt="globo terraqueo" />
       </Card>
 
       <Card background={yellow}>
@@ -120,7 +102,7 @@ const HomeContent: FunctionComponent = () => {
           <Content>
             <TitleContainer>
               <Title textColor={lightGreen}>Misión</Title>
-              <ImageTitle src="/images/mountain.png" />
+              <ImageTitle src="/images/mountain.png" alt="montaña icono con bandera" />
             </TitleContainer>
             <Text textColor={white}>
               Implementar Proyectos que generen oportunidades
@@ -131,7 +113,7 @@ const HomeContent: FunctionComponent = () => {
           <Content>
             <TitleContainer>
               <Title textColor={lightGreen}>Visión</Title>
-              <ImageTitle src="/images/anteojito.png" />
+              <ImageTitle src="/images/anteojito.png" alt="anteojos icono" />
             </TitleContainer>
             <Text textColor={white}>
               Trabajamos por la construcción de un mundo

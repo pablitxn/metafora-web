@@ -21,8 +21,10 @@ interface DotProps {
   size: string;
 }
 
-interface Rgb {
+interface Color {
   red: number;
   green: number;
   blue: number;
 }
+
+type Rgb = Color | undefined;
