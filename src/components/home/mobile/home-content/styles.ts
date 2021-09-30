@@ -83,7 +83,6 @@ export const Description = styled.div`
 
 export const Title = styled.h3<TitleProps>`
   font-size: 1.25rem;
-
   ${({ isBolded }) => (isBolded ? `font-weight: bold;` : `font-weight: normal;`)}
   ${({ minMargin }) => minMargin && `margin: 0.1rem;`}
   ${({ textColor }) => colorPicker(textColor)}

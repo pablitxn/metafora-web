@@ -61,7 +61,6 @@ const HomeContent: FunctionComponent = () => {
               que habitamos
             </Title>
           </TextContainer>
-
           <Plant src="/images/plant-in-circle.png" alt="planta en circulo" />
           <Dot size="0.69rem" position={{ top: '11rem', left: '3.5rem;' }} />
           <Dot size="0.69rem" position={{ top: '7rem', left: '20rem;' }} />
