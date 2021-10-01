@@ -7,16 +7,10 @@ export const About03Container = styled.div`
   justify-content: flex-end;
   padding: 6rem 0rem 0.5rem 1rem;
 `;
-export const CardContainer = styled.div`
-  width: 80%;
-  height: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-`;
+
 export const Card = styled.div`
-  width: 550px;
-  height: 100%;
+  width: 40%;
+  height: 45%;
   position: relative;
 `;
 export const Title = styled.div`
