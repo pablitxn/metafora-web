@@ -60,11 +60,11 @@ export const Dot = styled.div<DotProps>`
   border-radius: 50%;
   ${({ position }) => {
     const { top, left } = position;
-    return `top: ${top}; 
+    return `top: ${top};
             left: ${left};`;
   }}
   ${({ size }) =>
-    `width: ${size}; 
+    `width: ${size};
     height: ${size};`}
 `;
 
@@ -146,6 +146,5 @@ export const TitleContainer = styled.div`
 `;
 
 export const ImageTitle = styled.img`
-  display: block;
   width: 1.8rem;
 `;
