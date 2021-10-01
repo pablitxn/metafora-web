@@ -21,46 +21,174 @@ export const Canvas = styled.div`
   }
 `;
 
-export const Plant = styled.img`
+export const Plant = styled.img<AnimatedElement>`
   z-index: 10;
-  height: 550px;
-  bottom: 0;
-  left: 25%;
+  height: 750px;
+  bottom: -30%;
+  left: 20%;
+
+  ${({ currentPage }): string => {
+    if (currentPage === '01') {
+      return `
+      animation: fadeInAnimation ease 3s
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+
+      @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+      100% {
+          opacity: 1;
+        }
+      }
+      `;
+    }
+    return '';
+  }}
+
+  ${({ currentPage }): string => {
+    if (currentPage === '01') {
+      return `
+      transform: translateY(0px);
+      transition: transform 0.5s ease-in-out;
+      `;
+    }
+    if (currentPage === '02') {
+      return `
+      transform: translateY(-150px);
+      transition: transform 0.5s ease-in-out;
+      `;
+    }
+    if (currentPage === '03') {
+      return `
+      transform: translateY(-280px);
+      transition: transform 0.5s ease-in-out;
+      `;
+    }
+    return '';
+  }}
 `;
-export const Core = styled.img`
+
+export const Core = styled.img<AnimatedElement>`
   width: 400px;
   height: 400px;
   bottom: 28%;
   left: 28%;
-`;
-export const LineA = styled.img`
-  width: 60px;
-  height: 500px;
-  left: 36%;
-  bottom: -2rem;
-  z-index: 9;
-`;
-export const LineB = styled.img`
-  width: 60px;
-  height: 500px;
-  left: 39%;
-  bottom: -2rem;
-  z-index: 9;
-`;
-export const LineC = styled.img`
-  width: 60px;
-  height: 500px;
-  left: 42%;
-  bottom: -2rem;
-  z-index: 9;
+  ${({ currentPage }): string => {
+    if (currentPage === '01') {
+      return `
+      transform: rotate(0deg);
+      transition: transform 1.25s ease-in-out;
+      `;
+    }
+    if (currentPage === '02') {
+      return `
+      transform: rotate(70deg);
+      transition: transform 1.25s ease-in-out;
+      `;
+    }
+    if (currentPage === '03') {
+      return `
+      transform: rotate(140deg);
+      transition: transform 1.25s ease-in-out;
+      `;
+    }
+    return '';
+  }};
 `;
 
-export const Circle11 = styled.img`
+export const LinesCanvas = styled.div`
+  position: relative;
+  width: 130px;
+  height: 650px;
+  bottom: -10rem;
+  overflow: hidden;
+  left: 38%;
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+`;
+
+export const LinesContainer = styled.div<AnimatedElement>`
+  width: 100%;
+  padding: -3rem;
+  overflow: hidden;
+  z-index: 9;
+  ${({ currentPage }): string => {
+    if (currentPage === '01') {
+      return `
+      height: 50%;
+      transition: height 1.25s ease-in-out;
+      `;
+    }
+    if (currentPage === '02') {
+      return `
+      height: 75%;
+      transition: height 1.25s ease-in-out;
+      `;
+    }
+    if (currentPage === '03') {
+      return `
+      height: 100%;
+      transition: height 1.25s ease-in-out;
+      `;
+    }
+    return '';
+  }}
+`;
+
+export const LineA = styled.img`
+  position: absolute;
+  width: 60px;
+  height: 800px;
+  z-index: 10;
+`;
+
+export const LineB = styled.img`
+  position: absolute;
+  width: 60px;
+  height: 800px;
+  left: 25%;
+  z-index: 10;
+`;
+
+export const LineC = styled.img`
+  position: absolute;
+  width: 60px;
+  height: 800px;
+  left: 52%;
+  z-index: 10;
+`;
+
+export const Circle11 = styled.img<AnimatedElement>`
   width: 170px;
   height: 170px;
   left: 18%;
   top: 10%;
   bottom: 0;
+  ${({ currentPage }): string => {
+    if (currentPage === '01') {
+      return `
+      transform: rotate(180deg);
+      transition: transform 0.5s ease-in-out;
+      `;
+    }
+    if (currentPage === '02') {
+      return `
+      transform: rotate(40deg);
+      transition: transform 0.5s ease-in-out;
+      `;
+    }
+    if (currentPage === '03') {
+      return `
+      transform: rotate(0deg);
+      transition: transform 0.5s ease-in-out;
+      `;
+    }
+    return '';
+  }}
 `;
 
 export const DotMedium = styled.img`

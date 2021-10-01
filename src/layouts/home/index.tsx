@@ -13,7 +13,7 @@ const Home: FunctionComponent = () => {
     <HomeLayoutContainer>
       <Header />
       <Navigation onPageChange={handleNavigation} pageSelected={currentPage} />
-      <Background />
+      <Background currentPage={currentPage} />
       <HomeContent selected={currentPage} />
     </HomeLayoutContainer>
   );

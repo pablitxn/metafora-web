@@ -3,6 +3,8 @@ import {
   BackgroundContainer,
   Plant,
   Core,
+  LinesCanvas,
+  LinesContainer,
   LineA,
   LineB,
   LineC,
@@ -14,16 +16,20 @@ import {
   DotSmallC,
 } from './styles';
 
-const Background: FunctionComponent = () => {
+const Background: FunctionComponent<IBackgroundProps> = ({ currentPage }) => {
   return (
     <BackgroundContainer>
       <Canvas>
-        <Plant src="/images/plant.png" alt="logo" />
-        <Core src="/images/circle-core.svg" alt="logo" />
-        <LineA src="/images/line.png" alt="logo" />
-        <LineB src="/images/line.png" alt="logo" />
-        <LineC src="/images/line.png" alt="logo" />
-        <Circle11 src="/images/circle-11.png" alt="logo" />
+        <Plant currentPage={currentPage} src="/images/plant.png" alt="logo" />
+        <Core currentPage={currentPage} src="/images/circle-core.svg" alt="logo" />
+        <LinesCanvas>
+          <LinesContainer currentPage={currentPage}>
+            <LineA src="/images/line.png" alt="logo" />
+            <LineB src="/images/line.png" alt="logo" />
+            <LineC src="/images/line.png" alt="logo" />
+          </LinesContainer>
+        </LinesCanvas>
+        <Circle11 currentPage={currentPage} src="/images/circle-11.png" alt="logo" />
         <DotMedium src="/images/dot-medium.png" alt="logo" />
         <DotSmallA src="/images/dot-small.png" alt="logo" />
         <DotSmallB src="/images/dot-small.png" alt="logo" />
