@@ -5,7 +5,7 @@ export const About01Container = styled.div`
   height: 100%;
 `;
 
-export const CardContent = styled.article<AnimatedElement>`
+export const CardContent = styled.article`
   width: 380px;
   height: 140px;
   display: flex;

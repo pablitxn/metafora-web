@@ -44,6 +44,7 @@ export const Plant = styled.img<AnimatedElement>`
       }
       `;
     }
+    return '';
   }}
 
   ${({ currentPage }): string => {
@@ -101,10 +102,9 @@ export const LinesCanvas = styled.div`
   position: relative;
   width: 130px;
   height: 650px;
-  bottom: 10rem;
+  bottom: -10rem;
   overflow: hidden;
   left: 38%;
-  border: solid 2px blue;
   z-index: 9;
   display: flex;
   justify-content: center;
@@ -115,7 +115,6 @@ export const LinesContainer = styled.div<AnimatedElement>`
   width: 100%;
   padding: -3rem;
   overflow: hidden;
-  border: solid 1px red;
   z-index: 9;
   ${({ currentPage }): string => {
     if (currentPage === '01') {
@@ -143,14 +142,14 @@ export const LinesContainer = styled.div<AnimatedElement>`
 export const LineA = styled.img`
   position: absolute;
   width: 60px;
-  height: 600px;
+  height: 800px;
   z-index: 10;
 `;
 
 export const LineB = styled.img`
   position: absolute;
   width: 60px;
-  height: 600px;
+  height: 800px;
   left: 25%;
   z-index: 10;
 `;
@@ -158,7 +157,7 @@ export const LineB = styled.img`
 export const LineC = styled.img`
   position: absolute;
   width: 60px;
-  height: 600px;
+  height: 800px;
   left: 52%;
   z-index: 10;
 `;
