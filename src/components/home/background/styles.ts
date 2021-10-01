@@ -30,6 +30,25 @@ export const Plant = styled.img<AnimatedElement>`
   ${({ currentPage }): string => {
     if (currentPage === '01') {
       return `
+      animation: fadeInAnimation ease 3s
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+
+      @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+      100% {
+          opacity: 1;
+        }
+      }
+      `;
+    }
+  }}
+
+  ${({ currentPage }): string => {
+    if (currentPage === '01') {
+      return `
       transform: translateY(0px);
       transition: transform 0.5s ease-in-out;
       `;
@@ -50,11 +69,32 @@ export const Plant = styled.img<AnimatedElement>`
   }}
 `;
 
-export const Core = styled.img`
+export const Core = styled.img<AnimatedElement>`
   width: 400px;
   height: 400px;
   bottom: 28%;
   left: 28%;
+  ${({ currentPage }): string => {
+    if (currentPage === '01') {
+      return `
+      transform: rotate(0deg);
+      transition: transform 1.25s ease-in-out;
+      `;
+    }
+    if (currentPage === '02') {
+      return `
+      transform: rotate(70deg);
+      transition: transform 1.25s ease-in-out;
+      `;
+    }
+    if (currentPage === '03') {
+      return `
+      transform: rotate(140deg);
+      transition: transform 1.25s ease-in-out;
+      `;
+    }
+    return '';
+  }};
 `;
 
 export const LinesCanvas = styled.div`
@@ -106,6 +146,7 @@ export const LineA = styled.img`
   height: 600px;
   z-index: 10;
 `;
+
 export const LineB = styled.img`
   position: absolute;
   width: 60px;
@@ -113,6 +154,7 @@ export const LineB = styled.img`
   left: 25%;
   z-index: 10;
 `;
+
 export const LineC = styled.img`
   position: absolute;
   width: 60px;
@@ -121,12 +163,33 @@ export const LineC = styled.img`
   z-index: 10;
 `;
 
-export const Circle11 = styled.img`
+export const Circle11 = styled.img<AnimatedElement>`
   width: 170px;
   height: 170px;
   left: 18%;
   top: 10%;
   bottom: 0;
+  ${({ currentPage }): string => {
+    if (currentPage === '01') {
+      return `
+      transform: rotate(180deg);
+      transition: transform 0.5s ease-in-out;
+      `;
+    }
+    if (currentPage === '02') {
+      return `
+      transform: rotate(40deg);
+      transition: transform 0.5s ease-in-out;
+      `;
+    }
+    if (currentPage === '03') {
+      return `
+      transform: rotate(0deg);
+      transition: transform 0.5s ease-in-out;
+      `;
+    }
+    return '';
+  }}
 `;
 
 export const DotMedium = styled.img`
