@@ -21,8 +21,8 @@ interface DotProps {
   size: string;
 }
 
-interface Color {
+type Color = {
   red: number;
   green: number;
   blue: number;
-}
+};
