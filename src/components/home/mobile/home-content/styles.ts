@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const colorPicker = (rgb: Rgb): string => {
+const colorPicker = (rgb?: Color): string => {
   if (rgb) {
     const { red, green, blue } = rgb;
     return `color: rgb(${red}, ${green}, ${blue})`;
@@ -8,7 +8,7 @@ const colorPicker = (rgb: Rgb): string => {
   return ``;
 };
 
-const backgroundPicker = (rgb: Rgb): string => {
+const backgroundPicker = (rgb?: Color): string => {
   if (rgb) {
     const { red, green, blue } = rgb;
     return `background: rgb(${red}, ${green}, ${blue})`;

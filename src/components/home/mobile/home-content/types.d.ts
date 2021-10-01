@@ -1,16 +1,16 @@
 interface CardProps {
-  background: Rgb;
+  background: Colors;
 }
 
 interface TitleProps {
   isBolded?: boolean;
-  background?: Rgb;
-  textColor?: Rgb;
+  background?: Color;
+  textColor?: Color;
   minMargin?: boolean;
 }
 
 interface TextProps {
-  textColor?: Rgb;
+  textColor?: Color;
 }
 
 interface DotProps {
@@ -26,5 +26,3 @@ interface Color {
   green: number;
   blue: number;
 }
-
-type Rgb = Color | undefined;
