@@ -1,32 +1,20 @@
-import { FC, useState, useEffect } from "react";
-import Head from "next/head";
-import HomeLayout from "layouts/home";
+import { FunctionComponent, useState, useEffect } from 'react';
+import HomeLayout from 'layouts/home';
+import HomeMobile from 'layouts/home/mobile';
 
-const Home: FC = () => {
-	const [state, setState] = useState({
-		blogData: []
-	});
+const Home: FunctionComponent = () => {
+  const [isMobile, setIsMobile] = useState(false);
 
-	useEffect(() => {
-		const getMockData = async () => {
-			const response = await fetch("http://localhost:3000/api/blog");
-			const { homeArticles: blogData } = await response.json();
-			blogData && setState({ blogData });
-		};
-		getMockData();
-	}, []);
-
-	return (
-		<>
-			<Head>
-				<title>Fundacion Metáfora</title>
-				<meta charSet="utf-8" />
-				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
-			</Head>
-
-			<HomeLayout blogData={state.blogData} />
-		</>
-	);
+  useEffect(() => {
+    if (window.innerWidth < 480) setIsMobile(true);
+    if (window.innerWidth > 480) setIsMobile(false);
+  }, []);
+  return (
+    <>
+      {isMobile && <HomeMobile />}
+      {!isMobile && <HomeLayout />}
+    </>
+  );
 };
 
 export default Home;

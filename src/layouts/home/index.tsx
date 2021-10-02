@@ -1,29 +1,22 @@
-import { FC, useState } from "react";
-import Hero from "./hero";
-import About from "./about";
-import Vision from "./vision";
-import Footer from "components/_shared/footer";
-import LastPosts from "./last-posts";
-import "./styles.less";
+import { FunctionComponent } from 'react';
+import useHomeNavigation from 'hooks/useHomeNavigation';
+import Background from 'components/home/background';
+import Header from 'components/home/header';
+import Navigation from 'components/home/navigation';
+import HomeContent from 'components/home/home-content';
+import { HomeLayoutContainer } from './styles';
 
-interface IHomeLayout {
-	blogData: any;
-}
+const Home: FunctionComponent = () => {
+  const { currentPage, handleNavigation } = useHomeNavigation();
 
-const HomeLayout: FC<IHomeLayout> = ({ blogData }) => {
-	const [state] = useState({
-		isDesktop: true
-	});
-	const { isDesktop } = state;
-
-	return (
-		<div className="home-layout">
-			<Hero />
-			<About />
-			{isDesktop ? <Vision /> : null}
-			{isDesktop && blogData.length ? <LastPosts blogData={blogData} /> : null}
-		</div>
-	);
+  return (
+    <HomeLayoutContainer>
+      <Header />
+      <Navigation onPageChange={handleNavigation} pageSelected={currentPage} />
+      <Background currentPage={currentPage} />
+      <HomeContent selected={currentPage} />
+    </HomeLayoutContainer>
+  );
 };
 
-export default HomeLayout;
+export default Home;

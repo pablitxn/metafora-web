@@ -1,42 +1,53 @@
 {
   "name": "metafora-web",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "prepare": "husky install",
+    "lint": "eslint src --ext .ts,.tsx",
+    "lint-fix": "yarn lint --fix",
     "test": "jest",
-    "test-ut": "react-scripts test --runner=groups --group=unit ",
-    "test-co": "react-scripts test --coverage --watchAll=false",
-    "test-ci": "react-scripts test --runner=groups --group=unit --watchAll=false --coverage --testResultsProcessor=jest-junit"
+    "test-ut": "test --runner=groups --group=unit ",
+    "test-co": "test --coverage --watchAll=false",
+    "test-ci": "test --runner=groups --group=unit --watchAll=false --coverage --testResultsProcessor=jest-junit"
   },
   "dependencies": {
-    "@ant-design/icons": "^4.4.0",
+    "next": "^11.1.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-feather": "^2.0.9",
+    "styled-components": "^5.3.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.7.1",
-    "@zeit/next-less": "^1.0.1",
-    "antd": "^4.11.2",
-    "babel-plugin-import": "^1.13.3",
-    "less": "^4.1.0",
-    "less-vars-to-js": "^1.3.0",
-    "next": "10.0.6",
-    "null-loader": "^4.0.1",
-    "prettier": "^2.2.1",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "webpack": "^4.19.0"
-  },
-  "devDependencies": {
     "@types/jest": "^26.0.20",
+    "@types/next": "^9.0.0",
     "@types/node": "^14.14.22",
     "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.9",
+    "@types/styled-components": "^5.1.14",
+    "@typescript-eslint/eslint-plugin": "^4.31.0",
+    "@typescript-eslint/parser": "^4.31.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-typescript-prettier": "^4.2.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.25.1",
+    "husky": "^7.0.2",
     "jest": "^26.6.3",
     "jest-junit": "^12.0.0",
     "jest-runner-groups": "^2.0.1",
-    "ts-node": "^9.1.1",
-    "typescript": "^4.1.3"
+    "lint-staged": "^11.1.2",
+    "prettier": "^2.3.2",
+    "standard-version": "^9.3.1",
+    "typescript": "^4.4.2"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -44,9 +55,21 @@
       "!<rootDir>/node_modules/",
       "!<rootDir>/path/to/dir/"
     ],
-    "verbose": true,
-    "moduleNameMapper": {
-      "\\.(css|less)$": "less"
+    "verbose": true
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write",
+      "eslint"
+    ]
+  },
+  "resolutions": {
+    "styled-components": "^5"
   }
 }

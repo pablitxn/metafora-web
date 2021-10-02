@@ -1,43 +1,30 @@
-import { FC, useEffect } from "react";
-import { AppProps } from "next/app";
-import AppLayout from "layouts/app";
-import "./app.less";
-import { useRouter } from "next/router";
-import Footer from "components/_shared/footer";
+import React, { FunctionComponent } from 'react';
+import Head from 'next/head';
+import { AppProps } from 'next/app';
+import './globals.css';
 
-const App: FC<AppProps> = ({ Component, pageProps }) => {
-	const router = useRouter();
-	const adminRegex = new RegExp("/admin");
-	const prontoRegex = new RegExp("/pronto");
+const SafeHydrate: FunctionComponent = ({ children }) => {
+  return <div suppressHydrationWarning>{typeof window === 'undefined' ? null : children}</div>;
+};
 
-	useEffect(() => {
-		if (router.pathname === "/") {
-			router.push("/pronto");
-		}
-		if (router.pathname === "/_error") {
-			router.push("/pronto");
-		}
-	}, [router]);
-
-	return (
-		<>
-			{prontoRegex.test(router.pathname) ? (
-				<>
-					<Component {...pageProps} />
-					<Footer />
-				</>
-			) : null}
-
-			{adminRegex.test(router.pathname) ? <Component {...pageProps} /> : null}
-
-			{!prontoRegex.test(router.pathname) &&
-			!adminRegex.test(router.pathname) ? (
-				<AppLayout>
-					<Component {...pageProps} />
-				</AppLayout>
-			) : null}
-		</>
-	);
+const App: FunctionComponent<AppProps> = ({ Component, pageProps }) => {
+  return (
+    <SafeHydrate>
+      <Head>
+        <title>Fundacion Metáfora</title>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet"
+        />
+      </Head>
+      {/* eslint-disable-next-line react/jsx-props-no-spreading */}
+      <Component {...pageProps} />
+    </SafeHydrate>
+  );
 };
 
 export default App;
