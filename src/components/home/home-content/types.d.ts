@@ -1,3 +1,0 @@
-interface IHomeContentProps {
-  selected: string;
-}
