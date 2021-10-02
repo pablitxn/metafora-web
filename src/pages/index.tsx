@@ -1,5 +1,5 @@
 import { FunctionComponent, useState, useEffect } from 'react';
-import HomeLayout from 'layouts/home';
+import HomeLayout from 'layouts/home/desktop';
 import HomeMobile from 'layouts/home/mobile';
 
 const Home: FunctionComponent = () => {

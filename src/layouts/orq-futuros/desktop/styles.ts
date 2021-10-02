@@ -14,6 +14,16 @@ export const OrquestandoContainer = styled.div`
   }
 `;
 
+export const ContentContainer = styled.div`
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow: hidden;
+`;
+
 export const Content = styled.div`
   display: flex;
   flex-direction: column;

@@ -1,5 +1,5 @@
 import { FunctionComponent } from 'react';
-import HomeContent from 'components/home/mobile/home-content';
+import HomeContent from 'components/home/home-content/mobile';
 import { HomeLayoutContainer } from './styles';
 
 const HomeMobile: FunctionComponent = () => {
