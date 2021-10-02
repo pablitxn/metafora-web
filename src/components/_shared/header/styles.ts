@@ -18,12 +18,12 @@ export const NavigationContainer = styled.nav`
   color: #feffdf;
   z-index: 2;
 
-  a {
-    pointer-events: none;
+  & a {
     font-weight: 500;
     text-decoration: none;
     color: #feffdf;
     font-size: 1.1rem;
+    cursor: pointer;
   }
 `;
 
