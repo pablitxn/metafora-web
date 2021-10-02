@@ -3,16 +3,16 @@ import styled from 'styled-components';
 export const About01Container = styled.div`
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
 `;
 
 export const CardContent = styled.article`
-  width: 380px;
-  height: 140px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 10rem 0 0 50rem;
+  justify-content: flex-start;
+  margin-left: 50rem;
+  padding: 10rem;
 `;
 
 export const Divider = styled.div`
