@@ -14,4 +14,9 @@ export const HomeContentContainer = styled.div`
     right: 3rem;
     bottom: 3rem;
   }
+
+  @media (max-width: 1024px) {
+    padding-right: 1rem;
+    padding-top: 0;
+  }
 `;

@@ -2,7 +2,7 @@ import { FunctionComponent, useState } from 'react';
 import Whatsapp from 'components/_shared/whatsapp-icon';
 import Header from 'components/orq-futuros/header';
 import Background from 'components/orq-futuros/background';
-
+import MoreInfo from './more-info';
 import {
   OrquestandoContainer,
   ContentContainer,
@@ -15,22 +15,19 @@ import {
   Ellipse,
   EllipseText,
 } from './styles';
-import MoreInfo from './more-info';
 
 const OrquestandoFuturosContent: FunctionComponent = () => {
   const [isActive, setIsActive] = useState(false);
-
-  const handleClick = () => setIsActive((prev) => !prev);
+  const handleActive = () => setIsActive((prev) => !prev);
 
   return (
     <ContentContainer>
       <Header />
       <Background />
-
       <OrquestandoContainer>
         <Content>
           <Title>
-            <MoreInfo isActive={isActive} handleClick={handleClick} />
+            <MoreInfo isActive={isActive} handleClick={handleActive} />
             <TitleText>Compongamos un futuro juntos</TitleText>
           </Title>
           <Description>

@@ -1,20 +1,5 @@
 import styled from 'styled-components';
-
-const colorPicker = (rgb?: Color): string => {
-  if (rgb) {
-    const { red, green, blue } = rgb;
-    return `color: rgb(${red}, ${green}, ${blue})`;
-  }
-  return ``;
-};
-
-const backgroundPicker = (rgb?: Color): string => {
-  if (rgb) {
-    const { red, green, blue } = rgb;
-    return `background: rgb(${red}, ${green}, ${blue})`;
-  }
-  return ``;
-};
+import { colorPicker, backgroundPicker } from 'theme/helpers';
 
 export const HomeContainer = styled.div`
   width: 100vw;

@@ -15,29 +15,24 @@ const About02: FunctionComponent = () => {
     <About02Container>
       <CardContainer>
         <Card>
-          <CardIcon src="/images/mountain.png" alt="montaña icono con bandera" />
+          <CardIcon src="/images/mountain.png" alt="icono con montañas" />
           <CardContent>
             <Title>Misión</Title>
             <Divider />
             <Description>
-              implementar proyectos que <br />
-              generen oportunidades para la <br />
-              inclusión educativa, social, laboral
-              <br /> y profesional.
+              Implementar proyectos que generen oportunidades para la inclusión educativa, social,
+              laboral y profesional.
             </Description>
           </CardContent>
         </Card>
         <Card>
-          <CardIcon src="/images/anteojito.png" alt="anteojos icono" />
+          <CardIcon src="/images/binoculars.png" alt="icono con binoculares" />
           <CardContent>
             <Title>Visión</Title>
             <Divider />
             <Description>
-              Trabajamos por la construcción de
-              <br /> un mundo sustentable para todes.
-              <br /> Generando modelos participativos
-              <br /> y fortaleciendo las capacidades de
-              <br /> los intervinientes.
+              Trabajamos por la construcción de un mundo sustentable para todes. Generando modelos
+              participativos y fortaleciendo las capacidades de los intervinientes.
             </Description>
           </CardContent>
         </Card>

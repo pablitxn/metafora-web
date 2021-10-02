@@ -96,6 +96,10 @@ export const Core = styled.img<AnimatedElement>`
     }
     return '';
   }};
+
+  @media (max-width: 1024px) {
+    bottom: 20%;
+  }
 `;
 
 export const LinesCanvas = styled.div`

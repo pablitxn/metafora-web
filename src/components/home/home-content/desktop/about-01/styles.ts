@@ -12,7 +12,12 @@ export const CardContent = styled.article`
   flex-direction: column;
   justify-content: flex-start;
   margin-left: 50rem;
-  padding: 10rem;
+  padding-top: 10rem;
+
+  @media (max-width: 1024px) {
+    margin-left: 40rem;
+    padding: 5rem 0rem;
+  }
 `;
 
 export const Divider = styled.div`
