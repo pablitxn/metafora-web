@@ -1,4 +1,5 @@
 import { FunctionComponent } from 'react';
+import colors from 'theme/colors';
 import {
   Card,
   Description,
@@ -19,32 +20,7 @@ import {
 } from './styles';
 
 const HomeContent: FunctionComponent = () => {
-  /* to refactor with styled sheet */
-  const green = {
-    red: 1,
-    green: 46,
-    blue: 15,
-  };
-  const lightGreen = {
-    red: 146,
-    green: 203,
-    blue: 10,
-  };
-  const white = {
-    red: 255,
-    green: 255,
-    blue: 255,
-  };
-  const cream = {
-    red: 253,
-    green: 255,
-    blue: 222,
-  };
-  const yellow = {
-    red: 240,
-    green: 203,
-    blue: 0,
-  };
+  const { yellow, green, cream, lightGreen, white } = colors;
 
   return (
     <HomeContainer>
@@ -101,7 +77,7 @@ const HomeContent: FunctionComponent = () => {
           <Content>
             <TitleContainer>
               <Title textColor={lightGreen}>Misión</Title>
-              <ImageTitle src="/images/mountain.png" alt="montaña icono con bandera" />
+              <ImageTitle src="/images/mountain.png" alt="icono de una montaña" />
             </TitleContainer>
             <Text textColor={white}>
               Implementar Proyectos que generen oportunidades
@@ -112,7 +88,7 @@ const HomeContent: FunctionComponent = () => {
           <Content>
             <TitleContainer>
               <Title textColor={lightGreen}>Visión</Title>
-              <ImageTitle src="/images/anteojito.png" alt="anteojos icono" />
+              <ImageTitle src="/images/binoculars.png" alt="icono de binoculares" />
             </TitleContainer>
             <Text textColor={white}>
               Trabajamos por la construcción de un mundo

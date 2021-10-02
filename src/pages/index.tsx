@@ -6,8 +6,7 @@ const Home: FunctionComponent = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    if (window.innerWidth < 480) setIsMobile(true);
-    if (window.innerWidth > 480) setIsMobile(false);
+    if (window.innerWidth <= 768) setIsMobile(true);
   }, []);
   return (
     <>

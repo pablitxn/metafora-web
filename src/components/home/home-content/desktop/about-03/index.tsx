@@ -8,25 +8,13 @@ const About03: FunctionComponent = () => {
         <Title>¿Quiénes somos?</Title>
         <Divider />
         <Text>
-          Somos una organización joven,
-          <br />
-          apasionada por ser parte de la
-          <br />
-          construccion de un habitad más
-          <br />
-          justo y equitativo, desarrollando
-          <br />
-          proyectos educativos para
-          <br />
-          colaborar con el desarrollo de
-          <br />
-          un mundo mas sustentable.
+          Somos una organización joven, apasionada por ser parte de la construccion de un habitad
+          más justo y equitativo, desarrollando proyectos educativos para colaborar con el
+          desarrollo de un mundo mas sustentable.
         </Text>
         <Image src="/images/solar-bomb.png" alt="bomba solar" />
         <TextBold>
-          Promovemos una cultura de
-          <br /> sustentabilidad a travéz
-          <br /> de la educacion ambiental.
+          Promovemos una cultura de sustentabilidad a travéz de la educacion ambiental.
         </TextBold>
       </Card>
     </About03Container>
