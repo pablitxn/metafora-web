@@ -1,9 +1,9 @@
 import { FunctionComponent } from 'react';
 import useHomeNavigation from 'hooks/useHomeNavigation';
 import Background from 'components/home/background';
-import Header from 'components/home/header';
+import Header from 'components/_shared/header';
 import Navigation from 'components/home/navigation';
-import HomeContent from 'components/home/home-content';
+import HomeContent from 'components/home/home-content/desktop';
 import { HomeLayoutContainer } from './styles';
 
 const Home: FunctionComponent = () => {

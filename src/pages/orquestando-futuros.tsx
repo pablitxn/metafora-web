@@ -1,6 +1,6 @@
 import { FunctionComponent, useState, useEffect } from 'react';
-import OrquestandoFuturosLayout from 'layouts/orquestando-futuros';
-import OrquestandoFuturosMobile from 'layouts/orquestando-futuros/mobile';
+import OrquestandoFuturosLayout from 'layouts/orq-futuros/desktop';
+import OrquestandoFuturosMobile from 'layouts/orq-futuros/mobile';
 
 const OrquestandoFuturos: FunctionComponent = () => {
   const [state, setState] = useState({
