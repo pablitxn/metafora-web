@@ -14,7 +14,7 @@ const Header: FunctionComponent = () => {
     <HeaderContainer>
       <HeaderImage src="/logos/transparent_color-full-size.png" alt="Logo de fundacion metáfora" />
       <NavigationContainer>
-        <Navigation href="/">Orquestando Futuros</Navigation>
+        <Navigation href="/orquestando-futuros">Orquestando Futuros</Navigation>
         <Divider />
         <SocialMediaContainer>
           <Instagram />
