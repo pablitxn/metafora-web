@@ -16,6 +16,7 @@ export const Canvas = styled.div`
   position: relative;
   width: 100%;
   height: 100%;
+
   img {
     position: absolute;
   }
@@ -26,7 +27,6 @@ export const Plant = styled.img<AnimatedElement>`
   height: 750px;
   bottom: -30%;
   left: 20%;
-
   ${({ currentPage }): string => {
     if (currentPage === '01') {
       return `

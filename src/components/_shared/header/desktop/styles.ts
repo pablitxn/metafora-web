@@ -1,20 +1,14 @@
 import styled from 'styled-components';
 
-export const HeaderContainer = styled.div`
-  width: 100%;
-  z-index: 1;
+export const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  padding: 2rem 5rem;
   width: 100%;
-  padding: 2.75rem;
-`;
-
-export const Logo = styled.img`
-  width: 11.375rem;
-  height: 4.3125rem;
-  margin-left: 3.75rem;
+  position: relative;
+  z-index: 4;
 `;
 
 export const NavigationContainer = styled.nav`
@@ -24,13 +18,30 @@ export const NavigationContainer = styled.nav`
   flex-direction: row;
   gap: 2.5rem;
   color: #feffdf;
-  margin-right: 6rem;
-  a {
-    font-weight: 500;
+  z-index: 2;
+
+  & a {
     text-decoration: none;
     color: #feffdf;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
     cursor: pointer;
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+  }
+`;
+
+export const Logo = styled.img`
+  .metafora {
+    width: 12.25rem;
+    height: 4.063rem;
+  }
+
+  .orq-futuros {
+    z-index: 5;
+    width: 12.25rem;
+    height: 4.063rem;
   }
 `;
 
@@ -48,4 +59,12 @@ export const SocialMediaContainer = styled.div`
   svg {
     cursor: pointer;
   }
+
+  .orq-futuros {
+    padding-left: 4.5rem;
+  }
+`;
+
+export const Anchor = styled.a`
+  text-decoration: none;
 `;

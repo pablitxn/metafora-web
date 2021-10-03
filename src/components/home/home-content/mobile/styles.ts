@@ -99,7 +99,6 @@ export const Button = styled.button`
   background: transparent;
   color: rgb(1, 46, 15);
   border: 2px solid #012e0f;
-
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1rem;
   line-height: 1.15rem;

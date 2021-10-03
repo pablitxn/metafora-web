@@ -7,7 +7,7 @@ export const OrquestandoContainer = styled.div`
   align-items: center;
   justify-content: center;
 
-  & .whatsapp-icon {
+  .whatsapp-icon {
     position: absolute;
     right: 3rem;
     bottom: 3rem;
@@ -36,7 +36,7 @@ export const Title = styled.div`
   display: flex;
   height: 6%;
   justify-content: center;
-  border-bottom: 0.125rem solid #ffffff;
+  border-bottom: 0.125rem solid #ffff;
 `;
 
 export const TitleText = styled.h1`
@@ -47,8 +47,7 @@ export const TitleText = styled.h1`
   font-weight: normal;
   font-size: 1.4rem;
   text-transform: uppercase;
-
-  color: #ffffff;
+  color: #ffff;
 `;
 
 export const Description = styled.div`
@@ -66,7 +65,7 @@ export const Text = styled.p<TextProps>`
   line-height: 1.31em;
   ${({ isBigger }) => isBigger && `font-size: 3.75rem;`}
   ${({ isBolded }) => (isBolded ? `font-weight: bold;` : `font-weight: normal;`)}
-  color: #ffffff;
+  color: #ffff;
   margin: 0;
 `;
 
@@ -76,7 +75,6 @@ export const Button = styled.button`
   height: 2.625rem;
   border: 0.125rem solid #88e2d0;
   box-sizing: border-box;
-
   color: #88e2d0;
   font-style: normal;
   font-weight: bold;
@@ -89,14 +87,10 @@ export const Ellipse = styled.div`
   position: absolute;
   top: 16%;
   left: 82%;
-
   width: 35.25rem;
   height: 35.25rem;
-
   border-radius: 50%;
-
   background: linear-gradient(180deg, #db2b76 0%, rgba(219, 43, 118, 0) 100%);
-
   display: flex;
   flex-direction: column;
   justify-content: center;

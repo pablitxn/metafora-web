@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
-export const OrqFuturosLayoutMobile = styled.div``;
+export const OrqFuturosLayoutMobile = styled.div`
+  padding-top: 6rem;
+`;
+
 export const TitlePage = styled.h1`
   text-align: center;
   text-transform: uppercase;
@@ -16,7 +19,7 @@ export const CardContainer = styled.div`
 export const CardOrange = styled.div`
   height: 332px;
   width: 100%;
-  left: 0px;
+  left: 0;
   background-color: #e26f0d;
   padding: 26px 85px 16px 66px;
   text-align: center;
@@ -25,7 +28,7 @@ export const CardOrange = styled.div`
 export const CardBlack = styled.div`
   height: 511px;
   width: 100%;
-  background-color: #000000;
+  background-color: #000;
   padding: 33px 95px 16px 66px;
   text-align: left;
 `;
@@ -36,17 +39,17 @@ export const Title = styled.h2`
   text-align: left;
   font-size: 30px;
   font-weight: 400;
-  margin: 0px 0px 0px 0px;
+  margin: 0 0 0 0;
 `;
 
 export const Subtitle = styled.h3`
   font-family: 'Bebas Neue', sans-serif;
   text-transform: uppercase;
-  padding: 50px 0px 1px 0px;
+  padding: 50px 0 1px 0;
   text-align: left;
   font-size: 20px;
   font-weight: 400;
-  margin: 0px 0px 0px 0px;
+  margin: 0 0 0 0;
 `;
 
 export const Text = styled.p`

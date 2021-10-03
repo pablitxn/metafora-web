@@ -12,7 +12,7 @@ export const Icon = styled.div`
   text-align: center;
   flex-direction: column;
   border-radius: 50%;
-  background: #000000;
+  background: #000;
   user-select: none;
   cursor: pointer;
 `;
@@ -34,7 +34,6 @@ export const Background = styled.div`
   height: 85.375rem;
   border-radius: 50%;
   background: black;
-
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -56,10 +55,8 @@ export const Title = styled.h1`
   font-weight: normal;
   font-size: 2.5rem;
   line-height: 1.155rem;
-
   display: flex;
   align-items: center;
-
   color: #e26f0d;
 `;
 export const Text = styled.p`
@@ -67,10 +64,8 @@ export const Text = styled.p`
   font-style: normal;
   font-weight: normal;
   line-height: 1.305rem;
-
   display: flex;
   align-items: center;
-
   color: #e26f0d;
 `;
 export const Image = styled.img`
