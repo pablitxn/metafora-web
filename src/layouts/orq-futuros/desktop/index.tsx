@@ -1,6 +1,6 @@
 import { FunctionComponent, useState } from 'react';
 import Whatsapp from 'components/_shared/whatsapp-icon';
-import Header from 'components/orq-futuros/header';
+import Header from 'components/_shared/header/desktop';
 import Background from 'components/orq-futuros/background';
 import MoreInfo from './more-info';
 import {
@@ -37,12 +37,8 @@ const OrquestandoFuturosContent: FunctionComponent = () => {
               jóvenes puedan continuar su carrera musical sea esta profesional, sea a través de
               estudios académicos formales (conservatorio o universitarios) o el desarrollo musical
               amateur.
-              <br /> <br />
             </Text>
-            <Text isBolded>
-              puedes ayudarnos desde una mínima donación.
-              <br /> <br />
-            </Text>
+            <Text isBolded>puedes ayudarnos desde una mínima donación.</Text>
             <Button type="button">Donar</Button>
           </Description>
         </Content>

@@ -5,7 +5,7 @@ export const About03Container = styled.div`
   height: 100%;
   display: flex;
   justify-content: flex-end;
-  padding: 6rem 0rem 0.5rem 1rem;
+  padding: 6rem 0 0.5rem 1rem;
 
   @media (max-width: 1024px) {
     padding: 3rem 1rem 0.5rem 1rem;

@@ -1,6 +1,5 @@
 import { FunctionComponent } from 'react';
-// import Header from 'components/orquestando-futuros/mobile/header';
-// import Footer from 'components/orquestando-futuros/mobile/navigation';
+import Header from 'components/_shared/header/mobile';
 import {
   OrqFuturosLayoutMobile,
   TitlePage,
@@ -16,7 +15,7 @@ import {
 const Home: FunctionComponent = () => {
   return (
     <OrqFuturosLayoutMobile>
-      {/* <Header> */}
+      <Header />
       <TitlePage>Compongamos un futuro juntos</TitlePage>
       <CardContainer>
         <CardOrange>

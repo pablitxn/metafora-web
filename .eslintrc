@@ -5,10 +5,14 @@
     "jest": true,
     "node": true
   },
-  "extends": "airbnb-typescript-prettier",
+  "extends": [
+    "airbnb-typescript-prettier",
+    "plugin:jsx-a11y/recommended",
+    "plugin:styled-components-a11y/recommended"
+  ],
   "overrides": [
     {
-      "files": ["**/utils.ts", "**/styles.ts"],
+      "files": ["**/utils.ts", "**/styles.ts", "**/constants.ts"],
       "rules": {
         "import/prefer-default-export": "off"
       }
@@ -29,5 +33,7 @@
     "react": {
       "version": "detect"
     }
-  }
+  },
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["styled-components-config", "styled-components-a11y", "jsx-a11y"]
 }

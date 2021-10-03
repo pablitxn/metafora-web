@@ -16,7 +16,7 @@ export const CardContent = styled.article`
 
   @media (max-width: 1024px) {
     margin-left: 40rem;
-    padding: 5rem 0rem;
+    padding: 5rem 0;
   }
 `;
 

@@ -26,7 +26,8 @@ export const List = styled.ul`
 export const ListItem = styled.li<{ isActive: boolean }>`
   cursor: pointer;
   z-index: 20;
-  & button {
+
+  button {
     ${({ isActive }) =>
       isActive &&
       `padding: 0.25rem 2rem;
