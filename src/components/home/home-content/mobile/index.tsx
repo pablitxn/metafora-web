@@ -13,27 +13,25 @@ import {
   TitleContainer,
   CardContainer,
   ImageTitle,
-  Content,
+  CardContent,
   PlantContainer,
   TextContainer,
   Dot,
 } from './styles';
 
 const HomeContent: FunctionComponent = () => {
-  const { yellow, green, cream, lightGreen, white } = colors;
-
   return (
     <HomeContainer>
-      <Card background={green}>
+      <Card background={colors.green}>
         <PlantContainer>
           <TextContainer>
-            <Title isBolded minMargin background={yellow}>
+            <Title isBolded minMargin background={colors.yellow}>
               Seamos la voz que
             </Title>
-            <Title isBolded minMargin background={yellow}>
+            <Title isBolded minMargin background={colors.yellow}>
               defienda al mundo
             </Title>
-            <Title isBolded minMargin background={yellow}>
+            <Title isBolded minMargin background={colors.yellow}>
               que habitamos
             </Title>
           </TextContainer>
@@ -46,57 +44,49 @@ const HomeContent: FunctionComponent = () => {
         </PlantContainer>
       </Card>
 
-      <Card background={cream}>
+      <Card background={colors.cream}>
         <Description>
-          <Title isBolded textColor={green}>
+          <Title isBolded textColor={colors.green}>
             ¿Quiénes somos?
           </Title>
-          <Text textColor={green}>
-            Somos una organización joven,
-            <br /> apasionada por ser parte de la
-            <br /> construcción de un habitad más justo
-            <br /> y equitativo, desarrollando proyectos
-            <br /> educativos para colaborar con el
-            <br /> desarrollo de un mundo más sustentable.
+          <Text textColor={colors.green}>
+            Somos una organización joven, apasionada por ser parte de la construcción de un habitad
+            más justo y equitativo, desarrollando proyectos educativos para colaborar con el
+            desarrollo de un mundo más sustentable.
           </Text>
           <Button type="button">Sumate</Button>
         </Description>
         <Image src="/images/globe.png" alt="globo terraqueo" />
       </Card>
 
-      <Card background={yellow}>
+      <Card background={colors.yellow}>
         <SubTitle>
-          Promovemos una cultura de
-          <br /> sustentabilidad a través
-          <br /> de la educación ambiental.
+          Promovemos una cultura de sustentabilidad a través de la educación ambiental.
         </SubTitle>
       </Card>
 
-      <Card background={green}>
+      <Card background={colors.green}>
         <CardContainer>
-          <Content>
+          <CardContent>
             <TitleContainer>
-              <Title textColor={lightGreen}>Misión</Title>
+              <Title textColor={colors.lightGreen}>Misión</Title>
               <ImageTitle src="/images/mountain.png" alt="icono de una montaña" />
             </TitleContainer>
-            <Text textColor={white}>
-              Implementar Proyectos que generen oportunidades
-              <br /> para la inclusión educativa, social, laboral y
-              <br /> profesional.
+            <Text textColor={colors.white}>
+              Implementar Proyectos que generen oportunidades para la inclusión educativa, social,
+              laboral y profesional.
             </Text>
-          </Content>
-          <Content>
+          </CardContent>
+          <CardContent>
             <TitleContainer>
-              <Title textColor={lightGreen}>Visión</Title>
+              <Title textColor={colors.lightGreen}>Visión</Title>
               <ImageTitle src="/images/binoculars.png" alt="icono de binoculares" />
             </TitleContainer>
-            <Text textColor={white}>
-              Trabajamos por la construcción de un mundo
-              <br /> sustentable para todes. Generando modelos
-              <br /> participativos y fortaleciendo las capacidades de
-              <br /> los intervinientes
+            <Text textColor={colors.white}>
+              Trabajamos por la construcción de un mundo sustentable para todes. Generando modelos
+              participativos y fortaleciendo las capacidades de los intervinientes
             </Text>
-          </Content>
+          </CardContent>
         </CardContainer>
       </Card>
     </HomeContainer>

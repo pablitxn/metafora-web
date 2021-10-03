@@ -10,6 +10,7 @@ export const HeaderContainer = styled.header`
   width: 100%;
   top: 0;
   left: 0;
+  z-index: 10;
 `;
 
 export const NavigationContainer = styled.nav`
@@ -22,11 +23,4 @@ export const NavigationContainer = styled.nav`
   width: 100%;
 `;
 
-export const HeaderLogo = styled.img<IHeaderLogo>`
-  ${({ isActive }) => {
-    if (isActive) {
-      return ``;
-    }
-    return ``;
-  }}
-`;
+export const HeaderLogo = styled.img``;

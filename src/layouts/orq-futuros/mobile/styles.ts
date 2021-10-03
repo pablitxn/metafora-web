@@ -1,14 +1,29 @@
 import styled from 'styled-components';
 
 export const OrqFuturosLayoutMobile = styled.div`
-  padding-top: 6rem;
+  position: relative;
+`;
+
+export const HeroContainer = styled.div`
+  background: url('/images/musicians-photo.png') no-repeat center center;
+  background-size: cover;
+  padding-top: 6.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
 `;
 
 export const TitlePage = styled.h1`
-  text-align: center;
-  text-transform: uppercase;
+  font-family: Bebas Neue, sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 30px;
-  letter-spacing: 1px;
+  line-height: 115.5%;
+  color: #ffff;
 `;
 
 export const CardContainer = styled.div`
@@ -17,16 +32,15 @@ export const CardContainer = styled.div`
 `;
 
 export const CardOrange = styled.div`
-  height: 332px;
   width: 100%;
   left: 0;
   background-color: #e26f0d;
-  padding: 26px 85px 16px 66px;
+  padding: 3rem 4rem;
   text-align: center;
 `;
 
 export const CardBlack = styled.div`
-  height: 511px;
+  height: 32rem;
   width: 100%;
   background-color: #000;
   padding: 33px 95px 16px 66px;
