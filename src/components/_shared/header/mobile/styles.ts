@@ -25,9 +25,7 @@ export const NavigationContainer = styled.nav`
 export const HeaderLogo = styled.img<IHeaderLogo>`
   ${({ isActive }) => {
     if (isActive) {
-      return `
-        border: 1px solid green;
-      `;
+      return ``;
     }
     return ``;
   }}
