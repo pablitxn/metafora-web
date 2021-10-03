@@ -5,24 +5,21 @@ import { HeaderContainer, HeaderLogo, NavigationContainer } from './styles';
 
 const HeaderMobile: FunctionComponent = () => {
   const { pageActive } = useHeaderMobile();
+  const { home, orqFuturos } = pageActive;
 
   return (
     <HeaderContainer>
       <NavigationContainer>
         <Navigation href="/">
           <HeaderLogo
-            isActive={pageActive.home}
-            src="/logos/fmetafora.png"
+            src={home ? '/logos/fmetafora-white.png' : '/logos/fmetafora-gray.png'}
             alt="Logo de Fundación Metáfora"
-            className="metafora"
           />
         </Navigation>
         <Navigation href="/orquestando-futuros">
           <HeaderLogo
-            isActive={pageActive.orqFuturos}
-            src="/logos/orquestando-1.png"
+            src={orqFuturos ? '/logos/orq-futuros-white.png' : '/logos/orq-futuros-gray.png'}
             alt="Logo de Orquestando Futuros"
-            className="orq-futuros"
           />
         </Navigation>
       </NavigationContainer>

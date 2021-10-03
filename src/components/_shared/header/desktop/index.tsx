@@ -41,7 +41,7 @@ const Header: FunctionComponent = () => {
       {pathname === ORQ_FUTUROS_PATH && (
         <>
           <Logo
-            src="/logos/orquestando-1.png"
+            src="/logos/orq-futuros.png"
             alt="Logo de Orquestando Futuros"
             className="orq-futuros"
           />

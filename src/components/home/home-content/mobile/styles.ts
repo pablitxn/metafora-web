@@ -2,19 +2,11 @@ import styled from 'styled-components';
 import { colorPicker, backgroundPicker } from 'theme/helpers';
 
 export const HomeContainer = styled.div`
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  overflow: visible;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: Josefin Sans, sans-serif;
   line-height: 1rem;
-`;
-
-export const Card = styled.div<CardProps>`
-  display: flex;
-  width: 100%;
-  ${({ background }) => backgroundPicker(background)}
 `;
 
 export const PlantContainer = styled.div`
@@ -33,7 +25,6 @@ export const TextContainer = styled.div`
 `;
 
 export const Plant = styled.img`
-  position: relative;
   width: 18.75rem;
   top: 3rem;
   margin-left: 2rem;
@@ -75,19 +66,20 @@ export const Title = styled.h3<TitleProps>`
 `;
 
 export const SubTitle = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
+  padding: 3rem 1rem;
+  font-family: Josefin Sans, sans-serif;
+  font-style: normal;
   font-weight: bold;
-  font-size: 1.25rem;
-  margin: 2rem;
+  font-size: 1.5rem;
+  line-height: 115.5%;
+  display: flex;
+  align-items: center;
+  text-align: center;
   color: rgb(253, 255, 222);
 `;
 
 export const Text = styled.p<TextProps>`
-  font-size: 0.75rem;
+  font-size: 1rem;
   margin: 0;
   ${({ textColor }) => colorPicker(textColor)}
 `;
@@ -99,10 +91,17 @@ export const Button = styled.button`
   background: transparent;
   color: rgb(1, 46, 15);
   border: 2px solid #012e0f;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: Josefin Sans, sans-serif;
   font-size: 1rem;
   line-height: 1.15rem;
   margin-top: 2rem;
+`;
+
+export const Card = styled.div<CardProps>`
+  display: flex;
+  width: 100%;
+
+  ${({ background }) => backgroundPicker(background)}
 `;
 
 export const CardContainer = styled.div`
@@ -113,11 +112,11 @@ export const CardContainer = styled.div`
   margin-bottom: 3.5rem;
 `;
 
-export const Content = styled.div`
+export const CardContent = styled.div`
   width: 17.5rem;
   display: flex;
   flex-direction: column;
-  margin-top: 2.5rem;
+  margin: 2.5rem;
 `;
 
 export const TitleContainer = styled.div`
