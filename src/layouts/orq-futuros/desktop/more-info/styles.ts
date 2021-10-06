@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const MoreInfoContainer = styled.div``;
 
-export const Icon = styled.div`
+export const Icon = styled.div<IconProps>`
   display: flex;
   width: 2rem;
   height: 2rem;
@@ -15,9 +15,16 @@ export const Icon = styled.div`
   background: #000;
   user-select: none;
   cursor: pointer;
+  transition: 1s;
+  ${({ isActive }) =>
+    isActive &&
+    `
+      transform: translate(-2rem, 15rem) scale(0);
+      transition: 2s;
+  `}
 `;
 
-export const ExpandedInfo = styled.div`
+export const ExpandedInfo = styled.div<IconProps>`
   position: absolute;
   top: 0;
   left: 0;
@@ -28,7 +35,17 @@ export const ExpandedInfo = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  ${({ isActive }) =>
+    isActive
+      ? ` opacity: 1; `
+      : `
+          opacity: 0;
+          border-radius: 50%;
+          transform: scale(0);
+        `}
+  transition: opacity 1s, transform 1s, border-radius 0.2s;
 `;
+
 export const Background = styled.div`
   width: 85.375rem;
   height: 85.375rem;
@@ -59,6 +76,7 @@ export const Title = styled.h1`
   align-items: center;
   color: #e26f0d;
 `;
+
 export const Text = styled.p`
   font-family: 'Josefin Sans', sans-serif;
   font-style: normal;
@@ -68,6 +86,7 @@ export const Text = styled.p`
   align-items: center;
   color: #e26f0d;
 `;
+
 export const Image = styled.img`
   display: block;
   width: 50%;
