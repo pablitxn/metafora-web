@@ -22,10 +22,7 @@ const MoreInfo: FunctionComponent<MoreInfoProps> = ({ isActive, handleClick }) =
               <Text>
                 Otra forma de donacion es alcanzandonos alguno de los materiales y/o instrumentos
                 que estamos buscando. Podés contactarte con nosotros para saber cuales son:
-                <br />
-                <br />
-                ️info@metafora.org.ar
-                <br /> nicolas@metafora.org.ar 5491169480481
+                ️info@metafora.org.ar nicolas@metafora.org.ar 5491169480481
               </Text>
             </Description>
             <Image src="/images/camada-egresados-1.png" alt="camada de egresados" />
