@@ -19,8 +19,9 @@ export const Icon = styled.div<IconProps>`
   ${({ isActive }) =>
     isActive &&
     `
-      transform: translate(-2rem, 15rem) scale(0);
-      transition: 2s;
+      transform: translate(-2rem, 15rem) scale(10);
+      opacity: 0;
+      transition: transform 1.5s, opacity 0.5s;
   `}
 `;
 
@@ -43,7 +44,7 @@ export const ExpandedInfo = styled.div<IconProps>`
           border-radius: 50%;
           transform: scale(0);
         `}
-  transition: opacity 1s, transform 1s, border-radius 0.2s;
+  transition: opacity 0.5s, transform 1s, border-radius 0.75s;
 `;
 
 export const Background = styled.div`
