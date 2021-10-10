@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { fadeIn } from '../styles';
 
 export const About01Container = styled.div`
   width: 100%;
@@ -13,6 +14,7 @@ export const CardContent = styled.article`
   justify-content: flex-start;
   margin-left: 50rem;
   padding-top: 10rem;
+  animation: 3s ${fadeIn} ease;
 
   @media (max-width: 1024px) {
     margin-left: 40rem;

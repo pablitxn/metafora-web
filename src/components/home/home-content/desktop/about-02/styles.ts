@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { fadeIn } from '../styles';
 
 export const About02Container = styled.div`
   width: 100%;
@@ -6,6 +7,7 @@ export const About02Container = styled.div`
   display: flex;
   justify-content: center;
   padding-top: 5rem;
+  animation: 3s ${fadeIn} ease;
 `;
 
 export const Title = styled.h2`

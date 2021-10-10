@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { fadeIn } from 'components/home/home-content/desktop/styles';
 
 export const MoreInfoContainer = styled.div``;
 
@@ -28,6 +29,7 @@ export const ExpandedInfo = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: 0.5s ${fadeIn} ease;
 `;
 export const Background = styled.div`
   width: 85.375rem;
