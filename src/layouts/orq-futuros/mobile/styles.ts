@@ -68,10 +68,10 @@ export const Subtitle = styled.h3`
 
 export const Text = styled.p`
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
-  letter-spacing: 1px;
+  font-size: 13px;
+  font-weight: 390;
+  line-height: 17px;
+  letter-spacing: 0.7px;
   text-align: left;
 `;
 
