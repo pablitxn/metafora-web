@@ -17,6 +17,8 @@ interface DotProps {
   position: {
     top: string;
     left: string;
+    bottom: string;
+    right: string;
   };
   size: string;
 }

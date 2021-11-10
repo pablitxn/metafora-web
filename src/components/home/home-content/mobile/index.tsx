@@ -16,6 +16,7 @@ import {
   CardContent,
   PlantContainer,
   TextContainer,
+  ImgConteiner,
   Dot,
 } from './styles';
 
@@ -35,12 +36,23 @@ const HomeContent: FunctionComponent = () => {
               que habitamos
             </Title>
           </TextContainer>
-          <Plant src="/images/plant-in-circle.png" alt="planta en circulo" />
-          <Dot size="0.69rem" position={{ top: '11rem', left: '3.5rem;' }} />
-          <Dot size="0.69rem" position={{ top: '7rem', left: '20rem;' }} />
-          <Dot size="0.69rem" position={{ top: '24rem', left: '7rem;' }} />
-          <Dot size="0.5rem" position={{ top: '13rem', left: '8.8rem;' }} />
-          <Dot size="0.5rem" position={{ top: '20rem', left: '22rem;' }} />
+          <ImgConteiner>
+            <Plant src="/images/plant-in-circle.png" alt="planta en circulo" />
+            <Dot
+              size="0.69rem"
+              position={{ top: '8rem', left: '5.5rem', bottom: '0', right: '0' }}
+            />
+            <Dot size="0.69rem" position={{ top: '7rem', left: '', bottom: '0', right: '2rem' }} />
+            <Dot size="0.69rem" position={{ top: '21rem', left: '8rem', bottom: '0', right: '' }} />
+            <Dot
+              size="0.5rem"
+              position={{ top: '11rem', left: '11rem', bottom: '0', right: '0' }}
+            />
+            <Dot
+              size="0.5rem"
+              position={{ top: '17.5rem', left: '', bottom: '0', right: '1rem' }}
+            />
+          </ImgConteiner>
         </PlantContainer>
       </Card>
 
@@ -56,7 +68,7 @@ const HomeContent: FunctionComponent = () => {
           </Text>
           <Button type="button">Sumate</Button>
         </Description>
-        <Image src="/images/globe.png" alt="globo terraqueo" />
+        <Image src="/images/solar-bomb-kit-1.png" alt="Bomba solar" />
       </Card>
 
       <Card background={colors.yellow}>

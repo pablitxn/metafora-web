@@ -23,6 +23,12 @@ export const TextContainer = styled.div`
   align-items: center;
   z-index: 5;
 `;
+export const ImgConteiner = styled.div`
+  display: flex;
+  z-index: 3;
+  justify-content: center;
+  margin-bottom: -4rem;
+`;
 
 export const Plant = styled.img`
   width: 18.75rem;
@@ -35,9 +41,11 @@ export const Dot = styled.div<DotProps>`
   background: rgb(147, 203, 9);
   border-radius: 50%;
   ${({ position }) => {
-    const { top, left } = position;
+    const { top, left, bottom, right } = position;
     return `top: ${top};
-            left: ${left};`;
+            left: ${left};
+            bottom: ${bottom};
+            right: ${right};`;
   }}
   ${({ size }) =>
     `width: ${size};

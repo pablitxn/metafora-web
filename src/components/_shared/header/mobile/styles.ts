@@ -15,7 +15,8 @@ export const HeaderContainer = styled.header`
 
 export const NavigationContainer = styled.nav`
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 2rem;
   align-items: center;
   flex-direction: row;
   color: #feffdf;
