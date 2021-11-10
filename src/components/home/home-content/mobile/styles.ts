@@ -27,7 +27,7 @@ export const ImgConteiner = styled.div`
   display: flex;
   z-index: 3;
   justify-content: center;
-  margin-bottom: -4rem;
+  margin-bottom: -3rem;
 `;
 
 export const Plant = styled.img`
