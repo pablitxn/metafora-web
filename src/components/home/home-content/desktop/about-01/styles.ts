@@ -12,9 +12,11 @@ export const CardContent = styled.article`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-left: 50rem;
+  margin-left: 60rem;
   padding-top: 10rem;
   animation: 3s ${fadeIn} ease;
+  width: 35rem;
+
 
   @media (max-width: 1024px) {
     margin-left: 40rem;
@@ -32,17 +34,17 @@ export const Divider = styled.div`
 
 export const Title = styled.h2`
   color: #93cb0a;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: bold;
   font-family: 'Josefin Sans', sans-serif;
 `;
 
 export const Button = styled.button`
-  color: #93cb0a;
+  color: #012E0F; 
   font-weight: bold;
   border: 2px solid #93cb0a;
   padding: 0.5rem 2rem;
-  background-color: transparent;
+  background-color: #93CB09;
   font-size: 1.25rem;
   font-family: 'Poppins', sans-serif;
   align-self: flex-start;

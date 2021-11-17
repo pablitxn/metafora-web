@@ -50,6 +50,7 @@ export const Text = styled.p`
   font-size: 1.25rem;
   line-height: 1.5rem;
   margin-bottom: 1.5rem;
+  width: 20rem;
 
   @media (max-width: 1024px) {
     font-size: 1.1rem;
@@ -70,11 +71,13 @@ export const Image = styled.img`
 `;
 
 export const TextBold = styled.p`
-  color: #f0cb00;
+  color: #012E0F;
+  background-color: #93CB09;
   font-size: 2.5rem;
+  display: inline;
+  padding: 0.35rem;
   font-weight: bold;
   line-height: 3rem;
-
   @media (max-width: 1024px) {
     font-size: 1.5rem;
     line-height: 2rem;

@@ -2,6 +2,7 @@ import { FunctionComponent } from 'react';
 import { About01Container, CardContent, Divider, Title, Button } from './styles';
 
 const About01: FunctionComponent = () => {
+  const handleWhatsapp = () => window.location("")
   return (
     <About01Container>
       <CardContent>
