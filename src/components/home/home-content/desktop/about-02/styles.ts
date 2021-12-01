@@ -8,6 +8,10 @@ export const About02Container = styled.div`
   justify-content: center;
   padding-top: 5rem;
   animation: 3s ${fadeIn} ease;
+
+  @media (min-height: 1057px) {
+    padding-top: 12rem;
+  }
 `;
 
 export const Title = styled.h2`
@@ -37,12 +41,24 @@ export const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-left: 35rem;
+  margin-left: 50rem;
   gap: 2rem;
 
   @media (max-width: 1024px) {
     margin-left: 40rem;
     padding: 5rem 0;
+  }
+`;
+
+export const Image = styled.img`
+  position: relative;
+  top: 0rem;
+  right: 0rem;
+  z-index: -1;
+
+  @media (max-width: 1024px) {
+    right: -0.5rem;
+    width: 50%;
   }
 `;
 
@@ -55,7 +71,7 @@ export const CardIcon = styled.img`
   @media (max-width: 1024px) {
     width: 2rem;
     height: 2rem;
-    
+
     padding: 0.5rem;
   }
 `;
@@ -63,6 +79,9 @@ export const CardIcon = styled.img`
 export const CardContent = styled.div`
   padding-left: 1.8rem;
   width: 100%;
+  @media (min-height: 1057px) {
+    width: 80%;
+  }
 `;
 
 export const Divider = styled.div`
@@ -83,6 +102,9 @@ export const Description = styled.p`
 `;
 
 export const Button = styled.button`
+  position: relative;
+  top: -5rem;
+  left: 5rem;
   color: #012e0f;
   font-weight: bold;
   border: 2px solid #93cb0a;
@@ -90,5 +112,15 @@ export const Button = styled.button`
   background-color: #93cb09;
   font-size: 1.25rem;
   font-family: 'Poppins', sans-serif;
-  align-self: flex-start;
+`;
+
+export const ImgContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
 `;

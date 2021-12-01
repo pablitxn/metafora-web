@@ -9,6 +9,8 @@ import {
   Divider,
   Description,
   Button,
+  Image,
+  ImgContainer,
 } from './styles';
 
 const About02: FunctionComponent = () => {
@@ -17,8 +19,9 @@ const About02: FunctionComponent = () => {
       <CardContainer>
         <Card>
           <CardContent>
-            <Title>Misión
-          <CardIcon src="/images/mountain.png" alt="icono con montañas" />
+            <Title>
+              Misión
+              <CardIcon src="/images/mountain.png" alt="icono con montañas" />
             </Title>
             <Divider />
             <Description>
@@ -29,7 +32,8 @@ const About02: FunctionComponent = () => {
         </Card>
         <Card>
           <CardContent>
-            <Title>Visión
+            <Title>
+              Visión
               <CardIcon src="/images/binoculars.png" alt="icono con binoculares" />
             </Title>
             <Divider />
@@ -39,8 +43,11 @@ const About02: FunctionComponent = () => {
             </Description>
           </CardContent>
         </Card>
-        <Button>En accion   > </Button>
       </CardContainer>
+      <ImgContainer>
+        <Image src="/images/solar-bomb.png" alt="bomba solar" />
+        <Button>{'En accion   >'} </Button>
+      </ImgContainer>
     </About02Container>
   );
 };

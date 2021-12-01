@@ -12,11 +12,22 @@ export const About03Container = styled.div`
   @media (max-width: 1024px) {
     padding: 3rem 1rem 0.5rem 1rem;
   }
+  @media (min-height: 1057px) {
+    padding-top: 12rem;
+  }
+
+  @media (max-width: 1366px) {
+    padding: 2rem 0;
+  }
 `;
 
 export const Card = styled.div`
   width: 40%;
   position: relative;
+  @media (max-width: 1366px) {
+    width: 37%;
+    margin-right: 1rem;
+  }
 `;
 
 export const Title = styled.h2`
@@ -68,11 +79,17 @@ export const Image = styled.img`
     right: -0.5rem;
     width: 50%;
   }
+
+  @media (max-width: 1366px) {
+    width: 40%;
+    height: 75%;
+    right: -4rem;
+  }
 `;
 
 export const TextBold = styled.p`
-  color: #012E0F;
-  background-color: #93CB09;
+  color: #012e0f;
+  background-color: #93cb09;
   font-size: 2.5rem;
   display: inline;
   padding: 0.35rem;

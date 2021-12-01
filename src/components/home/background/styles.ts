@@ -100,6 +100,12 @@ export const Core = styled.img<AnimatedElement>`
   @media (max-width: 1024px) {
     bottom: 20%;
   }
+  @media (min-height: 1057px) {
+    width: 500px;
+    height: 500px;
+    left: 24%;
+    bottom: 7%;
+  }
 `;
 
 export const LinesCanvas = styled.div`
@@ -113,6 +119,10 @@ export const LinesCanvas = styled.div`
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  @media (min-height: 1057px) {
+    left: 35%;
+    bottom: -20rem;
+  }
 `;
 
 export const LinesContainer = styled.div<AnimatedElement>`
