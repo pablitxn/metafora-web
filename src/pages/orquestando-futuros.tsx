@@ -6,8 +6,8 @@ const OrquestandoFuturos: FunctionComponent = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    if (window.innerWidth < 500) setIsMobile(true);
-    if (window.innerWidth > 500) setIsMobile(false);
+    if (window.innerWidth < 1024) setIsMobile(true);
+    if (window.innerWidth > 1024) setIsMobile(false);
   }, []);
 
   return (

@@ -70,13 +70,11 @@ const HomeContent: FunctionComponent = () => {
         </Description>
         <Image src="/images/solar-bomb-kit-1.png" alt="Bomba solar" />
       </Card>
-
       <Card background={colors.yellow}>
         <SubTitle>
           Promovemos una cultura de sustentabilidad a través de la educación ambiental.
         </SubTitle>
       </Card>
-
       <Card background={colors.green}>
         <CardContainer>
           <CardContent>

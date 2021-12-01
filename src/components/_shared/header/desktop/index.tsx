@@ -45,18 +45,6 @@ const Header: FunctionComponent = () => {
             alt="Logo de Orquestando Futuros"
             className="orq-futuros"
           />
-          <NavigationContainer>
-            <Navigation href="/">Fundación Metáfora</Navigation>
-            <Divider />
-            <SocialMediaContainer className="orq-futuros">
-              <Anchor>
-                <Instagram />
-              </Anchor>
-              <Anchor>
-                <Mail />
-              </Anchor>
-            </SocialMediaContainer>
-          </NavigationContainer>
         </>
       )}
     </HeaderContainer>

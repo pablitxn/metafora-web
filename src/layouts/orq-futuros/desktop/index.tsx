@@ -1,36 +1,26 @@
-import { FunctionComponent, useState } from 'react';
-import Whatsapp from 'components/_shared/whatsapp-icon';
+import { FunctionComponent } from 'react';
 import Header from 'components/_shared/header/desktop';
-import Background from 'components/orq-futuros/background';
+import Footer from 'components/_shared/footer/desktop';
 import MoreInfo from './more-info';
 import {
-  OrquestandoContainer,
   ContentContainer,
-  Title,
   TitleText,
   Content,
   Description,
   Text,
+  TextBolded,
+  Box,
   Button,
-  Ellipse,
-  EllipseText,
 } from './styles';
 
 const OrquestandoFuturosContent: FunctionComponent = () => {
-  const [isActive, setIsActive] = useState(false);
-  const handleActive = () => setIsActive((prev) => !prev);
-
   return (
-    <ContentContainer>
-      <Header />
-      <Background />
-      <OrquestandoContainer>
+    <Box>
+      <ContentContainer>
+        <Header />
         <Content>
-          <Title>
-            <MoreInfo isActive={isActive} handleClick={handleActive} />
-            <TitleText>Compongamos un futuro juntos</TitleText>
-          </Title>
           <Description>
+            <TitleText>Compongamos un futuro juntos</TitleText>
             <Text>
               Orquestando Futuros es un espacio orientador y facilitador de la continuidad del hacer
               musical de lxs jóvenes de Orquestas Escuelas. Queremos ser el puente para que lxs
@@ -38,22 +28,16 @@ const OrquestandoFuturosContent: FunctionComponent = () => {
               estudios académicos formales (conservatorio o universitarios) o el desarrollo musical
               amateur.
             </Text>
-            <Text isBolded>puedes ayudarnos desde una mínima donación.</Text>
+            <TextBolded>puedes ayudarnos desde una mínima donación.</TextBolded>
             <Button type="button">Donar</Button>
           </Description>
         </Content>
-        <Ellipse>
-          <EllipseText>
-            <Text>Mas de </Text>
-            <Text isBolded isBigger>
-              350
-            </Text>
-            <Text isBolded>voluntarios </Text>
-          </EllipseText>
-        </Ellipse>
-        <Whatsapp className="whatsapp-icon" />
-      </OrquestandoContainer>
-    </ContentContainer>
+      </ContentContainer>
+      <ContentContainer>
+        <MoreInfo />
+        <Footer />
+      </ContentContainer>
+    </Box>
   );
 };
 
