@@ -15,10 +15,10 @@ interface TextProps {
 
 interface DotProps {
   position: {
-    top: string;
-    left: string;
+    top: number;
+    left: number;
   };
-  size: string;
+  size: number;
 }
 
 type Color = {
@@ -26,3 +26,7 @@ type Color = {
   green: number;
   blue: number;
 };
+
+interface CardContentProps {
+  position: 'top' | 'bottom';
+}
