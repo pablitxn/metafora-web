@@ -38,6 +38,7 @@ export const Plant = styled.img`
   @media (max-width: 360px) {
     width: 16.5rem;
     top: 2.5rem;
+    margin-left: 1.5rem;
   }
 `;
 
