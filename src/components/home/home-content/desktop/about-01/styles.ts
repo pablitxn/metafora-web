@@ -12,13 +12,23 @@ export const CardContent = styled.article`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-left: 50rem;
-  padding-top: 10rem;
+  margin-left: 55rem;
   animation: 3s ${fadeIn} ease;
+  width: 35rem;
 
   @media (max-width: 1024px) {
     margin-left: 40rem;
     padding: 5rem 0;
+  }
+
+  @media (max-width: 1366px) {
+    margin-left: 50rem;
+    padding: 5rem 0;
+  }
+
+  @media (min-height: 1057px) {
+    justify-content: center;
+    padding-bottom: 10rem;
   }
 `;
 
@@ -32,17 +42,17 @@ export const Divider = styled.div`
 
 export const Title = styled.h2`
   color: #93cb0a;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: bold;
   font-family: 'Josefin Sans', sans-serif;
 `;
 
 export const Button = styled.button`
-  color: #93cb0a;
+  color: #012e0f;
   font-weight: bold;
   border: 2px solid #93cb0a;
   padding: 0.5rem 2rem;
-  background-color: transparent;
+  background-color: #93cb09;
   font-size: 1.25rem;
   font-family: 'Poppins', sans-serif;
   align-self: flex-start;

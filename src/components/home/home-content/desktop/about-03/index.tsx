@@ -14,7 +14,7 @@ const About03: FunctionComponent = () => {
         </Text>
         <Image src="/images/solar-bomb.png" alt="bomba solar" />
         <TextBold>
-          Promovemos una cultura de sustentabilidad a travéz de la educacion ambiental.
+          cultura | sustentabilidad <br /> educacion ambiental.
         </TextBold>
       </Card>
     </About03Container>
