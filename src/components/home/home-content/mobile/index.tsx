@@ -17,6 +17,7 @@ import {
   PlantContainer,
   TextContainer,
   Dot,
+  SubTitleContainer,
 } from './styles';
 
 const HomeContent: FunctionComponent = () => {
@@ -36,11 +37,11 @@ const HomeContent: FunctionComponent = () => {
             </Title>
           </TextContainer>
           <Plant src="/images/plant-in-circle.png" alt="planta en circulo" />
-          <Dot size="0.69rem" position={{ top: '11rem', left: '3.5rem;' }} />
-          <Dot size="0.69rem" position={{ top: '7rem', left: '20rem;' }} />
-          <Dot size="0.69rem" position={{ top: '24rem', left: '7rem;' }} />
-          <Dot size="0.5rem" position={{ top: '13rem', left: '8.8rem;' }} />
-          <Dot size="0.5rem" position={{ top: '20rem', left: '22rem;' }} />
+          <Dot size={0.69} position={{ top: 11, left: 3.5 }} />
+          <Dot size={0.69} position={{ top: 7, left: 20 }} />
+          <Dot size={0.69} position={{ top: 24, left: 7 }} />
+          <Dot size={0.5} position={{ top: 13, left: 8.8 }} />
+          <Dot size={0.5} position={{ top: 20, left: 22 }} />
         </PlantContainer>
       </Card>
 
@@ -56,18 +57,20 @@ const HomeContent: FunctionComponent = () => {
           </Text>
           <Button type="button">Sumate</Button>
         </Description>
-        <Image src="/images/globe.png" alt="globo terraqueo" />
+        <Image src="/images/solar-bomb.png" alt="bomba solar" />
       </Card>
 
       <Card background={colors.yellow}>
-        <SubTitle>
-          Promovemos una cultura de sustentabilidad a través de la educación ambiental.
-        </SubTitle>
+        <SubTitleContainer>
+          <SubTitle>Promovemos una cultura de</SubTitle>
+          <SubTitle>sustentabilidad a través</SubTitle>
+          <SubTitle>de la educación ambiental.</SubTitle>
+        </SubTitleContainer>
       </Card>
 
       <Card background={colors.green}>
         <CardContainer>
-          <CardContent>
+          <CardContent position="top">
             <TitleContainer>
               <Title textColor={colors.lightGreen}>Misión</Title>
               <ImageTitle src="/images/mountain.png" alt="icono de una montaña" />
@@ -77,7 +80,7 @@ const HomeContent: FunctionComponent = () => {
               laboral y profesional.
             </Text>
           </CardContent>
-          <CardContent>
+          <CardContent position="bottom">
             <TitleContainer>
               <Title textColor={colors.lightGreen}>Visión</Title>
               <ImageTitle src="/images/binoculars.png" alt="icono de binoculares" />
