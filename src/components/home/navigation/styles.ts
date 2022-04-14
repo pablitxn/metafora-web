@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const NavigationContainer = styled.nav`
-  width: 100px;
+  width: auto;
   height: 100%;
   background-color: transparent;
   position: absolute;
@@ -15,6 +15,7 @@ export const NavigationContainer = styled.nav`
 
 export const List = styled.ul`
   display: flex;
+  width: 220px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -30,7 +31,7 @@ export const ListItem = styled.li<{ isActive: boolean }>`
   button {
     ${({ isActive }) =>
       isActive &&
-      `padding: 0.25rem 2rem;
+      `padding: 0.25rem 1.8rem;
     border: 2px solid #012e0f;
     font-weight: 700;`}
   }

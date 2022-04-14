@@ -9,17 +9,17 @@ const Navigation: FunctionComponent<INavigationProps> = ({ onPageChange, pageSel
       <List>
         <ListItem isActive={isActive('01')}>
           <Button type="button" onClick={() => onPageChange('01')}>
-            01
+            Inicio
           </Button>
         </ListItem>
         <ListItem isActive={isActive('02')}>
           <Button type="button" onClick={() => onPageChange('02')}>
-            02
+            Institucional
           </Button>
         </ListItem>
         <ListItem isActive={isActive('03')}>
           <Button type="button" onClick={() => onPageChange('03')}>
-            03
+            Sobre Nosotros
           </Button>
         </ListItem>
       </List>
