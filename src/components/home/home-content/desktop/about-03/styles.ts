@@ -58,7 +58,7 @@ export const Divider = styled.div`
 export const Text = styled.p`
   font-family: 'Josefin Sans', sans-serif;
   color: #ffff;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   line-height: 1.5rem;
   margin-bottom: 1.5rem;
   width: 20rem;

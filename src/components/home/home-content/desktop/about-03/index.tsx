@@ -8,9 +8,8 @@ const About03: FunctionComponent = () => {
         <Title>¿Quiénes somos?</Title>
         <Divider />
         <Text>
-          Somos una organización joven, apasionada por ser parte de la construccion de un habitad
-          más justo y equitativo, desarrollando proyectos educativos para colaborar con el
-          desarrollo de un mundo mas sustentable.
+          Somos una organización joven, apasionada por construir un hábitat más Justo y Equitativo.
+          Desarrollamos Proyectos Educativos para colaborar con un mundo más sustentable.
         </Text>
         <Image src="/images/solar-bomb.png" alt="bomba solar" />
         <TextBold>

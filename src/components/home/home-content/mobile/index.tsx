@@ -51,9 +51,9 @@ const HomeContent: FunctionComponent = () => {
             ¿Quiénes somos?
           </Title>
           <Text textColor={colors.green}>
-            Somos una organización joven, apasionada por ser parte de la construcción de un habitad
-            más justo y equitativo, desarrollando proyectos educativos para colaborar con el
-            desarrollo de un mundo más sustentable.
+            Somos una organización joven, apasionada por construir un hábitat más Justo y
+            Equitativo. Desarrollamos Proyectos Educativos para colaborar con un mundo más
+            sustentable.
           </Text>
           <Button type="button">Sumate</Button>
         </Description>
