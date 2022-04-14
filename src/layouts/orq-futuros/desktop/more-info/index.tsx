@@ -26,7 +26,7 @@ const MoreInfo: FunctionComponent<MoreInfoProps> = ({ isActive, handleClick }) =
             </Text>
             <Text>info@metafora.org.ar nicolas@metafora.org.ar 5491169480481</Text>
           </Description>
-          <Image src="/images/camada-egresados-1.png" alt="camada de egresados" />
+          <Image src="/images/egresados.png" alt="camada de egresados" />
         </Background>
       </ExpandedInfo>
     </MoreInfoContainer>

@@ -92,6 +92,6 @@ export const Text = styled.p`
 
 export const Image = styled.img`
   display: block;
-  width: 50%;
+  width: 65%;
   height: auto;
 `;

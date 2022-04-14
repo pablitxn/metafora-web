@@ -28,14 +28,24 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-left: 19rem;
-  margin-top: 1rem;
+  margin-left: 40%;
+  margin-top: 5%;
 `;
 
-export const Title = styled.div`
+export const Card = styled.div`
   display: flex;
-  height: 6%;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 1rem;
+  width: 20rem;
+`;
+
+export const TitleSection = styled.div`
+  display: flex;
+  align-items: center;
   justify-content: center;
+  height: 6%;
+  padding-bottom: 0.5rem;
   border-bottom: 0.125rem solid #ffff;
 `;
 
@@ -45,18 +55,17 @@ export const TitleText = styled.h1`
   font-family: 'Bebas Neue', sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   color: #ffff;
+  white-space: nowrap;
 `;
 
 export const Description = styled.div`
-  width: 14rem;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
-  margin-top: 1.5rem;
+  align-items: center;
 `;
 
 export const Text = styled.p<TextProps>`
@@ -65,8 +74,8 @@ export const Text = styled.p<TextProps>`
   line-height: 1.31em;
   ${({ isBigger }) => isBigger && `font-size: 3.75rem;`}
   ${({ isBolded }) => (isBolded ? `font-weight: bold;` : `font-weight: normal;`)}
+  ${({ notMargin }) => notMargin && `margin: 0;`}
   color: #ffff;
-  margin: 0;
 `;
 
 export const Button = styled.button`
@@ -102,6 +111,6 @@ export const EllipseText = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-right: 20rem;
-  margin-bottom: 5rem;
+  align-self: flex-start;
+  margin-left: 5rem;
 `;

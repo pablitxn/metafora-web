@@ -5,7 +5,10 @@ const Background: FunctionComponent = () => {
   return (
     <BackgroundContainer>
       <GradientRec />
-      <Photo src="/images/photo-1.png" alt="joven tocando el violin" />
+      <Photo
+        src="/images/orquestando-background.jpg"
+        alt="jóvenes tocando instrumentos musicales"
+      />
     </BackgroundContainer>
   );
 };

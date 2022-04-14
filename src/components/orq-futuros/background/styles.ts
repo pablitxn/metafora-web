@@ -13,6 +13,7 @@ export const BackgroundContainer = styled.div`
 export const Photo = styled.img`
   width: 50%;
   height: 100%;
+  object-fit: cover;
 `;
 
 export const GradientRec = styled.div`

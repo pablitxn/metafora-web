@@ -6,9 +6,10 @@ import MoreInfo from './more-info';
 import {
   OrquestandoContainer,
   ContentContainer,
-  Title,
+  TitleSection,
   TitleText,
   Content,
+  Card,
   Description,
   Text,
   Button,
@@ -26,29 +27,32 @@ const OrquestandoFuturosContent: FunctionComponent = () => {
       <Background />
       <OrquestandoContainer>
         <Content>
-          <Title>
-            <MoreInfo isActive={isActive} handleClick={handleActive} />
-            <TitleText>Compongamos un futuro juntos</TitleText>
-          </Title>
-          <Description>
-            <Text>
-              Orquestando Futuros es un espacio orientador y facilitador de la continuidad del hacer
-              musical de lxs jóvenes de Orquestas Escuelas. Queremos ser el puente para que lxs
-              jóvenes puedan continuar su carrera musical sea esta profesional, sea a través de
-              estudios académicos formales (conservatorio o universitarios) o el desarrollo musical
-              amateur.
-            </Text>
-            <Text isBolded>puedes ayudarnos desde una mínima donación.</Text>
-            <Button type="button">Donar</Button>
-          </Description>
+          <Card>
+            <TitleSection>
+              <MoreInfo isActive={isActive} handleClick={handleActive} />
+              <TitleText>Compongamos un futuro juntos</TitleText>
+            </TitleSection>
+            <Description>
+              <Text>
+                Orquestando Futuros es un espacio orientador y facilitador de la continuidad del
+                hacer musical de lxs jóvenes de Orquestas Escuelas. Queremos ser el puente para que
+                lxs jóvenes puedan continuar su carrera musical sea esta profesional, sea a través
+                de estudios académicos formales (conservatorio o universitarios) o el desarrollo
+                musical amateur.
+              </Text>
+              <Button type="button">Donar</Button>
+            </Description>
+          </Card>
         </Content>
         <Ellipse>
           <EllipseText>
-            <Text>Mas de </Text>
-            <Text isBolded isBigger>
-              350
+            <Text notMargin>Mas de </Text>
+            <Text notMargin isBolded isBigger>
+              1055
             </Text>
-            <Text isBolded>voluntarios </Text>
+            <Text notMargin isBolded>
+              jóvenes alcanzados
+            </Text>
           </EllipseText>
         </Ellipse>
         <Whatsapp className="whatsapp-icon" />
