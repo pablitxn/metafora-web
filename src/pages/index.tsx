@@ -1,19 +1,20 @@
-import { FunctionComponent, useState, useEffect } from 'react';
-import HomeLayout from 'layouts/home/desktop';
-import HomeMobile from 'layouts/home/mobile';
+import { FC, useState, useEffect } from 'react';
+import DesktopLayout from 'layouts/metafora/desktop';
+import MobileLayout from 'layouts/metafora/mobile';
 
-const Home: FunctionComponent = () => {
+const Metafora: FC = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     if (window.innerWidth <= 768) setIsMobile(true);
+    if (window.innerWidth > 768) setIsMobile(false);
   }, []);
   return (
     <>
-      {isMobile && <HomeMobile />}
-      {!isMobile && <HomeLayout />}
+      {isMobile && <MobileLayout />}
+      {!isMobile && <DesktopLayout />}
     </>
   );
 };
 
-export default Home;
+export default Metafora;

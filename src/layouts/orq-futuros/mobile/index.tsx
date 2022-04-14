@@ -1,6 +1,6 @@
-import { FunctionComponent } from 'react';
-import Header from 'components/_shared/header/mobile';
-import Footer from 'components/_shared/footer/mobile';
+import { FC } from 'react';
+import Header from 'components/header/mobile';
+import Footer from 'components/footer';
 import {
   OrqFuturosLayoutMobile,
   HeroContainer,
@@ -14,7 +14,7 @@ import {
   Button,
 } from './styles';
 
-const Home: FunctionComponent = () => {
+const Home: FC = () => {
   return (
     <OrqFuturosLayoutMobile>
       <Header />
@@ -41,7 +41,15 @@ const Home: FunctionComponent = () => {
           <Subtitle>No tengo elementos</Subtitle>
           <Title>¿puedo ayudar de otra forma?</Title>
           <Text>Tambien puedes ayudarnos desde una mínima donación.</Text>
-          <Button>Donar</Button>
+          <Button type="button">
+            <a
+              href="https://donaronline.org/fundacion-metafora/campana-de-donacion-orquestando-futuros"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Donar
+            </a>
+          </Button>
         </CardBlack>
       </CardContainer>
       <Footer />

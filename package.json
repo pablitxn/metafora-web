@@ -8,64 +8,47 @@
     "lint:css": "stylelint './src/**/styles.ts'",
     "lint:ts": "eslint src --ext .ts,.tsx",
     "start": "next start",
-    "prepare": "husky install",
-    "test": "jest",
-    "test-ut": "test --runner=groups --group=unit ",
-    "test-co": "test --coverage --watchAll=false",
-    "test-ci": "test --runner=groups --group=unit --watchAll=false --coverage --testResultsProcessor=jest-junit"
+    "prepare": "husky install"
   },
   "dependencies": {
-    "next": "^11.1.2",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-feather": "^2.0.9",
-    "styled-components": "^5.3.1"
+    "next": "12.1.5",
+    "postcss-syntax": "^0.36.2",
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
+    "react-feather": "2.0.9",
+    "styled-components": "5.3.5"
   },
   "devDependencies": {
-    "@commitlint/cli": "^13.1.0",
-    "@commitlint/config-conventional": "^13.1.0",
-    "@testing-library/jest-dom": "^5.11.9",
-    "@testing-library/react": "^11.2.5",
-    "@testing-library/user-event": "^12.7.1",
-    "@types/jest": "^26.0.20",
-    "@types/next": "^9.0.0",
-    "@types/node": "^14.14.22",
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.9",
-    "@types/styled-components": "^5.1.14",
-    "@typescript-eslint/eslint-plugin": "^4.31.0",
-    "@typescript-eslint/parser": "^4.31.0",
-    "eslint": "^7.32.0",
-    "eslint-config-airbnb-typescript-prettier": "^4.2.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.25.1",
-    "eslint-plugin-styled-components": "^0.0.0",
-    "eslint-plugin-styled-components-a11y": "^0.0.34",
-    "eslint-plugin-styled-components-config": "^0.0.2",
-    "husky": "^7.0.2",
-    "jest": "^26.6.3",
-    "jest-junit": "^12.0.0",
-    "jest-runner-groups": "^2.0.1",
-    "lint-staged": "^11.1.2",
-    "prettier": "^2.3.2",
-    "standard-version": "^9.3.1",
-    "stylelint": "^13.13.1",
-    "stylelint-a11y": "^1.2.3",
-    "stylelint-config-recommended": "^5.0.0",
-    "stylelint-config-standard": "^22.0.0",
-    "stylelint-config-styled-components": "^0.1.1",
-    "stylelint-processor-styled-components": "^1.10.0",
-    "typescript": "^4.4.2"
-  },
-  "jest": {
-    "collectCoverageFrom": [
-      "**/src/**/*.{js,jsx,ts,tsx}",
-      "!<rootDir>/node_modules/",
-      "!<rootDir>/path/to/dir/"
-    ],
-    "verbose": true
+    "@commitlint/cli": "16.2.3",
+    "@commitlint/config-conventional": "16.2.1",
+    "@stylelint/postcss-css-in-js": "^0.37.2",
+    "@types/next": "9.0.0",
+    "@types/react": "18.0.5",
+    "@types/react-dom": "18.0.0",
+    "@types/styled-components": "5.1.25",
+    "@typescript-eslint/eslint-plugin": "5.19.0",
+    "@typescript-eslint/parser": "5.19.0",
+    "babel-plugin-styled-components": "^2.0.7",
+    "eslint": "8.13.0",
+    "eslint-config-airbnb-typescript-prettier": "5.0.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-jsx-a11y": "6.5.1",
+    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-react": "7.29.4",
+    "eslint-plugin-styled-components": "0.0.0",
+    "eslint-plugin-styled-components-a11y": "0.0.34",
+    "eslint-plugin-styled-components-config": "0.0.2",
+    "husky": "7.0.4",
+    "lint-staged": "12.3.7",
+    "prettier": "2.6.2",
+    "standard-version": "9.3.2",
+    "stylelint": "14.6.1",
+    "stylelint-a11y": "1.2.3",
+    "stylelint-config-recommended": "7.0.0",
+    "stylelint-config-standard": "25.0.0",
+    "stylelint-config-styled-components": "0.1.1",
+    "stylelint-processor-styled-components": "1.10.0",
+    "typescript": "4.6.3"
   },
   "husky": {
     "hooks": {
@@ -74,12 +57,47 @@
     }
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+    "src/**/*.{js,ts,tsx,json,css,md}": [
       "prettier --write",
       "eslint"
     ]
   },
   "resolutions": {
-    "styled-components": "^5"
+    "styled-components": "5"
+  },
+  "babel": {
+    "plugins": [
+      "babel-plugin-styled-components"
+    ],
+    "env": {
+      "development": {
+        "presets": [
+          "next/babel"
+        ],
+        "plugins": [
+          [
+            "styled-components",
+            {
+              "ssr": false,
+              "displayName": true
+            }
+          ]
+        ]
+      },
+      "production": {
+        "presets": [
+          "next/babel"
+        ],
+        "plugins": [
+          [
+            "styled-components",
+            {
+              "ssr": false,
+              "displayName": false
+            }
+          ]
+        ]
+      }
+    }
   }
 }

@@ -53,17 +53,17 @@ export const Title = styled.h2`
   text-align: left;
   font-size: 30px;
   font-weight: 400;
-  margin: 0 0 0 0;
+  margin: 0;
 `;
 
 export const Subtitle = styled.h3`
   font-family: 'Bebas Neue', sans-serif;
   text-transform: uppercase;
-  padding: 50px 0 1px 0;
+  padding: 50px 0 1px;
   text-align: left;
   font-size: 20px;
   font-weight: 400;
-  margin: 0 0 0 0;
+  margin: 0;
 `;
 
 export const Text = styled.p`
@@ -81,4 +81,13 @@ export const Button = styled.button`
   color: #88e2d0;
   background-color: black;
   border: solid 3px #88e2d0;
+
+  a {
+    text-decoration: none;
+    color: #88e2d0;
+
+    &:visited {
+      color: #88e2d0;
+    }
+  }
 `;

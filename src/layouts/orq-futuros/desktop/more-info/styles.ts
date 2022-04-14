@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { fadeIn } from 'components/home/home-content/desktop/styles';
+import { fadeIn } from 'layouts/metafora/desktop/content/styles';
 
 export const MoreInfoContainer = styled.div``;
 
@@ -32,7 +32,7 @@ export const ExpandedInfo = styled.div<IconProps>`
   left: 0;
   width: 100%;
   height: 100vh;
-  background: rgba(219, 43, 118, 0.74);
+  background: rgba(219, 43, 118, 74%);
   z-index: 5;
   display: flex;
   justify-content: center;
@@ -92,6 +92,6 @@ export const Text = styled.p`
 
 export const Image = styled.img`
   display: block;
-  width: 50%;
+  width: 65%;
   height: auto;
 `;
