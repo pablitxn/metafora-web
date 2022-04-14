@@ -1,4 +1,4 @@
-import { FunctionComponent } from 'react';
+import { FC } from 'react';
 import {
   Icon,
   MoreInfoContainer,
@@ -10,7 +10,7 @@ import {
   Image,
 } from './styles';
 
-const MoreInfo: FunctionComponent<MoreInfoProps> = ({ isActive, handleClick }) => {
+const MoreInfo: FC<MoreInfoProps> = ({ isActive, handleClick }) => {
   return (
     <MoreInfoContainer>
       <Icon onClick={handleClick} isActive={isActive}>

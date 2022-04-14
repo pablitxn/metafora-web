@@ -1,15 +1,11 @@
-import React, { FunctionComponent } from 'react';
+import { FC } from 'react';
 import Head from 'next/head';
 import { AppProps } from 'next/app';
 import './globals.css';
 
-const SafeHydrate: FunctionComponent = ({ children }) => {
-  return <div suppressHydrationWarning>{typeof window === 'undefined' ? null : children}</div>;
-};
-
-const App: FunctionComponent<AppProps> = ({ Component, pageProps }) => {
+const App: FC<AppProps> = ({ Component, pageProps }) => {
   return (
-    <SafeHydrate>
+    <>
       <Head>
         <title>Fundacion Metáfora</title>
         <meta charSet="utf-8" />
@@ -23,7 +19,7 @@ const App: FunctionComponent<AppProps> = ({ Component, pageProps }) => {
       </Head>
       {/* eslint-disable-next-line react/jsx-props-no-spreading */}
       <Component {...pageProps} />
-    </SafeHydrate>
+    </>
   );
 };
 

@@ -99,7 +99,7 @@ export const Ellipse = styled.div`
   width: 35.25rem;
   height: 35.25rem;
   border-radius: 50%;
-  background: linear-gradient(180deg, #db2b76 0%, rgba(219, 43, 118, 0) 100%);
+  background: linear-gradient(180deg, #db2b76 0, rgba(219, 43, 118, 0%) 100%);
   display: flex;
   flex-direction: column;
   justify-content: center;

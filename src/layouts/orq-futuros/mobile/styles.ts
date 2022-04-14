@@ -53,17 +53,17 @@ export const Title = styled.h2`
   text-align: left;
   font-size: 30px;
   font-weight: 400;
-  margin: 0 0 0 0;
+  margin: 0;
 `;
 
 export const Subtitle = styled.h3`
   font-family: 'Bebas Neue', sans-serif;
   text-transform: uppercase;
-  padding: 50px 0 1px 0;
+  padding: 50px 0 1px;
   text-align: left;
   font-size: 20px;
   font-weight: 400;
-  margin: 0 0 0 0;
+  margin: 0;
 `;
 
 export const Text = styled.p`

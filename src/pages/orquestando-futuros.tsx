@@ -1,8 +1,8 @@
-import { FunctionComponent, useState, useEffect } from 'react';
+import { FC, useState, useEffect } from 'react';
 import OrquestandoFuturosDesktop from 'layouts/orq-futuros/desktop';
 import OrquestandoFuturosMobile from 'layouts/orq-futuros/mobile';
 
-const OrquestandoFuturos: FunctionComponent = () => {
+const OrquestandoFuturos: FC = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {

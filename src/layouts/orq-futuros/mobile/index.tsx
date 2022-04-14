@@ -1,6 +1,6 @@
-import { FunctionComponent } from 'react';
-import Header from 'components/_shared/header/mobile';
-import Footer from 'components/_shared/footer/mobile';
+import { FC } from 'react';
+import Header from 'components/header/mobile';
+import Footer from 'components/footer';
 import {
   OrqFuturosLayoutMobile,
   HeroContainer,
@@ -14,7 +14,7 @@ import {
   Button,
 } from './styles';
 
-const Home: FunctionComponent = () => {
+const Home: FC = () => {
   return (
     <OrqFuturosLayoutMobile>
       <Header />

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { fadeIn } from 'components/home/home-content/desktop/styles';
+import { fadeIn } from 'layouts/metafora/desktop/content/styles';
 
 export const MoreInfoContainer = styled.div``;
 
@@ -16,14 +16,17 @@ export const Icon = styled.div<IconProps>`
   background: #000;
   user-select: none;
   cursor: pointer;
-  transition: 1s;
-  ${({ isActive }) =>
-    isActive &&
-    `
+
+  @media (prefers-reduced-motion) {
+    transition: 1s;
+    ${({ isActive }) =>
+      isActive &&
+      `
       transform: translate(-2rem, 15rem) scale(10);
       opacity: 0;
       transition: transform 1.5s, opacity 0.5s;
   `}
+  }
 `;
 
 export const ExpandedInfo = styled.div<IconProps>`
@@ -32,21 +35,24 @@ export const ExpandedInfo = styled.div<IconProps>`
   left: 0;
   width: 100%;
   height: 100vh;
-  background: rgba(219, 43, 118, 0.74);
+  background: rgba(219, 43, 118, 74%);
   z-index: 5;
   display: flex;
   justify-content: center;
   align-items: center;
-  ${({ isActive }) =>
-    isActive
-      ? ` opacity: 1; `
-      : `
+
+  @media (prefers-reduced-motion) {
+    ${({ isActive }) =>
+      isActive
+        ? ` opacity: 1; `
+        : `
           opacity: 0;
           border-radius: 50%;
           transform: scale(0);
         `}
-  transition: opacity 0.5s, transform 1s, border-radius 0.75s;
-  animation: 0.5s ${fadeIn} ease;
+    transition: opacity 0.5s, transform 1s, border-radius 0.75s;
+    animation: 0.5s ${fadeIn} ease;
+  }
 `;
 
 export const Background = styled.div`
