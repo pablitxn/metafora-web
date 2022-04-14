@@ -16,17 +16,14 @@ export const Icon = styled.div<IconProps>`
   background: #000;
   user-select: none;
   cursor: pointer;
-
-  @media (prefers-reduced-motion) {
-    transition: 1s;
-    ${({ isActive }) =>
-      isActive &&
-      `
+  transition: 1s;
+  ${({ isActive }) =>
+    isActive &&
+    `
       transform: translate(-2rem, 15rem) scale(10);
       opacity: 0;
       transition: transform 1.5s, opacity 0.5s;
   `}
-  }
 `;
 
 export const ExpandedInfo = styled.div<IconProps>`
@@ -40,19 +37,16 @@ export const ExpandedInfo = styled.div<IconProps>`
   display: flex;
   justify-content: center;
   align-items: center;
-
-  @media (prefers-reduced-motion) {
-    ${({ isActive }) =>
-      isActive
-        ? ` opacity: 1; `
-        : `
+  ${({ isActive }) =>
+    isActive
+      ? ` opacity: 1; `
+      : `
           opacity: 0;
           border-radius: 50%;
           transform: scale(0);
         `}
-    transition: opacity 0.5s, transform 1s, border-radius 0.75s;
-    animation: 0.5s ${fadeIn} ease;
-  }
+  transition: opacity 0.5s, transform 1s, border-radius 0.75s;
+  animation: 0.5s ${fadeIn} ease;
 `;
 
 export const Background = styled.div`

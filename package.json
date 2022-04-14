@@ -28,6 +28,7 @@
     "@types/styled-components": "5.1.25",
     "@typescript-eslint/eslint-plugin": "5.19.0",
     "@typescript-eslint/parser": "5.19.0",
+    "babel-plugin-styled-components": "^2.0.7",
     "eslint": "8.13.0",
     "eslint-config-airbnb-typescript-prettier": "5.0.0",
     "eslint-config-prettier": "8.5.0",
@@ -63,5 +64,40 @@
   },
   "resolutions": {
     "styled-components": "5"
+  },
+  "babel": {
+    "plugins": [
+      "babel-plugin-styled-components"
+    ],
+    "env": {
+      "development": {
+        "presets": [
+          "next/babel"
+        ],
+        "plugins": [
+          [
+            "styled-components",
+            {
+              "ssr": false,
+              "displayName": true
+            }
+          ]
+        ]
+      },
+      "production": {
+        "presets": [
+          "next/babel"
+        ],
+        "plugins": [
+          [
+            "styled-components",
+            {
+              "ssr": false,
+              "displayName": false
+            }
+          ]
+        ]
+      }
+    }
   }
 }

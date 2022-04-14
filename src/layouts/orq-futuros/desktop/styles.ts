@@ -90,6 +90,23 @@ export const Button = styled.button`
   font-size: 1.25rem;
   line-height: 1.155rem;
   padding: 0;
+  transition: all 1s ease-out;
+  cursor: pointer;
+
+  &:hover {
+    transition: all 1s;
+    transform: scale(1.25);
+    display: inline-block;
+  }
+
+  a {
+    text-decoration: none;
+    color: #88e2d0;
+
+    &:visited {
+      color: #88e2d0;
+    }
+  }
 `;
 
 export const Ellipse = styled.div`

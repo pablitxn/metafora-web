@@ -6,6 +6,7 @@ export const About01Container = styled.div`
   height: 100%;
   display: flex;
   justify-content: center;
+  margin-top: 10%;
 `;
 
 export const CardContent = styled.article`
@@ -14,10 +15,7 @@ export const CardContent = styled.article`
   justify-content: flex-start;
   margin-left: 55rem;
   width: 35rem;
-
-  @media (prefers-reduced-motion) {
-    animation: 3s ${fadeIn} ease;
-  }
+  animation: 3s ${fadeIn} ease;
 
   @media (max-width: 1024px) {
     margin-left: 40rem;

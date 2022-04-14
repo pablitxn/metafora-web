@@ -81,4 +81,13 @@ export const Button = styled.button`
   color: #88e2d0;
   background-color: black;
   border: solid 3px #88e2d0;
+
+  a {
+    text-decoration: none;
+    color: #88e2d0;
+
+    &:visited {
+      color: #88e2d0;
+    }
+  }
 `;

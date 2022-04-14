@@ -40,7 +40,15 @@ const OrquestandoFuturosContent: FC = () => {
                 de estudios académicos formales (conservatorio o universitarios) o el desarrollo
                 musical amateur.
               </Text>
-              <Button type="button">Donar</Button>
+              <Button type="button">
+                <a
+                  href="https://donaronline.org/fundacion-metafora/campana-de-donacion-orquestando-futuros"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Donar
+                </a>
+              </Button>
             </Description>
           </Card>
         </Content>

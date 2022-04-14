@@ -7,10 +7,7 @@ export const About02Container = styled.div`
   display: flex;
   justify-content: center;
   padding-top: 5rem;
-
-  @media (prefers-reduced-motion) {
-    animation: 3s ${fadeIn} ease;
-  }
+  animation: 3s ${fadeIn} ease;
 
   @media (min-height: 1057px) {
     padding-top: 12rem;

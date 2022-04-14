@@ -41,7 +41,15 @@ const Home: FC = () => {
           <Subtitle>No tengo elementos</Subtitle>
           <Title>¿puedo ayudar de otra forma?</Title>
           <Text>Tambien puedes ayudarnos desde una mínima donación.</Text>
-          <Button>Donar</Button>
+          <Button type="button">
+            <a
+              href="https://donaronline.org/fundacion-metafora/campana-de-donacion-orquestando-futuros"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Donar
+            </a>
+          </Button>
         </CardBlack>
       </CardContainer>
       <Footer />

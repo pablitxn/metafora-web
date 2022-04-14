@@ -34,6 +34,13 @@ export const ListItem = styled.li<{ isActive: boolean }>`
       `padding: 0.25rem 1.8rem;
     border: 2px solid #012e0f;
     font-weight: 700;`}
+    transition: all 1s ease-out;
+
+    &:hover {
+      transition: all 1s;
+      transform: scale(1.25);
+      display: inline-block;
+    }
   }
 `;
 
