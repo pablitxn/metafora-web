@@ -1,0 +1,32 @@
+{
+  "processors": ["stylelint-processor-styled-components"],
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-recommended",
+    "stylelint-config-styled-components",
+    "stylelint-a11y",
+    "@stylelint/postcss-css-in-js"
+  ],
+  "plugins": ["stylelint-a11y"],
+  "rules": {
+    "a11y/media-prefers-reduced-motion": true,
+    "a11y/no-outline-none": true,
+    "a11y/selector-pseudo-class-focus": true,
+    "value-keyword-case": null,
+    "declaration-colon-newline-after": null,
+    "string-quotes": null,
+    "color-function-notation": null,
+    "font-family-name-quotes": null,
+    "declaration-block-no-redundant-longhand-properties": null,
+    "keyframes-name-pattern": null
+  },
+  "overrides": [
+    {
+      "files": ["**/*.{js,ts}"],
+      "customSyntax": "@stylelint/postcss-css-in-js",
+      "rules": {
+        "at-rule-no-unknown": null
+      }
+    }
+  ]
+}

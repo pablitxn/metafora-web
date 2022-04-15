@@ -1,0 +1,33 @@
+name: Build
+
+# Controls when the workflow will run
+on:
+  workflow_dispatch:
+  push:
+    branches:
+    - '**'
+  pull_request:
+    branches:
+      - 'master'
+      - 'dev'
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # Get the repositery's code
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16.13.0
+      - name: Dependencies
+        run: yarn
+      - name: Stylelint
+        run: yarn lint:css
+      - name: Eslint
+        run: yarn lint:ts
+      - name: Build express app
+        run: yarn build
