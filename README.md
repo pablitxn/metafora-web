@@ -63,6 +63,7 @@ We use [SemVer]() for versioning. For the versions available, see the [tags on t
 ## Authors
 
 - **Pablo Coronel** - _Developer_ - [volunteer](https://github.com/pablitxn)
+- **Nicolas Coronel** - _Developer_ - [volunteer](https://github.com/NicoCle)
 - **Ignacio Zamboni** - _Developer_ - [volunteer](https://github.com/izamboni)
 - **Genaro di Caro** - _Developer_ - [volunteer](https://github.com/gedemal666)
 - **Facundo Mercado** - _Developer_ - [volunteer](https://github.com/facumk2)

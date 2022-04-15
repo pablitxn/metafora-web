@@ -25,7 +25,6 @@ For #XXX
 <!-- You can remove the checklist items that don't apply to your PR. -->
 
 - [ ] UX/UI
-- [ ] Code
 - [ ] CI
 - [ ] Project
 
@@ -36,7 +35,6 @@ What kind of change does this PR introduce?
 - [ ] Feature
 - [ ] Bugfix
 - [ ] CI related changes
-- [ ] Tests
 - [ ] Other
 
 ## Checklist before merge
@@ -45,5 +43,4 @@ Developer's responsibilities
 
 - [ ] **This pull request merges to `dev`**
 - [ ] Approved by at least one developer
-- [ ] **Pull request tests** have passed
 - [ ] **Pull request build** has passed
