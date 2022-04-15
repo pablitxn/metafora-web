@@ -23,8 +23,8 @@ jobs:
       - name: Dependencies
         run: yarn
       - name: Stylelint
-      run: yarn lint:css
+        run: yarn lint:css
       - name: Eslint
-      run: yarn lint:ts
+        run: yarn lint:ts
       - name: Build express app
-      run: yarn build
+        run: yarn build
