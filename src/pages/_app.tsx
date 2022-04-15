@@ -3,6 +3,8 @@ import Head from 'next/head';
 import { AppProps } from 'next/app';
 import './globals.css';
 
+import dynamic from 'next/dynamic';
+
 const App: FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <>
@@ -23,4 +25,6 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
   );
 };
 
-export default App;
+const NoSSR = dynamic(() => Promise.resolve(App), { ssr: false });
+
+export default NoSSR;
